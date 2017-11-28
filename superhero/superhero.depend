@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1511891891 source:c:\users\einar\documents\codeblocks\verklegt_namskeiğ_1\superhero\main.cpp
+	<iostream>
+	<string>
+	"Superhero.h"
+
+1511886253 c:\users\einar\documents\codeblocks\verklegt_namskeiğ_1\superhero\include\superhero.h
+	<string>
+	<iostream>
+	<fstream>
+
+1511890274 source:c:\users\einar\documents\codeblocks\verklegt_namskeiğ_1\superhero\src\superhero.cpp
+	"Superhero.h"
+	<string>
+	<fstream>
+	<iostream>
+
