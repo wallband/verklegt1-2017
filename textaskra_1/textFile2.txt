@@ -1,0 +1,37 @@
+lina 1
+lina 2
+lina 3
+lina 4
+lina 5
+
+lina 6
+lina 7
+lina 8
+lina 9
+lina 10
+
+lina 11
+lina 12
+lina 13
+lina 14
+
+lina 15
+lina 16
+lina 17
+lina 18
+lina 19
+lina 20
+
+lina 21
+lina 22
+lina 23
+lina 24
+lina 25
+
+lina 26
+lina 27
+lina 28
+lina 29
+lina 30
+
+ENDIR__:__

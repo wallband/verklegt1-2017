@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1511824037 source:c:\users\einar\documents\codeblock\verklegt_1\textaskra_1\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+
