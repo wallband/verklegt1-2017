@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1511980634 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\superhero_ii\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"Superhero.h"
+
+1511950574 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\superhero_ii\mainui.cpp
+	"mainUI.h"
+
+1511950574 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\superhero_ii\mainui.h
+
+1511981069 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\superhero_ii\superhero.h
+	<iostream>
+
+1511981140 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\superhero_ii\superhero.cpp
+	"Superhero.h"
+	<iostream>
+	<stddef.h>
+	<fstream>
+
