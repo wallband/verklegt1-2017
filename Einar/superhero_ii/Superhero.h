@@ -23,6 +23,7 @@ void fixString();
 void read_from_file();
 void write_to_file();
 void prompt_user();
+void read_write_to_file(Superhero hero);
 
 
 

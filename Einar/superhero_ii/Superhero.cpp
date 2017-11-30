@@ -37,11 +37,32 @@ Superhero::~Superhero()
 }
 
     ostream& operator <<(ostream& out, const Superhero& superhero) {
-        out << superhero._name << endl;
+        out << superhero._name << " (" << superhero._age << "): ";
+
+        if ((superhero._superpower == 'f') || (superhero._superpower == 'F')) {
+        out << "Flying" << endl;
+        }
+        else if ((superhero._superpower == 'g') || (superhero._superpower == 'G')) {
+        out << "Giant" << endl;
+        }
+        else if ((superhero._superpower == 'h') || (superhero._superpower == 'H')) {
+        out << "Hacker" << endl;
+        }
+        else if ((superhero._superpower == 'n') || (superhero._superpower == 'N')) {
+        out << "None" << endl;
+        }
+        else {
+        out << "Weakling" << endl;
+        }
+
+        return out;
+
+
+       /* out << superhero._name << endl;
         out << superhero._age << endl;
         out << superhero._superpower << endl;
 
-    return out;
+    return out;*/
 }
 void Superhero::fixString() {
     _name[19] = '\0';
@@ -86,9 +107,10 @@ void Superhero::write_to_file() {
 
     for(int i = 0; i < size_of_arr; i++) {
         cin >> hero1[i];
-        cout << hero1[i] << endl;
+
 
         fout.write((char*)(&hero1[i]), sizeof(Superhero));
+        cout << endl;
     }
     fout.close();
     delete[] hero1;

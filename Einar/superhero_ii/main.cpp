@@ -8,7 +8,9 @@ using namespace std;
 int main()
 {
     Superhero hero;
-    char input;
+
+
+char input;
 
 
     while(input != 'q' || input != 'Q'){
@@ -29,8 +31,6 @@ int main()
                 }
 
     }
-
-
 
 
 

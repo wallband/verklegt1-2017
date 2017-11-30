@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1512051313 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\main.cpp
+	<iostream>
+	"MainUI.h"
+
+1512051246 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\mainui.h
+
+1512055487 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\mainui.cpp
+	"MainUI.h"
+	"PizzaUI.h"
+	<iostream>
+
+1512055458 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\pizza.cpp
+	"Pizza.h"
+
+1512054194 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\pizza.h
+	"Topping.h"
+	<iostream>
+
+1512054535 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\topping.cpp
+	"Topping.h"
+	<string.h>
+	<iostream>
+
+1512054365 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\topping.h
+	<iostream>
+
+1512055458 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\pizzaui.h
+
