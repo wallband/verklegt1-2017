@@ -23,4 +23,9 @@ void PizzaUI::startUI() {
 
     Pizza pizza(topCount);
 
+    for(int i = 0; i < topCount; i++) {
+
+
+    }
+
 }
