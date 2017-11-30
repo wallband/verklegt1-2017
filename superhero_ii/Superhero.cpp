@@ -59,12 +59,17 @@ void Superhero::read_from_file() {
         Superhero *hero2 = new Superhero[recordCount];
 
         fread.read((char*)(hero2), (sizeof(Superhero) * recordCount));
-        fread.close();
         for(int i = 0; i < recordCount; i++) {
             hero2[i].fixString();
             cout << hero2[i] << endl;
         }
+        cout << "-----------" << endl;
+        fread.close();
         delete[] hero2;
+    }
+
+    else {
+        cout << "File not found" << endl;
     }
 
 }
@@ -81,8 +86,9 @@ void Superhero::write_to_file() {
 
     for(int i = 0; i < size_of_arr; i++) {
         cin >> hero1[i];
+        cout << hero1[i] << endl;
 
-        fout.write((char*)(hero1), sizeof(Superhero));
+        fout.write((char*)(&hero1[i]), sizeof(Superhero));
     }
     fout.close();
     delete[] hero1;

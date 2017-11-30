@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1511980634 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\superhero_ii\main.cpp
+1511981264 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\superhero_ii\main.cpp
 	<iostream>
 	<fstream>
 	<string>
@@ -13,7 +13,7 @@
 1511981069 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\superhero_ii\superhero.h
 	<iostream>
 
-1511981140 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\superhero_ii\superhero.cpp
+1512035522 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\superhero_ii\superhero.cpp
 	"Superhero.h"
 	<iostream>
 	<stddef.h>
