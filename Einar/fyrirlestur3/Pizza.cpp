@@ -49,7 +49,7 @@ void Pizza::addTopping(Topping topping) {
 ostream& operator <<(ostream& out, Pizza& pizza) {
 
     //out << "Pizza with toppings" << endl;
-    out << pizza.toppingCount;
+    out << pizza.toppingCount << " ";
 
     for(int i = 0; i < pizza.toppingCount; i++) {
         out << pizza.toppings[i] << " ";

@@ -20,7 +20,7 @@ void MainUI::startUI() {
 
     while((selection != 'q') && (selection != 'Q')) {
 
-        cout << "p: Make Pizza" << endl;
+        cout << "p: Pizzas" << endl;
         cout << "w: Write" << endl;
         cout << "r: Read" << endl;
         cout << "q: Quit" << endl;

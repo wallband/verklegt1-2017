@@ -1,4 +1,4 @@
-#include "PizzaRepository.h"
+#include "../include/PizzaRepository.h"
 #include <fstream>
 #include "../Pizza.h"
 
@@ -17,7 +17,7 @@ void PizzaRepository::storePizza(Pizza pizza) {
 
     ofstream fout;
     fout.open("Pizzas.txt");
-
+    cout << pizza;
     fout << pizza;
 
     fout.close();
@@ -25,14 +25,15 @@ void PizzaRepository::storePizza(Pizza pizza) {
 }
 Pizza PizzaRepository::retrivePizza() {
 
+    Pizza pizza;
     ifstream fin;
     fin.open("Pizzas.txt");
     if(fin.is_open()) {
 
-        Pizza pizza;
+
         fin >> pizza;
 
-    return pizza;
+
     }
     else {
 
@@ -40,7 +41,6 @@ Pizza PizzaRepository::retrivePizza() {
     }
     fin.close();
 
-
-
+return pizza;
 
 }

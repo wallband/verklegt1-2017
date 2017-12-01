@@ -5,24 +5,25 @@
 
 1512051246 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\mainui.h
 
-1512055487 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\mainui.cpp
+1512122168 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\mainui.cpp
 	"MainUI.h"
 	"PizzaUI.h"
 	<iostream>
 
-1512055458 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\pizza.cpp
+1512126654 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\pizza.cpp
 	"Pizza.h"
+	"Topping.h"
 
-1512054194 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\pizza.h
+1512119843 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\pizza.h
 	"Topping.h"
 	<iostream>
 
-1512054535 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\topping.cpp
+1512119843 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\topping.cpp
 	"Topping.h"
 	<string.h>
 	<iostream>
 
-1512054365 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\topping.h
+1512119843 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\topping.h
 	<iostream>
 
 1512055458 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\pizzaui.h
@@ -68,5 +69,20 @@
 	"../Pizza.h"
 
 1512089628 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\include\pizzarepository.h
+	"../Pizza.h"
+
+1512122637 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\pizzaui.cpp
+	"PizzaUI.h"
+	<iostream>
+	"Pizza.h"
+	"Topping.h"
+	"include/PizzaRepository.h"
+
+1512119843 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\include\pizzarepository.h
+	"../Pizza.h"
+
+1512126982 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\src\pizzarepository.cpp
+	"../include/PizzaRepository.h"
+	<fstream>
 	"../Pizza.h"
 
