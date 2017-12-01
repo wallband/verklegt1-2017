@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1511966559 source:c:\users\regina\documents\c++\verk1bi\main.cpp
+	<iostream>
+	<fstream>
+
