@@ -13,6 +13,7 @@ class Topping
         virtual ~Topping();
 
         friend ostream& operator <<(ostream& out, Topping& topping);
+        friend istream& operator >>(istream& in, Topping& topping);
 
 
 

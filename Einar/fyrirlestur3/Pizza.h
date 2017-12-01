@@ -10,6 +10,9 @@ class Pizza
         Pizza(int numberOfToppings);
         virtual ~Pizza();
 
+        void clean();
+        void initialize(int numberOfToppings);
+
         void addTopping(Topping topping);
 
         friend ostream& operator <<(ostream& out, Pizza& pizza);
