@@ -25,7 +25,8 @@ void MainUI::start_mainUI(){
     cout << "-> "; cin >> input;
 
     if(input == 'o' || input == 'O') {
-
+            OrderUI orderUI;
+            orderUI.start_orderUI();
 
     }
 

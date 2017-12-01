@@ -10,6 +10,7 @@ int main()
 
     string str;
     ofstream fout;
+    cout << "Enter as many strings as you want, use '\\' to quit" << endl;
 
     fout.open("TextOutput.txt", ios::app);
 

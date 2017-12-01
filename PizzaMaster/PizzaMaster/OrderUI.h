@@ -6,6 +6,8 @@ class OrderUI
 {
     public:
         OrderUI();
+        void start_orderUI();
+
         virtual ~OrderUI();
 
     protected:
