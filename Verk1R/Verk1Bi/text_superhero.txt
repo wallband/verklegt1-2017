@@ -1,0 +1,9 @@
+superman(45): Flying
+batman(45): Giant
+catwoman(56): Weakling
+catwomen(56): Weakling
+supermouse(23): Hacker
+lala(23): Weakling
+baba(56): Weakling
+michy mouse(67): Weakling
+catwoman(34): Flying
