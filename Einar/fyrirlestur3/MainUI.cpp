@@ -18,9 +18,9 @@ MainUI::~MainUI()
 void MainUI::startUI() {
     char selection = '\0';
 
-    while((selection != 'q') || (selection != 'Q')) {
+    while((selection != 'q') && (selection != 'Q')) {
 
-        cout << "m: Make Pizza" << endl;
+        cout << "p: Make Pizza" << endl;
         cout << "w: Write" << endl;
         cout << "r: Read" << endl;
         cout << "q: Quit" << endl;

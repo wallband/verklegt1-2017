@@ -27,3 +27,37 @@
 
 1512055458 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\einar\fyrirlestur3\pizzaui.h
 
+1512062782 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\main.cpp
+	<iostream>
+	"MainUI.h"
+
+1512062782 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\mainui.h
+
+1512082886 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\mainui.cpp
+	"MainUI.h"
+	"PizzaUI.h"
+	<iostream>
+
+1512062782 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\pizzaui.h
+
+1512062782 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\pizza.cpp
+	"Pizza.h"
+
+1512062782 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\pizza.h
+	"Topping.h"
+	<iostream>
+
+1512081869 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\topping.h
+	<iostream>
+
+1512081861 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\pizzaui.cpp
+	"PizzaUI.h"
+	<iostream>
+	"Pizza.h"
+	"Topping.h"
+
+1512081907 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\topping.cpp
+	"Topping.h"
+	<string.h>
+	<iostream>
+
