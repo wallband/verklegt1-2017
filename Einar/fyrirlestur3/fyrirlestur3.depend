@@ -40,24 +40,33 @@
 
 1512062782 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\pizzaui.h
 
-1512062782 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\pizza.cpp
+1512090411 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\pizza.cpp
 	"Pizza.h"
+	"Topping.h"
 
-1512062782 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\pizza.h
+1512090351 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\pizza.h
 	"Topping.h"
 	<iostream>
 
 1512081869 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\topping.h
 	<iostream>
 
-1512081861 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\pizzaui.cpp
+1512087581 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\pizzaui.cpp
 	"PizzaUI.h"
 	<iostream>
 	"Pizza.h"
 	"Topping.h"
 
-1512081907 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\topping.cpp
+1512088740 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\topping.cpp
 	"Topping.h"
 	<string.h>
 	<iostream>
+
+1512090467 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\src\pizzarepository.cpp
+	"PizzaRepository.h"
+	<fstream>
+	"../Pizza.h"
+
+1512089628 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\fyrirlestur3\include\pizzarepository.h
+	"../Pizza.h"
 
