@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1512057513 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\readfiletest\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+
