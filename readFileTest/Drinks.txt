@@ -1,0 +1,4 @@
+1 Coke 50
+2 Fanta 50
+3 Sprite 50
+4 Exit 0
