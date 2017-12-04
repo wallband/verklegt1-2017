@@ -1,0 +1,132 @@
+# depslib dependency file v1.0
+1512171335 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\pizzamaster\pizzamaster\main.cpp
+	<iostream>
+	"MainUI.h"
+
+1512158442 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\pizzamaster\pizzamaster\mainui.h
+
+1512180861 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\pizzamaster\pizzamaster\mainui.cpp
+	"MainUI.h"
+	"OrderUI.h"
+	<iostream>
+
+1512158442 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\pizzamaster\pizzamaster\orderui.h
+
+1512171042 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\pizzamaster\pizzamaster\order.cpp
+	"Order.h"
+
+1512171041 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\pizzamaster\pizzamaster\order.h
+
+1512182425 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\pizzamaster\pizzamaster\orderui.cpp
+	"OrderUI.h"
+	"PizzaUI.h"
+	"DrinkUI.h"
+	"Order.h"
+	<iostream>
+	<string>
+	<stdlib.h>
+
+1512173473 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\pizzamaster\pizzamaster\pizza.cpp
+	"Pizza.h"
+
+1512173473 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\pizzamaster\pizzamaster\pizza.h
+
+1512173829 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\pizzamaster\pizzamaster\pizzaui.cpp
+	"PizzaUI.h"
+	"Pizza.h"
+	<iostream>
+
+1512173799 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\pizzamaster\pizzamaster\pizzaui.h
+
+1512182276 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\pizzamaster\pizzamaster\drink.cpp
+	"Drink.h"
+	<vector>
+	<iostream>
+
+1512182061 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\pizzamaster\pizzamaster\drink.h
+	<vector>
+	<iostream>
+	<string>
+
+1512182394 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\pizzamaster\pizzamaster\drinkui.cpp
+	"DrinkUI.h"
+	"Drink.h"
+	"OrderUI.h"
+	<iostream>
+
+1512174114 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\pizzamaster\pizzamaster\drinkui.h
+
+1512171335 source:c:\users\einar\documents\codeblock\verklegt_1\pizzamaster\main.cpp
+	<iostream>
+	"MainUI.h"
+
+1512158442 c:\users\einar\documents\codeblock\verklegt_1\pizzamaster\mainui.h
+
+1512382484 source:c:\users\einar\documents\codeblock\verklegt_1\pizzamaster\mainui.cpp
+	"MainUI.h"
+	"OrderUI.h"
+	<iostream>
+
+1512381752 c:\users\einar\documents\codeblock\verklegt_1\pizzamaster\orderui.h
+
+1512248839 source:c:\users\einar\documents\codeblock\verklegt_1\pizzamaster\order.cpp
+	"Order.h"
+	"Drink.h"
+	<iostream>
+	<fstream>
+
+1512248839 c:\users\einar\documents\codeblock\verklegt_1\pizzamaster\order.h
+	"Drink.h"
+	<iostream>
+
+1512382271 source:c:\users\einar\documents\codeblock\verklegt_1\pizzamaster\orderui.cpp
+	"OrderUI.h"
+	"PizzaUI.h"
+	"DrinkUI.h"
+	"Order.h"
+	<iostream>
+	<string>
+	<stdlib.h>
+
+1512173799 c:\users\einar\documents\codeblock\verklegt_1\pizzamaster\pizzaui.h
+
+1512174114 c:\users\einar\documents\codeblock\verklegt_1\pizzamaster\drinkui.h
+
+1512173473 source:c:\users\einar\documents\codeblock\verklegt_1\pizzamaster\pizza.cpp
+	"Pizza.h"
+
+1512173473 c:\users\einar\documents\codeblock\verklegt_1\pizzamaster\pizza.h
+
+1512382484 source:c:\users\einar\documents\codeblock\verklegt_1\pizzamaster\pizzaui.cpp
+	"PizzaUI.h"
+	"Pizza.h"
+	<iostream>
+
+1512384832 source:c:\users\einar\documents\codeblock\verklegt_1\pizzamaster\drink.cpp
+	"Drink.h"
+	<vector>
+	<iostream>
+	"OrderRepository.h"
+
+1512384832 c:\users\einar\documents\codeblock\verklegt_1\pizzamaster\drink.h
+	<vector>
+	<iostream>
+	<string>
+
+1512382775 source:c:\users\einar\documents\codeblock\verklegt_1\pizzamaster\drinkui.cpp
+	"DrinkUI.h"
+	"Drink.h"
+	"OrderUI.h"
+	<iostream>
+
+1512248139 c:\users\einar\documents\codeblock\verklegt_1\pizzamaster\orderrepository.h
+	"Drink.h"
+	<iostream>
+
+1512381946 source:c:\users\einar\documents\codeblock\verklegt_1\pizzamaster\orderrepository.cpp
+	"OrderRepository.h"
+	<iostream>
+	<fstream>
+	"Drink.h"
+	<string>
+

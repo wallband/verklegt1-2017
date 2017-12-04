@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1512387459 source:c:\users\einar\documents\codeblock\verklegt_1\car\main.cpp
+	"StaffUI.h"
+
+1512386855 source:c:\users\einar\documents\codeblock\verklegt_1\car\src\models\car.cpp
+	"Car.h"
+
+1512386741 c:\users\einar\documents\codeblock\verklegt_1\car\include\models\car.h
+	<string>
+	<iostream>
+
+1512388982 c:\users\einar\documents\codeblock\verklegt_1\car\include\ui\staffui.h
+	"Car.h"
+	"CarService.h"
+
+1512389506 c:\users\einar\documents\codeblock\verklegt_1\car\include\services\carservice.h
+	"Car.h"
+	"CarRepository.h"
+
+1512389522 source:c:\users\einar\documents\codeblock\verklegt_1\car\src\services\carservice.cpp
+	"CarService.h"
+
+1512389628 c:\users\einar\documents\codeblock\verklegt_1\car\include\repository\carrepository.h
+	"Car.h"
+	<fstream>
+
+1512388893 source:c:\users\einar\documents\codeblock\verklegt_1\car\src\ui\staffui.cpp
+	"StaffUI.h"
+	"CarService.h"
+
+1512389769 source:c:\users\einar\documents\codeblock\verklegt_1\car\src\repository\carrepository.cpp
+	"CarRepository.h"
+
