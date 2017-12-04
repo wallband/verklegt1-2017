@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1512401207 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\main.cpp
+	"MainUI.h"
+	"Employee.h"
+	"Salary.h"
+
+1512401543 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\src\models\employee.cpp
+	"Employee.h"
+
+1512401675 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\include\models\employee.h
+	<iostream>
+	<string>
+
+1512400132 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\src\ui\mainui.cpp
+	"MainUI.h"
+
+1512395774 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\include\ui\mainui.h
+	<iostream>
+	<stdlib.h>
+
+1512400448 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\src\models\salary.cpp
+	"Salary.h"
+
+1512401675 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\include\models\salary.h
+	"Employee.h"
+	<fstream>
+	<iostream>
+	<iomanip>
+
