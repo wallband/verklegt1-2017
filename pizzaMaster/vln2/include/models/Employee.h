@@ -1,6 +1,7 @@
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
 
+#include "Employee_Service.h"
 #include <iostream>
 #include <string>
 
@@ -19,6 +20,7 @@ class Employee
     private:
         string name;
         unsigned long int kt;
+        Employee_Service service;
 };
 
 #endif // EMPLOYEE_H

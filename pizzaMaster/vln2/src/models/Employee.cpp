@@ -17,3 +17,4 @@ unsigned long int Employee::get_kt() {
 
     return this->kt;
 }
+

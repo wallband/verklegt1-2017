@@ -34,13 +34,17 @@
 		</Compiler>
 		<Unit filename="MainUI.cpp" />
 		<Unit filename="MainUI.h" />
+		<Unit filename="OrdersUI.cpp" />
+		<Unit filename="OrdersUI.h" />
 		<Unit filename="Pizza.cpp" />
 		<Unit filename="Pizza.h" />
 		<Unit filename="PizzaUI.cpp" />
 		<Unit filename="PizzaUI.h" />
 		<Unit filename="Topping.cpp" />
 		<Unit filename="Topping.h" />
+		<Unit filename="include/PizzaRepository.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/PizzaRepository.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

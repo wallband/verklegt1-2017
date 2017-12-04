@@ -1,4 +1,5 @@
 #include "MainUI.h"
+#include "Employee_Service.h"
 
 MainUI::MainUI(){}
 
@@ -13,7 +14,7 @@ void MainUI::start_ui() {
     cout << "5. Show employee with highest salary for selected year" << endl;
 
     char input;
-    cin >> input;
+    cout << "->" ;cin >> input;
     validate_input(input);
 
     }
@@ -24,28 +25,28 @@ void MainUI::validate_input(char input) {
 
     if(input == '1') {
         system("CLS");
-
-
-
+        Employee_Service service;
+        service.get_employee_list();
     }
     else if(input == '1') {
         system("CLS");
+        cout << input << endl;
     }
     else if(input == '2') {
         system("CLS");
-        cout << input;
-
+        cout << input << endl;
     }
     else if(input == '3') {
         system("CLS");
-        cout << input;
+        cout << input << endl;
     }
     else if(input == '4') {
         system("CLS");
-        cout << input;
+        cout << input << endl;
     }
     else {
         system("CLS");
+        cout << input << endl;
         cout << "Invalid input, please select again." << endl;
 
     }

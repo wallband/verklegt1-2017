@@ -32,20 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="Drink.cpp" />
-		<Unit filename="Drink.h" />
-		<Unit filename="DrinkUI.cpp" />
-		<Unit filename="DrinkUI.h" />
 		<Unit filename="MainUI.cpp" />
 		<Unit filename="MainUI.h" />
-		<Unit filename="Order.cpp" />
-		<Unit filename="Order.h" />
 		<Unit filename="OrderUI.cpp" />
 		<Unit filename="OrderUI.h" />
-		<Unit filename="Pizza.cpp" />
-		<Unit filename="Pizza.h" />
-		<Unit filename="PizzaUI.cpp" />
-		<Unit filename="PizzaUI.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
