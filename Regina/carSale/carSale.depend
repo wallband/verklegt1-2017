@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1512430188 source:c:\users\regina\desktop\3viknaafangi\verk1r\carsale\main.cpp
+	<iostream>
+	"StaffUI.h"
+	"UserUI.h"
+	"car.h"
+
+1512429962 source:c:\users\regina\desktop\3viknaafangi\verk1r\carsale\src\models\car.cpp
+	"car.h"
+
+1512430188 c:\users\regina\desktop\3viknaafangi\verk1r\carsale\include\models\car.h
+	<string>
+	<iostream>
+
+1512430465 c:\users\regina\desktop\3viknaafangi\verk1r\carsale\include\ui\staffui.h
+	"CarService.h"
+	"Car.h"
+
+1512430474 source:c:\users\regina\desktop\3viknaafangi\verk1r\carsale\src\ui\staffui.cpp
+	"StaffUI.h"
+
+1512431290 c:\users\regina\desktop\3viknaafangi\verk1r\carsale\include\services\carservice.h
+	"Car.h"
+	"CarRepository.h"
+
+1512431184 source:c:\users\regina\desktop\3viknaafangi\verk1r\carsale\src\servies\carservice.cpp
+	"CarService.h"
+
+1512389200 source:c:\users\regina\desktop\3viknaafangi\verk1r\carsale\src\repositories\carrepository.cpp
+	"carrepository.h"
+
+1512389929 c:\users\regina\desktop\3viknaafangi\verk1r\carsale\include\reporitories\carrepository.h
+	"CarRepository.h"
+	"Car.h"
+	<fstream>
+
+1512394027 c:\users\regina\desktop\3viknaafangi\verk1r\carsale\include\ui\userui.h
+	<iostream>
+
+1512394027 source:c:\users\regina\desktop\3viknaafangi\verk1r\carsale\src\models\motorcycle.cpp
+	"motorcycle.h"
+
+1512394027 c:\users\regina\desktop\3viknaafangi\verk1r\carsale\include\models\motorcycle.h
+
+1512394027 source:c:\users\regina\desktop\3viknaafangi\verk1r\carsale\src\ui\userui.cpp
+	"userui.h"
+
