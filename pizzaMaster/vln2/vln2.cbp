@@ -43,13 +43,17 @@
 		<Unit filename="include/models/Employee.h" />
 		<Unit filename="include/models/Salary.h" />
 		<Unit filename="include/repository/Employee_Repository.h" />
+		<Unit filename="include/repository/Salary_Repository.h" />
 		<Unit filename="include/services/Employee_Service.h" />
+		<Unit filename="include/services/Salary_Service.h" />
 		<Unit filename="include/ui/MainUI.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/models/Employee.cpp" />
 		<Unit filename="src/models/Salary.cpp" />
 		<Unit filename="src/repository/Employee_Repository.cpp" />
+		<Unit filename="src/repository/Salary_Repository.cpp" />
 		<Unit filename="src/services/Employee_Service.cpp" />
+		<Unit filename="src/services/Salary_Service.cpp" />
 		<Unit filename="src/ui/MainUI.cpp" />
 		<Extensions>
 			<code_completion />

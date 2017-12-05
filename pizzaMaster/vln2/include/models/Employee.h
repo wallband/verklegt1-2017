@@ -20,7 +20,6 @@ class Employee
     private:
         string name;
         unsigned long int kt;
-        Employee_Service service;
 };
 
 #endif // EMPLOYEE_H

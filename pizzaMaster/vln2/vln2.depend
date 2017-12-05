@@ -7,22 +7,25 @@
 1512415484 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\src\models\employee.cpp
 	"Employee.h"
 
-1512415484 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\include\models\employee.h
+1512462011 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\include\models\employee.h
 	"Employee_Service.h"
 	<iostream>
 	<string>
 
-1512412960 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\src\ui\mainui.cpp
+1512477890 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\src\ui\mainui.cpp
 	"MainUI.h"
+	"Employee_Service.h"
 
-1512415497 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\include\ui\mainui.h
+1512476774 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\include\ui\mainui.h
 	<iostream>
 	<stdlib.h>
+	"Employee_Service.h"
+	"Salary_Service.h"
 
-1512402772 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\src\models\salary.cpp
+1512477256 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\src\models\salary.cpp
 	"Salary.h"
 
-1512401675 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\include\models\salary.h
+1512477077 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\include\models\salary.h
 	"Employee.h"
 	<fstream>
 	<iostream>
@@ -44,4 +47,25 @@
 
 1512413621 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\include\services\employee_service.h
 	"Employee_Repository.h"
+
+1512478480 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\include\services\salary_service.h
+	"Salary_Repository.h"
+	"Salary.h"
+
+1512478344 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\include\repository\salary_repository.h
+	<string>
+	<iostream>
+	<fstream>
+	"Salary.h"
+	<vector>
+
+1512478535 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\src\services\salary_service.cpp
+	"Salary_Service.h"
+	"Salary.h"
+
+1512479454 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\pizzamaster\vln2\src\repository\salary_repository.cpp
+	"Salary_Repository.h"
+	<fstream>
+	"Salary.h"
+	<iostream>
 
