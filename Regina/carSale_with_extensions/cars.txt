@@ -1,0 +1,2 @@
+toyota, corolla, 20
+nissan, micra, 9
