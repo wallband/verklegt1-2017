@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1512410402 source:c:\users\regina\documents\c++\week 2 assignment employee\employee's_monthly_salary\main.cpp
+	"employee.h"
+	"salary.h"
+	"userui.h"
+
+1512401188 source:c:\users\regina\documents\c++\week 2 assignment employee\employee's_monthly_salary\src\models\employee.cpp
+	"employee.h"
+
+1512401188 c:\users\regina\documents\c++\week 2 assignment employee\employee's_monthly_salary\include\models\employee.h
+	<string>
+	<iostream>
+
+1512417658 source:c:\users\regina\documents\c++\week 2 assignment employee\employee's_monthly_salary\src\models\salary.cpp
+	"salary.h"
+
+1512402495 c:\users\regina\documents\c++\week 2 assignment employee\employee's_monthly_salary\include\models\salary.h
+	<iostream>
+
+1512418904 c:\users\regina\documents\c++\week 2 assignment employee\employee's_monthly_salary\include\ui\userui.h
+	"employee.h"
+	"salary.h"
+	"salaryservice.h"
+	"employeeservice.h"
+
+1512418967 source:c:\users\regina\documents\c++\week 2 assignment employee\employee's_monthly_salary\src\ui\userui.cpp
+	"userui.h"
+
+1512416325 c:\users\regina\documents\c++\week 2 assignment employee\employee's_monthly_salary\include\services\salaryservice.h
+	"employee.h"
+	"salary.h"
+
+1512416005 source:c:\users\regina\documents\c++\week 2 assignment employee\employee's_monthly_salary\src\services\salaryservice.cpp
+	"salaryservice.h"
+
+1512418682 c:\users\regina\documents\c++\week 2 assignment employee\employee's_monthly_salary\include\services\employeeservice.h
+	"employee.h"
+
+1512418782 source:c:\users\regina\documents\c++\week 2 assignment employee\employee's_monthly_salary\src\services\employeeservice.cpp
+	"employeeservice.h"
+
