@@ -16,6 +16,8 @@
 					<Add directory="include/model" />
 					<Add directory="include/services" />
 					<Add directory="include/ui" />
+					<Add directory="include/repositories" />
+					<Add directory="include/exceptions" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -28,6 +30,8 @@
 					<Add directory="include/model" />
 					<Add directory="include/services" />
 					<Add directory="include/ui" />
+					<Add directory="include/repositories" />
+					<Add directory="include/exceptions" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -38,11 +42,25 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/exceptions/InvalidKennitalaException.h" />
+		<Unit filename="include/exceptions/InvalidMonthException.h" />
+		<Unit filename="include/exceptions/InvalidNameException.h" />
+		<Unit filename="include/exceptions/InvalidSalaryAmountException.h" />
+		<Unit filename="include/exceptions/InvalidSalaryAmountMinusException.h" />
+		<Unit filename="include/exceptions/InvalidYearException.h" />
 		<Unit filename="include/model/Salary.h" />
+		<Unit filename="include/repositories/Salary_Repository.h" />
 		<Unit filename="include/services/Salary_Service.h" />
 		<Unit filename="include/ui/MainUI.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/exceptions/InvalidKennitalaException.cpp" />
+		<Unit filename="src/exceptions/InvalidMonthException.cpp" />
+		<Unit filename="src/exceptions/InvalidNameException.cpp" />
+		<Unit filename="src/exceptions/InvalidSalaryAmountException.cpp" />
+		<Unit filename="src/exceptions/InvalidSalaryAmountMinusException.cpp" />
+		<Unit filename="src/exceptions/InvalidYearException.cpp" />
 		<Unit filename="src/model/Salary.cpp" />
+		<Unit filename="src/repositories/Salary_Repository.cpp" />
 		<Unit filename="src/services/Salary_Service.cpp" />
 		<Unit filename="src/ui/MainUI.cpp" />
 		<Extensions>

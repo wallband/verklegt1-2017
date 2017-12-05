@@ -3,7 +3,10 @@
 
 #include <string>
 #include <iostream>
-
+#include <stdlib.h>
+#include <fstream>
+#include "InvalidNameException.h"
+#include <vector>
 using namespace std;
 
 
@@ -11,19 +14,20 @@ class Salary
 {
     public:
         Salary();
-
-        void set_name();
-        void set_kennitala();
-        void set_year();
-        void set_month();
-        void set_salary_amount();
-
+        Salary(string name, string kennitala, string year, string month, string salary_amount);
+        ///     Setters         ///
+        void set_name(string name1);
+        void set_kennitala(string kennitala1);
+        void set_year(string year1);
+        void set_month(string month1);
+        void set_salary_amount(string amount1);
+        ///     Getters         ///
         string get_name();
         string get_kennitala();
-        int get_year();
-        int get_month();
-        int get_salary_amount();
-
+        string get_year();
+        string get_month();
+        string get_salary_amount();
+        ///   Friend Functions  ///
         friend istream& operator >>(istream& in, Salary& salary);
         friend ostream& operator <<(ostream& out, Salary& salary);
 
@@ -31,9 +35,9 @@ class Salary
     private:
         string name;
         string kennitala;
-        int year;
-        int month;
-        int salary_amount;
+        string year;
+        string month;
+        string salary_amount;
 };
 
 #endif // SALARY_H

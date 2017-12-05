@@ -12,3 +12,76 @@
 
 1512480339 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\ui\mainui.h
 
+1512483688 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\main.cpp
+	<iostream>
+	"MainUI.h"
+
+1512512665 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\model\salary.cpp
+	"Salary.h"
+
+1512512665 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\model\salary.h
+	<string>
+	<iostream>
+	<stdlib.h>
+	<fstream>
+	"InvalidNameException.h"
+	<vector>
+
+1512514493 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\services\salary_service.cpp
+	"Salary_Service.h"
+
+1512514493 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\services\salary_service.h
+	"Salary_Repository.h"
+	"Salary.h"
+	"InvalidNameException.h"
+	"InvalidKennitalaException.h"
+	"InvalidYearException.h"
+	"InvalidMonthException.h"
+	"InvalidSalaryAmountException.h"
+	"InvalidSalaryAmountMinusException.h"
+
+1512515127 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\ui\mainui.h
+	"Salary.h"
+	"Salary_Service.h"
+
+1512511657 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\repositories\salary_repository.h
+	"Salary.h"
+
+1512513899 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\ui\mainui.cpp
+	"MainUI.h"
+
+1512514731 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\repositories\salary_repository.cpp
+	"Salary_Repository.h"
+	<fstream>
+	<vector>
+
+1512489694 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\exceptions\invalidnameexception.h
+
+1512489694 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\exceptions\invalidnameexception.cpp
+	"InvalidNameException.h"
+
+1512509687 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\exceptions\invalidkennitalaexception.h
+
+1512509719 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\exceptions\invalidyearexception.h
+
+1512509750 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\exceptions\invalidmonthexception.h
+
+1512509772 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\exceptions\invalidsalaryamountexception.h
+
+1512509687 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\exceptions\invalidkennitalaexception.cpp
+	"InvalidKennitalaException.h"
+
+1512509750 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\exceptions\invalidmonthexception.cpp
+	"InvalidMonthException.h"
+
+1512509772 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\exceptions\invalidsalaryamountexception.cpp
+	"InvalidSalaryAmountException.h"
+
+1512509720 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\exceptions\invalidyearexception.cpp
+	"InvalidYearException.h"
+
+1512513663 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\exceptions\invalidsalaryamountminusexception.h
+
+1512513663 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\exceptions\invalidsalaryamountminusexception.cpp
+	"InvalidSalaryAmountMinusException.h"
+
