@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1446667744 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\main.cpp
+	<iostream>
+
+1512480276 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\src\services\salary_service.cpp
+	"Salary_Service.h"
+
+1512480276 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\services\salary_service.h
+
+1512480339 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\src\ui\mainui.cpp
+	"MainUI.h"
+
+1512480339 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\ui\mainui.h
+
