@@ -49,7 +49,14 @@ void MainUI::validate_input(char input) {
     if(input == '1') {
             system ("CLS");
         try{
-            add_salary(create_salary());
+            Salary salary = create_salary();
+           // add_salary(salary);
+            vector<Salary> sal_vect = salary_repo.read_salaryfile_into_vector2(salary);
+            for(unsigned int i = 0; i < sal_vect.size(); i++) {
+                cout << sal_vect[i];
+            }
+            //add_salary(salary);
+            salary_service.is_salary_duplicate(sal_vect,salary);
         }
         catch(InvalidNameException e) {
         cout << "Invalid name, only use the alphabet letters. Please try again" << endl;
@@ -77,10 +84,11 @@ void MainUI::validate_input(char input) {
     }
     else if(input == '2') {
         vector<Salary> sal_vect = salary_repo.read_salaryfile_into_vector();
+
         cout << "Salary Vector has " << sal_vect.size() << " variables" << endl;
 
         for(unsigned int i = 0; i < sal_vect.size(); i++) {
-            cout << sal_vect[i].get_month() << endl;
+            cout << sal_vect[i] << endl;
         }
     }
     else if(input == '3') {

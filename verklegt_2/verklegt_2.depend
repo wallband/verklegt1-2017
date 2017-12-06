@@ -1,16 +1,29 @@
 # depslib dependency file v1.0
-1446667744 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\main.cpp
+1512566635 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\main.cpp
 	<iostream>
-
-1512480276 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\src\services\salary_service.cpp
-	"Salary_Service.h"
-
-1512480276 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\services\salary_service.h
-
-1512480339 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\src\ui\mainui.cpp
 	"MainUI.h"
 
-1512480339 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\ui\mainui.h
+1512570926 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\src\services\salary_service.cpp
+	"Salary_Service.h"
+
+1512570318 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\services\salary_service.h
+	"Salary_Repository.h"
+	"Salary.h"
+	"InvalidNameException.h"
+	"InvalidKennitalaException.h"
+	"InvalidYearException.h"
+	"InvalidMonthException.h"
+	"InvalidSalaryAmountException.h"
+	"InvalidSalaryAmountMinusException.h"
+	<algorithm>
+
+1512572445 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\src\ui\mainui.cpp
+	"MainUI.h"
+
+1512566635 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\ui\mainui.h
+	"Salary.h"
+	"Salary_Service.h"
+	"Salary_Repository.h"
 
 1512483688 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\main.cpp
 	<iostream>
@@ -86,4 +99,53 @@
 
 1512513663 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\exceptions\invalidsalaryamountminusexception.cpp
 	"InvalidSalaryAmountMinusException.h"
+
+1512566635 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\model\salary.h
+	<string>
+	<iostream>
+	<stdlib.h>
+	<fstream>
+	"InvalidNameException.h"
+	<vector>
+
+1512566635 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\exceptions\invalidnameexception.h
+
+1512569967 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\repositories\salary_repository.h
+	"Salary.h"
+
+1512566635 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\exceptions\invalidkennitalaexception.h
+
+1512566635 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\exceptions\invalidyearexception.h
+
+1512566635 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\exceptions\invalidmonthexception.h
+
+1512566635 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\exceptions\invalidsalaryamountexception.h
+
+1512566635 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\exceptions\invalidsalaryamountminusexception.h
+
+1512566635 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\src\exceptions\invalidkennitalaexception.cpp
+	"InvalidKennitalaException.h"
+
+1512566635 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\src\exceptions\invalidmonthexception.cpp
+	"InvalidMonthException.h"
+
+1512566635 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\src\exceptions\invalidnameexception.cpp
+	"InvalidNameException.h"
+
+1512566635 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\src\exceptions\invalidsalaryamountexception.cpp
+	"InvalidSalaryAmountException.h"
+
+1512566635 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\src\exceptions\invalidsalaryamountminusexception.cpp
+	"InvalidSalaryAmountMinusException.h"
+
+1512566635 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\src\exceptions\invalidyearexception.cpp
+	"InvalidYearException.h"
+
+1512566635 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\src\model\salary.cpp
+	"Salary.h"
+
+1512569967 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\src\repositories\salary_repository.cpp
+	"Salary_Repository.h"
+	<fstream>
+	<vector>
 

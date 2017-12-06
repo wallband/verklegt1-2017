@@ -44,6 +44,7 @@ vector<Salary> Salary_Repository::read_salaryfile_into_vector() {
         getline(fin,str);
         salary.set_month(str);
 
+
         getline(fin,str);
         salary.set_salary_amount(str);
         if(fin.eof()) {
@@ -74,22 +75,14 @@ void Salary_Repository::add_fixed_salary(vector<Salary>& sal_vector, Salary& sal
         fout << sal_vector[i];
     }
 
-
-
-
-
-
     fout.close();
 }
-/*vector<Salary> Salary_Repository::read_salaryfile_into_vector() {
+vector<Salary> Salary_Repository::read_salaryfile_into_vector2(Salary& salary) {
     vector<Salary> salary_vector;
-    Salary salary;
 
     ifstream fin;
-    string filename;
+    string filename = salary.get_kennitala();
     string str;
-    cout << "Enter the kennitala you wish to review: ->";
-    cin >> filename;
     fin.open(filename + ".txt");
     while(!fin.eof()) {
         if(fin.is_open()) {
@@ -124,6 +117,6 @@ void Salary_Repository::add_fixed_salary(vector<Salary>& sal_vector, Salary& sal
     fin.close();
     return salary_vector;
 
-}*/
+}
 
 
