@@ -3,10 +3,11 @@
 	<iostream>
 	"MainUI.h"
 
-1512570926 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\src\services\salary_service.cpp
+1512575897 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\src\services\salary_service.cpp
 	"Salary_Service.h"
+	<stdio.h>
 
-1512570318 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\services\salary_service.h
+1512575362 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\services\salary_service.h
 	"Salary_Repository.h"
 	"Salary.h"
 	"InvalidNameException.h"
@@ -17,7 +18,7 @@
 	"InvalidSalaryAmountMinusException.h"
 	<algorithm>
 
-1512572445 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\src\ui\mainui.cpp
+1512575574 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\src\ui\mainui.cpp
 	"MainUI.h"
 
 1512566635 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\ui\mainui.h
@@ -110,7 +111,7 @@
 
 1512566635 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\exceptions\invalidnameexception.h
 
-1512569967 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\repositories\salary_repository.h
+1512575993 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\repositories\salary_repository.h
 	"Salary.h"
 
 1512566635 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\verklegt_2\include\exceptions\invalidkennitalaexception.h

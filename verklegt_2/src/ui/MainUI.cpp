@@ -50,13 +50,15 @@ void MainUI::validate_input(char input) {
             system ("CLS");
         try{
             Salary salary = create_salary();
+            cout << "month " << salary.get_month() << endl;
+
            // add_salary(salary);
             vector<Salary> sal_vect = salary_repo.read_salaryfile_into_vector2(salary);
             for(unsigned int i = 0; i < sal_vect.size(); i++) {
                 cout << sal_vect[i];
             }
             //add_salary(salary);
-            salary_service.is_salary_duplicate(sal_vect,salary);
+            salary_service.is_salary_duplicate(sal_vect, salary);
         }
         catch(InvalidNameException e) {
         cout << "Invalid name, only use the alphabet letters. Please try again" << endl;

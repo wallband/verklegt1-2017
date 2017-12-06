@@ -77,7 +77,7 @@ void Salary_Repository::add_fixed_salary(vector<Salary>& sal_vector, Salary& sal
 
     fout.close();
 }
-vector<Salary> Salary_Repository::read_salaryfile_into_vector2(Salary& salary) {
+vector<Salary> Salary_Repository::read_salaryfile_into_vector2(Salary salary) {
     vector<Salary> salary_vector;
 
     ifstream fin;
