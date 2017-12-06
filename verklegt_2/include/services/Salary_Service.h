@@ -8,6 +8,7 @@
 #include "InvalidMonthException.h"
 #include "InvalidSalaryAmountException.h"
 #include "InvalidSalaryAmountMinusException.h"
+#include <algorithm>
 
 
 class Salary_Service
@@ -16,6 +17,7 @@ class Salary_Service
         Salary_Service();
         void add_salary(Salary& salary);
         void read_salary();
+        void salary_duplicate(vector<Salary>& sal_vector, Salary& salary);
 
         /// Validate salary input ///
         bool isValidName(Salary& salary);

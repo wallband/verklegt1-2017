@@ -1,3 +1,15 @@
-Einar Sveinbjornsson,2908815289,2017,8,450000
-asdf,1234567890,2017,12,1500000
-ASDF,0123456789,2017,02,0
+Einar Sveinbjornsson
+2908815289
+2017
+08
+100
+Solborg Indiana Gudjonsdottir
+0711824779
+2017
+11
+200
+Steindor Ymir Einarsson
+0711122920
+2017
+11
+300

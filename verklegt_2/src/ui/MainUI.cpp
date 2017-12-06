@@ -40,6 +40,7 @@ Salary MainUI::create_salary() {
     salary_service.isValidMonthInt(month);
     cout << "Salary amount: ->"; cin >> salary_amount;
     salary_service.isValidSalaryAmountInt(salary_amount);
+
     return Salary(name,kennitala,year,month,salary_amount);
 }
 
@@ -75,7 +76,12 @@ void MainUI::validate_input(char input) {
 
     }
     else if(input == '2') {
+        vector<Salary> sal_vect = salary_repo.read_salaryfile_into_vector();
+        cout << "Salary Vector has " << sal_vect.size() << " variables" << endl;
 
+        for(unsigned int i = 0; i < sal_vect.size(); i++) {
+            cout << sal_vect[i].get_month() << endl;
+        }
     }
     else if(input == '3') {
 

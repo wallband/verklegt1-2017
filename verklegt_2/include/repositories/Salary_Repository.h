@@ -9,6 +9,7 @@ class Salary_Repository
         Salary_Repository();
         void add_salary(Salary& salary);
         vector<Salary> read_salaryfile_into_vector();
+        void add_fixed_salary(vector<Salary>& sal_vector,Salary& salary);
 
 
     private:

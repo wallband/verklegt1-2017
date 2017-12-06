@@ -16,7 +16,7 @@
 	<iostream>
 	"MainUI.h"
 
-1512512665 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\model\salary.cpp
+1512554872 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\model\salary.cpp
 	"Salary.h"
 
 1512512665 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\model\salary.h
@@ -27,10 +27,10 @@
 	"InvalidNameException.h"
 	<vector>
 
-1512514493 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\services\salary_service.cpp
+1512559526 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\services\salary_service.cpp
 	"Salary_Service.h"
 
-1512514493 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\services\salary_service.h
+1512558685 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\services\salary_service.h
 	"Salary_Repository.h"
 	"Salary.h"
 	"InvalidNameException.h"
@@ -39,18 +39,20 @@
 	"InvalidMonthException.h"
 	"InvalidSalaryAmountException.h"
 	"InvalidSalaryAmountMinusException.h"
+	<algorithm>
 
-1512515127 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\ui\mainui.h
+1512551036 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\ui\mainui.h
 	"Salary.h"
 	"Salary_Service.h"
+	"Salary_Repository.h"
 
-1512511657 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\repositories\salary_repository.h
+1512560494 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\repositories\salary_repository.h
 	"Salary.h"
 
-1512513899 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\ui\mainui.cpp
+1512557890 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\ui\mainui.cpp
 	"MainUI.h"
 
-1512514731 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\repositories\salary_repository.cpp
+1512559518 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\repositories\salary_repository.cpp
 	"Salary_Repository.h"
 	<fstream>
 	<vector>

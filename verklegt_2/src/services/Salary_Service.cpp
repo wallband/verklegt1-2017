@@ -13,6 +13,16 @@ void Salary_Service::read_salary(){
 
 }
 
+void Salary_Service::salary_duplicate(vector<Salary>& sal_vector, Salary& salary) {
+    for(unsigned int i = 0; i < sal_vector.size(); i++) {
+        if(sal_vector[i].get_month() == salary.get_month()) {
+            sal_vector.erase(sal_vector.begin() + i );
+            sal_vector.push_back(salary);
+            salary_repo.add_fixed_salary(sal_vector,salary);
+        }
+    }
+}
+
 bool Salary_Service::isValidNameStr(string name) {
     string name1 = name;
     for(unsigned int i = 0; i < name1.length(); i++) {

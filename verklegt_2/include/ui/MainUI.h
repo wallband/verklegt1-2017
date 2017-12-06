@@ -2,6 +2,7 @@
 #define MAINUI_H
 #include "Salary.h"
 #include "Salary_Service.h"
+#include "Salary_Repository.h"
 
 
 class MainUI
@@ -16,6 +17,7 @@ class MainUI
 
     private:
         Salary_Service salary_service;
+        Salary_Repository salary_repo;
 };
 
 #endif // MAINUI_H

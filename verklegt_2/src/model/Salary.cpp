@@ -48,14 +48,15 @@ return this->salary_amount;
 
         ///Friend Functions
 /*istream& operator >>(istream& in, Salary& salary) {
-    in >>
+    in >> salary.name >> salary.kennitala >> salary.year
+       >> salary.month >> salary.salary_amount;
 
     return in;
 }*/
 
 ostream& operator <<(ostream& out, Salary& salary) {
-    out << salary.get_name() << "," << salary.get_kennitala() << ","
-        << salary.get_year() << "," << salary.get_month() << ","
+    out << salary.get_name() << endl << salary.get_kennitala() << endl
+        << salary.get_year() << endl << salary.get_month() << endl
         << salary.get_salary_amount() << endl;
     return out;
 }
