@@ -17,7 +17,8 @@ class Salary_Service
         Salary_Service();
         void add_salary(Salary& salary);
         void read_salary();
-        void is_salary_duplicate(vector<Salary>& sal_vector, Salary& salary);
+        void is_salary_duplicate(vector<Salary> sal_vector, Salary salary);
+        void total_salary(string year, string kennitala);
 
         /// Validate salary input ///
         bool isValidName(Salary& salary);

@@ -43,21 +43,22 @@ Salary MainUI::create_salary() {
 
     return Salary(name,kennitala,year,month,salary_amount);
 }
+void MainUI::total_salary(string year, string kennitala) {
+    salary_service.total_salary(year, kennitala);
 
+}
 void MainUI::validate_input(char input) {
 
     if(input == '1') {
             system ("CLS");
         try{
             Salary salary = create_salary();
-            cout << "month " << salary.get_month() << endl;
-
-           // add_salary(salary);
+            // add_salary(salary);
+            cout << "Creating vector and reading from file into it" << endl;
             vector<Salary> sal_vect = salary_repo.read_salaryfile_into_vector2(salary);
-            for(unsigned int i = 0; i < sal_vect.size(); i++) {
-                cout << sal_vect[i];
-            }
+
             //add_salary(salary);
+            cout << "MainUI, steppint into isSalaryDuplicate" << endl;
             salary_service.is_salary_duplicate(sal_vect, salary);
         }
         catch(InvalidNameException e) {
@@ -85,6 +86,7 @@ void MainUI::validate_input(char input) {
 
     }
     else if(input == '2') {
+        system("CLS");
         vector<Salary> sal_vect = salary_repo.read_salaryfile_into_vector();
 
         cout << "Salary Vector has " << sal_vect.size() << " variables" << endl;
@@ -94,7 +96,13 @@ void MainUI::validate_input(char input) {
         }
     }
     else if(input == '3') {
-
+        system("CLS");
+        string year,kennitala;
+        cout << "Please enter year: -> ";
+        cin >> year;
+        cout << "Please enter kennitala -> ";
+        cin >> kennitala;
+        total_salary(year, kennitala);
     }
     else if(input == '4') {
 

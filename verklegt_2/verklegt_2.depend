@@ -41,10 +41,13 @@
 	"InvalidNameException.h"
 	<vector>
 
-1512559526 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\services\salary_service.cpp
+1512606040 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\services\salary_service.cpp
 	"Salary_Service.h"
+	<stdio.h>
+	<algorithm>
+	<vector>
 
-1512558685 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\services\salary_service.h
+1512605905 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\services\salary_service.h
 	"Salary_Repository.h"
 	"Salary.h"
 	"InvalidNameException.h"
@@ -55,21 +58,26 @@
 	"InvalidSalaryAmountMinusException.h"
 	<algorithm>
 
-1512551036 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\ui\mainui.h
+1512605913 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\ui\mainui.h
 	"Salary.h"
 	"Salary_Service.h"
 	"Salary_Repository.h"
 
-1512560494 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\repositories\salary_repository.h
+1512605896 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\repositories\salary_repository.h
 	"Salary.h"
 
-1512557890 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\ui\mainui.cpp
+1512606348 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\ui\mainui.cpp
 	"MainUI.h"
 
-1512559518 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\repositories\salary_repository.cpp
+1512610288 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\repositories\salary_repository.cpp
 	"Salary_Repository.h"
 	<fstream>
 	<vector>
+	<cstdio>
+	<iostream>
+	<string>
+	<stdlib.h>
+	<iomanip>
 
 1512489694 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\exceptions\invalidnameexception.h
 

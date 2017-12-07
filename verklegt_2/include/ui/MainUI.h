@@ -14,6 +14,7 @@ class MainUI
         void add_salary(Salary salary);
         void read_salary_list();
         Salary create_salary();
+        void total_salary(string year, string kennitala);
 
     private:
         Salary_Service salary_service;
