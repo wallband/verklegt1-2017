@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1512586400 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\pushtest\main.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+
