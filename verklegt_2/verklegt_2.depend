@@ -66,10 +66,10 @@
 1512605896 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\include\repositories\salary_repository.h
 	"Salary.h"
 
-1512606348 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\ui\mainui.cpp
+1512610582 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\ui\mainui.cpp
 	"MainUI.h"
 
-1512610288 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\repositories\salary_repository.cpp
+1512649653 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\verklegt_2\src\repositories\salary_repository.cpp
 	"Salary_Repository.h"
 	<fstream>
 	<vector>

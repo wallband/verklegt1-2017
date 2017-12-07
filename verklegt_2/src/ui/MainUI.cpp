@@ -14,7 +14,7 @@ void MainUI::startui(){
     cout << "3. Get total salary for given year and kennitala." << endl;
     cout << "4. Get employee with highest salary for given year." << endl;
 
-    cin >> input;
+    cout << "->"; cin >> input;
     validate_input(input);
     }
 }

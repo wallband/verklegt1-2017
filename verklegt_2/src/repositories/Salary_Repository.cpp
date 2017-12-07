@@ -185,6 +185,8 @@ void Salary_Repository::total_salary(string year, string kennitala) {
         salary_int = stoi(salary_vector[i].get_salary_amount());
         total_salary_int += salary_int;
     }
+    salary_int = stoi(salary_vector.back().get_salary_amount());
+    total_salary_int -= salary_int;
     cout << salary_vector[0].get_name()  << " Kt: " << kennitala << " had " << fixed << setprecision(3) << total_salary_int << " in salary for the year " << year << endl;
     fin.close();
 }
