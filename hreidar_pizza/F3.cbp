@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="F3" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/F3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="REPO" />
+					<Add directory="include/service" />
+					<Add directory="SERVICE" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/F3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="REPO" />
+					<Add directory="include/service" />
+					<Add directory="SERVICE" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="MODEL/Pizza.cpp" />
+		<Unit filename="MODEL/Pizza.h" />
+		<Unit filename="MODEL/PizzaRepository.cpp" />
+		<Unit filename="MODEL/PizzaRepository.h" />
+		<Unit filename="MODEL/Topping.cpp" />
+		<Unit filename="MODEL/Topping.h" />
+		<Unit filename="SERVICE/DrinkService.cpp" />
+		<Unit filename="SERVICE/DrinkService.h" />
+		<Unit filename="SERVICE/OrderService.cpp" />
+		<Unit filename="SERVICE/OrderService.h" />
+		<Unit filename="SERVICE/PizzaService.cpp" />
+		<Unit filename="SERVICE/PizzaService.h" />
+		<Unit filename="UI/MainUI.cpp" />
+		<Unit filename="UI/MainUI.h" />
+		<Unit filename="UI/PizzaUI.cpp" />
+		<Unit filename="UI/PizzaUI.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

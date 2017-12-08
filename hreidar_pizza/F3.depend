@@ -1,0 +1,130 @@
+# depslib dependency file v1.0
+1512665574 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\main.cpp
+	"../UI/MainUI.h"
+
+1511975978 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\mainui.h
+
+1512133342 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\pizza.h
+	"Topping.h"
+	<iostream>
+	<vector>
+
+1512134227 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\topping.h
+	<iostream>
+
+1512137375 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\mainui.cpp
+	"MainUI.h"
+	"PizzaUI.h"
+	<iostream>
+	<vector>
+
+1512136100 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\pizza.cpp
+	"Pizza.h"
+	<stddef.h>
+
+1512135472 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\topping.cpp
+	"Topping.h"
+	<string.h>
+	<iostream>
+
+1511993240 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\pizzaui.h
+	"PizzaRepository.h"
+
+1512136359 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\pizzarepository.cpp
+	"PizzaRepository.h"
+	"Pizza.h"
+	<fstream>
+	<iostream>
+
+1511992339 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\pizzarepository.h
+	"Pizza.h"
+
+1512142656 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\pizzaui.cpp
+	"PizzaUI.h"
+	"Pizza.h"
+	<iostream>
+
+1512135141 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\repo\toppingrepo.cpp
+	"ToppingRepo.h"
+
+1512135141 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\repo\toppingrepo.h
+
+1512658291 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\repo\pizzarepository.h
+	<fstream>
+	"../MODEL/Pizza.h"
+	"../UI/PizzaUI.h"
+
+1512656550 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\repo\pizzarepository.cpp
+	"PizzaRepository.h"
+
+1512665703 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\ui\mainui.cpp
+	"MainUI.h"
+
+1512652588 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\ui\mainui.h
+	"PizzaUI.h"
+	<iostream>
+	<vector>
+
+1512756641 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\ui\pizzaui.h
+	"../main.h"
+	"../SERVICE/PizzaService.h"
+	"../MODEL/PizzaRepository.h"
+
+1512764148 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\ui\pizzaui.cpp
+	"PizzaUI.h"
+
+1512654088 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\model\pizza.cpp
+	"Pizza.h"
+
+1512659603 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\model\pizza.h
+	"../main.h"
+	"Topping.h"
+	"../UI/PizzaUI.h"
+
+1512659543 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\model\topping.h
+	"../main.h"
+	"../UI/PizzaUI.h"
+
+1512653675 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\model\topping.cpp
+	"Topping.h"
+
+1512764488 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\service\pizzaservice.cpp
+	"PizzaService.h"
+
+1512761884 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\service\pizzaservice.h
+	"../main.h"
+	"../MODEL/PizzaRepository.h"
+	"DrinkService.h"
+	"OrderService.h"
+
+1512595472 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\service\toppingservice.cpp
+	"ToppingService.h"
+
+1512595472 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\service\toppingservice.h
+
+1512652606 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\service\drinkservice.cpp
+	"DrinkService.h"
+
+1512652606 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\service\drinkservice.h
+
+1512652500 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\service\orderservice.cpp
+	"OrderService.h"
+
+1512668636 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\service\orderservice.h
+	"../MODEL/PizzaRepository.h"
+
+1512764041 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\model\pizzarepository.h
+	"../main.h"
+
+1512764488 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\model\pizzarepository.cpp
+	"PizzaRepository.h"
+
+1512659498 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3\main.h
+	<iostream>
+	<stddef.h>
+	<stdlib.h>
+	<fstream>
+	<iostream>
+	<vector>
+	<string>
+
