@@ -2,28 +2,23 @@
 #include "PizzaUI.h"
 #include "DrinkUI.h"
 #include "Order.h"
-#include <iostream>
 #include <string>
 #include <stdlib.h>
+#include <vector>
 
 using namespace std;
 
-OrderUI::OrderUI()
-{
-    //ctor
+OrderUI::OrderUI(){
 }
 
-OrderUI::~OrderUI()
-{
-    //dtor
-}
+
 
 void OrderUI::start_orderUI(){
 
-     int input;
+     char input;
      Order order;
 
-    while(input != 6) {
+    while(input != '6') {
 
         cout << "1: Add pizza " << endl;
         cout << "2: Add drink" << endl;
@@ -36,11 +31,11 @@ void OrderUI::start_orderUI(){
         cout << "-> "; cin >> input;
         cout << endl;
 
-        if(input == 1 ) {
+        if(input == '1') {
             PizzaUI pizzaUI;
-            pizzaUI.start_pizzaUI();
+            pizzaUI.start_pizzaUI(order);
         }
-        else if(input == 2) {
+        else if(input == '2') {
             DrinkUI drinkUI;
             drinkUI.start_drinkUI();
 
@@ -57,9 +52,14 @@ void OrderUI::start_orderUI(){
 
 
         }
+        else if(input == 6) {
+                cout << "Thank you, goodbyeee";
+            exit (EXIT_SUCCESS);
+
+        }
         else{
+            system("CLS");
             cout <<  "Invalid input, please try again " << endl << endl;
-           system("CLS");
         }
 
     }

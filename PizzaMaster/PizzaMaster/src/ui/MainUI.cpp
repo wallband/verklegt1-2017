@@ -2,6 +2,7 @@
 #include "OrderUI.h"
 #include <iostream>
 
+
 using namespace std;
 
 
@@ -29,7 +30,7 @@ void MainUI::start_mainUI(){
     cout << "-> "; cin >> input;
     cout << endl;
 
-    if(input == '1' || input == 'O') {
+    if(input == '1') {
             OrderUI orderUI;
             orderUI.start_orderUI();
 

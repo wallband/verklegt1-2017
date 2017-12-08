@@ -13,6 +13,10 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include/models" />
+					<Add directory="include/service" />
+					<Add directory="include/repositories" />
+					<Add directory="include/ui" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +26,10 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include/models" />
+					<Add directory="include/service" />
+					<Add directory="include/repositories" />
+					<Add directory="include/ui" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,11 +40,33 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="MainUI.cpp" />
-		<Unit filename="MainUI.h" />
-		<Unit filename="OrderUI.cpp" />
-		<Unit filename="OrderUI.h" />
+		<Unit filename="include/models/Drink.h" />
+		<Unit filename="include/models/On_the_side.h" />
+		<Unit filename="include/models/Order.h" />
+		<Unit filename="include/models/Pizza.h" />
+		<Unit filename="include/models/Topping.h" />
+		<Unit filename="include/repositories/Order_repository.h" />
+		<Unit filename="include/service/Pizza_service.h" />
+		<Unit filename="include/service/Topping_service.h" />
+		<Unit filename="include/ui/DrinkUI.h" />
+		<Unit filename="include/ui/MainUI.h" />
+		<Unit filename="include/ui/OrderUI.h" />
+		<Unit filename="include/ui/PizzaUI.h" />
+		<Unit filename="include/ui/ToppingUI.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/models/Drink.cpp" />
+		<Unit filename="src/models/On_the_side.cpp" />
+		<Unit filename="src/models/Order.cpp" />
+		<Unit filename="src/models/Pizza.cpp" />
+		<Unit filename="src/models/Topping.cpp" />
+		<Unit filename="src/repositories/Order_repository.cpp" />
+		<Unit filename="src/service/Pizza_service.cpp" />
+		<Unit filename="src/service/Topping_service.cpp" />
+		<Unit filename="src/ui/DrinkUI.cpp" />
+		<Unit filename="src/ui/MainUI.cpp" />
+		<Unit filename="src/ui/OrderUI.cpp" />
+		<Unit filename="src/ui/PizzaUI.cpp" />
+		<Unit filename="src/ui/ToppingUI.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

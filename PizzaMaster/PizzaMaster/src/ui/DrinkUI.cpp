@@ -1,9 +1,6 @@
 #include "DrinkUI.h"
 #include "Drink.h"
-#include "OrderUI.h"
-#include <iostream>
 
-using namespace std;
 
 DrinkUI::DrinkUI()
 {
@@ -75,8 +72,7 @@ void DrinkUI::start_drinkUI() {
 
         }
         else if(input == '5') {
-            OrderUI orderUI;
-            orderUI.start_orderUI();
+            break;
 
 
         }
