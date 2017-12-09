@@ -11,7 +11,7 @@ void MainUI::startUI(){
 
 
 
-    while(selection != 'q'){
+    while(selection != '3'){
     system("CLS");
 
     cout << "            ...WELCOME TO..."                  << endl;
@@ -32,15 +32,21 @@ void MainUI::startUI(){
     cout << endl;
 
 
-        cout << "o: Order" << endl;
-        cout << "q: Quit" << endl;
+        cout << "1: Order" << endl;
+        cout << "2: View orders" << endl;
+        cout << "3: Quit" << endl;
 
         cin >> selection;
 
-        if(selection == 'o'){
+        if(selection == '1'){
 
-            PizzaUI pizzaui;
+            //PizzaUI pizzaui;
             pizzaui.startUI();
+        }
+        if(selection == '2'){
+
+            //PizzaUI pizzaui;
+            pizzaui.view_Orders();
         }
     }
 }

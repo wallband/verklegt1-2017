@@ -38,14 +38,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="MODEL/Pizza.cpp" />
-		<Unit filename="MODEL/Pizza.h" />
-		<Unit filename="MODEL/PizzaRepository.cpp" />
-		<Unit filename="MODEL/PizzaRepository.h" />
-		<Unit filename="MODEL/Topping.cpp" />
-		<Unit filename="MODEL/Topping.h" />
-		<Unit filename="SERVICE/DrinkService.cpp" />
-		<Unit filename="SERVICE/DrinkService.h" />
+		<Unit filename="REPO/OrderRepository.cpp" />
+		<Unit filename="REPO/OrderRepository.h" />
+		<Unit filename="REPO/PizzaRepository.cpp" />
+		<Unit filename="REPO/PizzaRepository.h" />
 		<Unit filename="SERVICE/OrderService.cpp" />
 		<Unit filename="SERVICE/OrderService.h" />
 		<Unit filename="SERVICE/PizzaService.cpp" />

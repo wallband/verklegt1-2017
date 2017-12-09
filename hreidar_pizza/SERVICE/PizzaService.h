@@ -2,7 +2,7 @@
 #define PIZZASERVICE_H
 
 #include "../main.h"
-#include "../MODEL/PizzaRepository.h"
+#include "../REPO/PizzaRepository.h"
 #include "DrinkService.h"
 #include "OrderService.h"
 
@@ -15,21 +15,19 @@ class PizzaService
     public:
         PizzaService();
         void makePizza();
+        string pizzaStart();
+        string pizzaType(string str);
         void addPizza(string str);
         void addDrink();
-        void readPizza();
-        void getPizza();
-        void getListOfPizza();
+        void addSide();
         void orderHeader();
         void finish_Order();
-        int getTotalPizza();
-        int getTotalDrink();
+        //void deleteItem();
 
 
     private:
-        int totalPizza;
-        int totalDrink;
         PizzaRepository pizzaRepo;
+        OrderService orderService;
 };
 
 #endif // PIZZASERVICE_H

@@ -3,7 +3,8 @@
 
 #include "../main.h"
 #include "../SERVICE/PizzaService.h"
-#include "../MODEL/PizzaRepository.h"
+#include "../REPO/PizzaRepository.h"
+#include "../SERVICE/OrderService.h"
 
 
 
@@ -13,11 +14,12 @@ class PizzaUI
         PizzaUI();
 
         void startUI();
-        void finishOrder();
         void ui_Header();
+        void view_Orders();
 
     private:
         PizzaService pizza_Service;
+        OrderService order_Service;
         //PizzaRepository pizzaRepo;
 };
 
