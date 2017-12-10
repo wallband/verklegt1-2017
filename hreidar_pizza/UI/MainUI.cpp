@@ -34,7 +34,7 @@ void MainUI::startUI(){
 
         cout << "1: Order" << endl;
         cout << "2: View orders" << endl;
-        cout << "3: Quit" << endl;
+        cout << "\n3: Quit" << endl;
 
         cin >> selection;
 

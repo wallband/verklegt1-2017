@@ -41,6 +41,13 @@ void PizzaRepository::storePizza(string pizza, int items){
 
 void PizzaRepository::saveOrder(){
 
+    //printOrder(OrderList);
+    //cout << "--------------------------------" << endl;
+    //system("pause");
+    OrderRepo.saveOrder(OrderList, getTotalPizza(), getTotalDrink(), getTotalSides(), get_Total());
+}
+void PizzaRepository::printOrder(){
+
     for(unsigned int i = 0; i < OrderList.size(); i++){
         cout <<"  - " << OrderList.at(i) << endl;
     }
@@ -92,7 +99,6 @@ void PizzaRepository::input_Drinks(){
 
     bool done = false;
     string str = "";
-    //int drinks = 0;
     string input;
     int inputNR;
     int limit = listOfDrinks.size();
@@ -115,21 +121,17 @@ void PizzaRepository::input_Drinks(){
             total += listOfDrinkPrice.at((inputNR - 1));
             addVectorString(listOfDrinks.at((inputNR - 1)));
             totalDrink++;
-
         }
         else if(inputNR == limit){
             done = true;
         }
     }while(!done);
-    //return drinks;
 }
 
 void PizzaRepository::input_Sides(){
 
     bool done = false;
     string str = "";
-    //int sides = 0;
-
     string input;
     int inputNR;
     int limit = listOfSides.size();
@@ -158,8 +160,6 @@ void PizzaRepository::input_Sides(){
             done = true;
         }
     }while(!done);
-
-    //return sides;
 }
 
 void PizzaRepository::input_Toppings(string str){
@@ -322,11 +322,5 @@ void PizzaRepository::sidesHeader(){
 
     cout << "-----------------------" << endl;
     cout << "   Select side-dish" << endl;
-    cout << "-----------------------" << endl;
-}
-void PizzaRepository::removeHeader(){
-
-    cout << "-----------------------" << endl;
-    cout << "     Remove item" << endl;
     cout << "-----------------------" << endl;
 }

@@ -143,7 +143,7 @@
 	"../REPO/PizzaRepository.h"
 	"../SERVICE/OrderService.h"
 
-1512837469 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\main.h
+1512863860 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\main.h
 	<iostream>
 	<stddef.h>
 	<stdlib.h>
@@ -152,8 +152,9 @@
 	<iostream>
 	<vector>
 	<string>
+	<sstream>
 
-1512841241 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\service\pizzaservice.h
+1512856595 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\service\pizzaservice.h
 	"../main.h"
 	"../REPO/PizzaRepository.h"
 	"DrinkService.h"
@@ -190,28 +191,28 @@
 1512652606 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\service\drinkservice.cpp
 	"DrinkService.h"
 
-1512845176 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\service\orderservice.cpp
+1512855930 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\service\orderservice.cpp
 	"OrderService.h"
 
-1512842213 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\service\pizzaservice.cpp
+1512923040 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\service\pizzaservice.cpp
 	"PizzaService.h"
 
-1512772441 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\ui\mainui.cpp
+1512855358 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\ui\mainui.cpp
 	"MainUI.h"
 
 1512842053 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\ui\pizzaui.cpp
 	"PizzaUI.h"
 
-1512842935 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\repo\pizzarepository.h
+1512922167 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\repo\pizzarepository.h
 	"../main.h"
 	"OrderRepository.h"
 
-1512842469 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\repo\pizzarepository.cpp
+1512922167 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\repo\pizzarepository.cpp
 	"PizzaRepository.h"
 
-1512845398 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\repo\orderrepository.h
+1512863629 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\repo\orderrepository.h
 	"../main.h"
 
-1512850652 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\repo\orderrepository.cpp
+1512923040 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\repo\orderrepository.cpp
 	"OrderRepository.h"
 

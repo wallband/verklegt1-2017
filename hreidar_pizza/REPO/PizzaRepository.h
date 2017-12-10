@@ -19,12 +19,12 @@ class PizzaRepository
         int getTotalSides();
         void storePizza(string pizza, int items);
         void saveOrder();
+        void printOrder();
         ///void removeItem(); // !!Dangerous!!
         void addVectorString(string str);
         void toppingHeader();
         void drinksHeader();
         void sidesHeader();
-        void removeHeader();
         void input_Toppings(string str);
 
     private:

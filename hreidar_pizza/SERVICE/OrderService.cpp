@@ -16,11 +16,13 @@ void OrderService::viewOrderList(){
         cin >>selection;
 
         if(selection == '1'){
-            cout << endl;
+
+            cout <<"Almost here..." << endl;
+            system("pause");
         }
         if(selection == '2'){
-            int N = orderRepo.readOrderList();
-            cout <<"Selected object: " << N << endl;
+            int select = orderRepo.readOrderList();
+            cout <<"Selected object: " << select << endl;
             system("pause");
         }
     }

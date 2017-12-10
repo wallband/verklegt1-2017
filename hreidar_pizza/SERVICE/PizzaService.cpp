@@ -7,14 +7,8 @@ PizzaService::PizzaService()
 }
 
 void PizzaService::makePizza(){
-    /*
 
-
-    */
     addPizza(pizzaStart());
-
-
-
 
 }
 
@@ -132,11 +126,14 @@ void PizzaService::finish_Order(){
         cout << "   " << pizzaRepo.getTotalDrink() << " Drink/s" << endl;
         cout << "   " << pizzaRepo.getTotalSides() << " Side-dish/es" << endl;
         cout << endl;
-        pizzaRepo.saveOrder();
+        pizzaRepo.printOrder();
         cout << endl;
         cout << endl;
         cout << "  The total is " << pizzaRepo.get_Total() << endl;
         cout << "--------------------------------" << endl;
+        system("pause");
+        pizzaRepo.saveOrder();
+        cout << "Save incoming" << endl;
     }
 
     system("pause");

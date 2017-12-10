@@ -10,5 +10,6 @@ using namespace std;
 #include <iostream>
 #include <vector>
 #include <string>
+#include <sstream>
 
 #endif // MAIN_H_INCLUDED
