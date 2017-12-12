@@ -1,0 +1,6 @@
+Pepperoni 25
+Skinka 15
+Rjomaostur 30
+Hakk 35
+Sveppir 10
+Exit 0
