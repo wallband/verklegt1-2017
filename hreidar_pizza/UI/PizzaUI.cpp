@@ -1,11 +1,35 @@
 #include "PizzaUI.h"
 
-PizzaUI::PizzaUI()
-{
-    //ctor
+void PizzaUI::startUI(){
+
+    selectItems();
+
+    if(pizza_Service.finish_Order(0) == 1){
+        startUI();
+    }
+    else{
+        pizza_Service.clearMem();
+    }
+
 }
 
-void PizzaUI::startUI(){
+void PizzaUI::contUI(int fileNr){
+
+    //int file = fileNr;
+
+    pizza_Service.loadPizza(fileNr);
+
+    //startUI();
+    selectItems();
+    if(pizza_Service.finish_Order(fileNr) == 1){
+        startUI();
+    }
+    else{
+        pizza_Service.clearMem();
+    }
+}
+
+void PizzaUI::selectItems(){
 
     char selection;
     while(selection != '5'){
@@ -32,18 +56,21 @@ void PizzaUI::startUI(){
         if(selection == '3'){
 
             pizza_Service.addSide();
-        }/*
-        if(selection == '4'){
-
-            pizza_Service.deleteItem();
-        }*/
-
+        }
     }
-    pizza_Service.finish_Order();
 }
 
 void PizzaUI::view_Orders(){
-    order_Service.viewOrderList();
+    int selection = order_Service.viewOrderList();
+    if(selection > 0){
+        cout << "selected item: " << selection << endl;
+        system("pause");
+        contUI(selection);
+    }
+    else{
+        cout << "no selection" <<endl;
+        system("pause");
+    }
 }
 
 
@@ -53,4 +80,12 @@ void PizzaUI::ui_Header(){
     cout << "-----------------------" << endl;
     cout << "          Order " << endl;
     cout << "-----------------------" << endl;
+}
+
+void PizzaUI::admin_Header(){
+
+    system("cls");
+    cout << "---------------------------" << endl;
+    cout << "       Admin settings " << endl;
+    cout << "---------------------------\n" << endl;
 }

@@ -11,14 +11,15 @@ class PizzaService
     public:
         PizzaService();
         void makePizza();
+        void loadPizza(int fileNr);
         string pizzaStart();
         string pizzaType(string str);
         void addPizza(string str);
         void addDrink();
         void addSide();
         void orderHeader();
-        void finish_Order();
-        //void deleteItem();
+        int finish_Order(int file);
+        void clearMem();
 
 
     private:

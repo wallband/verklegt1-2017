@@ -6,8 +6,12 @@ PizzaRepository::PizzaRepository()
     totalPizza = 0;
     totalDrink = 0;
     totalSides = 0;
+    phoneNr = "";
+    stateOfPizza = IN_PREP;
 }
-
+void PizzaRepository::clearMem(){
+    OrderList.clear();
+}
 void PizzaRepository::orderTotal(int money){
 
     total += money;
@@ -30,6 +34,26 @@ int PizzaRepository::getTotalDrink(){
 int PizzaRepository::getTotalSides(){
     return this -> totalSides;
 }
+string PizzaRepository::getPhoneNr(){
+    return this -> phoneNr;
+}
+
+void PizzaRepository::newTotal(int totalPrice){
+    this -> total = totalPrice;
+}
+void PizzaRepository::newTotalPizza(int Pizza){
+    this -> totalPizza = Pizza;
+}
+void PizzaRepository::newTotalDrink(int Drink){
+    this ->totalDrink = Drink;
+}
+void PizzaRepository::newTotalSides(int Sides){
+    this -> totalSides = Sides;
+}
+void PizzaRepository::newPhoneNr(string phone){
+    this -> phoneNr = phone;
+}
+
 
 void PizzaRepository::storePizza(string pizza, int items){
 
@@ -38,19 +62,60 @@ void PizzaRepository::storePizza(string pizza, int items){
     }
     addVectorString(pizza);
 }
-
-void PizzaRepository::saveOrder(){
-
-    //printOrder(OrderList);
-    //cout << "--------------------------------" << endl;
-    //system("pause");
-    OrderRepo.saveOrder(OrderList, getTotalPizza(), getTotalDrink(), getTotalSides(), get_Total());
-}
 void PizzaRepository::printOrder(){
 
     for(unsigned int i = 0; i < OrderList.size(); i++){
-        cout <<"  - " << OrderList.at(i) << endl;
+        int length = OrderList.at(i).length();
+        if(length > 0){
+            cout <<"  - " << OrderList.at(i) << endl;
+        }
     }
+}
+
+void PizzaRepository::saveOrder(int file, string phone){
+
+    cout << "save to file nr "<< file << endl;
+    system("pause");
+
+    OrderRepo.saveOrder(file, OrderList, phone, getTotalPizza(), getTotalDrink(), getTotalSides(), get_Total());
+}
+
+void PizzaRepository::loadOrder(int file){
+
+    string phone, temp;
+    int pizza, drink, side, totalPrice;
+
+    ifstream fin;
+    string fileNr = OrderRepo.numToString(file);
+    string fileName = "DATA/ORDER/order" + fileNr + ".txt";
+    fin.open(fileName.c_str());
+    cout << "open " << fileName <<endl;
+    system("pause");
+    if(fin.fail()){
+        cerr << "Error opening file " + fileName <<endl;
+        system("pause");
+    }
+    else{
+        fin >> phone >> pizza >> drink >> side >> totalPrice;
+        newPhoneNr(phone);
+        newTotalPizza(pizza);
+        newTotalDrink(drink);
+        newTotalSides(side);
+        newTotal(totalPrice);
+
+        cout <<"phone: " << getPhoneNr() << ", pizza: " << getTotalPizza();
+        cout <<", drink: " << getTotalDrink() << ", side: " << getTotalSides();
+        cout <<", Total price: " << get_Total() << endl;
+        system("pause");
+        while(!fin.eof()){
+            getline(fin, temp);
+            OrderList.push_back(temp);
+            if(fin.eof()){ break; }
+        }
+        fin.close();
+
+    }
+
 }
 /** //I am scared of this bit, almost ruined my program
 void PizzaRepository::removeItem(){

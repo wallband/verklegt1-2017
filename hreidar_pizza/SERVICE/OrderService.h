@@ -7,8 +7,7 @@
 class OrderService
 {
     public:
-        OrderService();
-        void viewOrderList();
+        int viewOrderList();
         void service_header();
 
 

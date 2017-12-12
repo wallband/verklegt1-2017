@@ -133,17 +133,17 @@
 1512665574 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\main.cpp
 	"../UI/MainUI.h"
 
-1512837599 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\ui\mainui.h
+1512948716 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\ui\mainui.h
 	"../main.h"
 	"PizzaUI.h"
 
-1512838822 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\ui\pizzaui.h
+1512938710 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\ui\pizzaui.h
 	"../main.h"
 	"../SERVICE/PizzaService.h"
 	"../REPO/PizzaRepository.h"
 	"../SERVICE/OrderService.h"
 
-1512863860 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\main.h
+1513098918 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\main.h
 	<iostream>
 	<stddef.h>
 	<stdlib.h>
@@ -151,10 +151,11 @@
 	<fstream>
 	<iostream>
 	<vector>
+	<algorithm>
 	<string>
 	<sstream>
 
-1512856595 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\service\pizzaservice.h
+1513084545 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\service\pizzaservice.h
 	"../main.h"
 	"../REPO/PizzaRepository.h"
 	"DrinkService.h"
@@ -164,7 +165,7 @@
 	"../main.h"
 	"OrderService.h"
 
-1512840742 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\service\orderservice.h
+1512934003 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\service\orderservice.h
 	"../REPO/OrderRepository.h"
 	"../main.h"
 
@@ -191,28 +192,28 @@
 1512652606 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\service\drinkservice.cpp
 	"DrinkService.h"
 
-1512855930 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\service\orderservice.cpp
+1512946034 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\service\orderservice.cpp
 	"OrderService.h"
 
-1512923040 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\service\pizzaservice.cpp
+1513084545 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\service\pizzaservice.cpp
 	"PizzaService.h"
 
-1512855358 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\ui\mainui.cpp
+1512948716 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\ui\mainui.cpp
 	"MainUI.h"
 
-1512842053 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\ui\pizzaui.cpp
+1513084545 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\ui\pizzaui.cpp
 	"PizzaUI.h"
 
-1512922167 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\repo\pizzarepository.h
+1513098918 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\repo\pizzarepository.h
 	"../main.h"
 	"OrderRepository.h"
 
-1512922167 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\repo\pizzarepository.cpp
+1513088038 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\repo\pizzarepository.cpp
 	"PizzaRepository.h"
 
-1512863629 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\repo\orderrepository.h
+1513091726 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\repo\orderrepository.h
 	"../main.h"
 
-1512923040 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\repo\orderrepository.cpp
+1513092546 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeiğ 1\vika1\f3 - copy\repo\orderrepository.cpp
 	"OrderRepository.h"
 

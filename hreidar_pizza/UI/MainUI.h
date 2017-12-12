@@ -11,7 +11,6 @@ using namespace std;
 class MainUI
 {
     public:
-        MainUI();
 
         void startUI();
 

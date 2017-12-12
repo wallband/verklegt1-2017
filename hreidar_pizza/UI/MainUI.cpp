@@ -1,17 +1,13 @@
 #include "MainUI.h"
 
-MainUI::MainUI()
-{
-    //ctor
-}
-
 void MainUI::startUI(){
-
+    string passWd = "12345";
+    string input;
     char selection = '\0';
 
 
 
-    while(selection != '3'){
+    while(selection != '4'){
     system("CLS");
 
     cout << "            ...WELCOME TO..."                  << endl;
@@ -34,19 +30,32 @@ void MainUI::startUI(){
 
         cout << "1: Order" << endl;
         cout << "2: View orders" << endl;
-        cout << "\n3: Quit" << endl;
+        cout << "3: Admin" << endl;
+        cout << "\n4: Quit" << endl;
 
         cin >> selection;
 
         if(selection == '1'){
 
-            //PizzaUI pizzaui;
             pizzaui.startUI();
         }
         if(selection == '2'){
 
-            //PizzaUI pizzaui;
             pizzaui.view_Orders();
+        }
+        if(selection == '3'){
+            pizzaui.admin_Header();
+            cout << "Enter password... ";
+            cin >> input;
+
+            if(input == passWd){
+                cout << "\n  Access granted" << endl;
+                system("pause");
+            }
+            else{
+                cout << "\n  !DENIED!" << endl;
+                system("pause");
+            }
         }
     }
 }

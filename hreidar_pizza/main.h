@@ -9,7 +9,9 @@ using namespace std;
 #include <fstream>
 #include <iostream>
 #include <vector>
+#include <algorithm>
 #include <string>
 #include <sstream>
+enum status {IN_PREP = 1, IN_OVEN, READY, PAID};
 
 #endif // MAIN_H_INCLUDED

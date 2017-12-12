@@ -1,14 +1,11 @@
 #include "OrderService.h"
 
-OrderService::OrderService()
-{
-    //ctor
-}
+int OrderService::viewOrderList(){
 
-void OrderService::viewOrderList(){
-
+    int select = 0;
     char selection;
-    while(selection != '4'){
+    bool done = false;
+    do{
         service_header();
         cout << "1. Edit last order" << endl;
         cout << "2. View orders" << endl;
@@ -17,15 +14,32 @@ void OrderService::viewOrderList(){
 
         if(selection == '1'){
 
-            cout <<"Almost here..." << endl;
-            system("pause");
+            select = orderRepo.getTotalItems();
+            done = true;
         }
         if(selection == '2'){
-            int select = orderRepo.readOrderList();
-            cout <<"Selected object: " << select << endl;
+            select = orderRepo.readOrderList();
+            if(select > 0){
+                cout <<"Selected object: " << select << endl;
+                break;
+            }
+            /*
+            else{
+                service_header();
+                cout << "Nothing selected\n" << endl;
+            }*/
+            done = true;
+            /*
+            cout <<"Selected object: " << select << endl;*/
             system("pause");
         }
-    }
+        if(selection == '4'){
+
+            select = 0;
+            done = true;
+        }
+    }while(!done);
+    return select;
 
 }
 
@@ -34,5 +48,5 @@ void OrderService::service_header(){
     system("CLS");
     cout << "-----------------------" << endl;
     cout << "    Order operations " << endl;
-    cout << "-----------------------" << endl;
+    cout << "-----------------------\n" << endl;
 }

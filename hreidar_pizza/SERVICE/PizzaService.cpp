@@ -11,6 +11,10 @@ void PizzaService::makePizza(){
     addPizza(pizzaStart());
 
 }
+void PizzaService::loadPizza(int fileNr){
+
+    pizzaRepo.loadOrder(fileNr);
+}
 
 string PizzaService::pizzaStart(){
 
@@ -101,15 +105,12 @@ void PizzaService::addSide(){
 }
 
 
-/*
-void PizzaService::deleteItem(){
+int PizzaService::finish_Order(int file){
 
-    pizzaRepo.removeItem();
-}
-*/
-
-void PizzaService::finish_Order(){
-
+    string phoneNr = "";
+    char selection;
+    int confirm;
+    bool done = false;
     system("CLS");
     if(pizzaRepo.numOfItems() == 0){
         cout << "--------------------------------" << endl;
@@ -117,6 +118,8 @@ void PizzaService::finish_Order(){
         cout << "  - - - - - You have - - - - -" << endl;
         cout << "\n\t   NOTHING!!!\n" << endl;
         cout << "--------------------------------" << endl;
+        system("pause");
+        return 0;
     }
     else{
         cout << "--------------------------------" << endl;
@@ -131,12 +134,33 @@ void PizzaService::finish_Order(){
         cout << endl;
         cout << "  The total is " << pizzaRepo.get_Total() << endl;
         cout << "--------------------------------" << endl;
-        system("pause");
-        pizzaRepo.saveOrder();
-        cout << "Save incoming" << endl;
-    }
+        do{
+            cout << "Confirm order?" << endl;
+            cout << "1: Yes" << endl;
+            cout << "2: No" << endl;
+            cin >> selection;
+            if(selection == '1'){
+                cout << "\tEnter phone-number:";
+                cin >> phoneNr;
 
-    system("pause");
+                cout << "Save incoming" << endl;
+                system("pause");
+                confirm = 0;
+                pizzaRepo.saveOrder(file, phoneNr);
+                done = true;
+            }
+            if(selection == '2'){
+                confirm = 1;
+                done = true;
+            }
+
+        }while(!done);
+
+        return confirm;
+    }
+}
+void PizzaService::clearMem(){
+    pizzaRepo.clearMem();
 }
 
 void PizzaService::orderHeader(){
