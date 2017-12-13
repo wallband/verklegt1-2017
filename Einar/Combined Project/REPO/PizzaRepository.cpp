@@ -186,6 +186,7 @@ void PizzaRepository::input_Drinks()
     string str = "";
     string input;
     int inputNR;
+    init();
     int limit = listOfDrinks.size();
 
     do
@@ -225,6 +226,7 @@ void PizzaRepository::input_Sides()
     string str = "";
     string input;
     int inputNR;
+    init();
     int limit = listOfSides.size();
 
     do
@@ -266,6 +268,7 @@ void PizzaRepository::input_Toppings(string str)
     string input = "";
     int inputNR;
     int items = 0;
+    init();
     int limit = listOfToppings.size();
 
     do
@@ -307,6 +310,7 @@ string PizzaRepository::select_Combo(string str)
     bool done = false;
     string input = "";
     int inputNr;
+    init();
     int limit = listOfCombo.size();
 
     do

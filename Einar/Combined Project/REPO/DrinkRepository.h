@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 #include <fstream>
+#include <stdlib.h>
 #include <iostream>
 #include <locale>
 #include "../EXCEPTIONS/FileNotFound.h"

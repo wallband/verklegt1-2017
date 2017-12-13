@@ -4,6 +4,7 @@
 #include <string>
 #include <fstream>
 #include <iostream>
+#include <stdlib.h>
 #include <locale>
 #include "../EXCEPTIONS/FileNotFound.h"
 #include "../EXCEPTIONS/InvalidInput.h"

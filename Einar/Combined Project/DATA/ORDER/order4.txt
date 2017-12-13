@@ -1,4 +1,10 @@
-6960666 1 1 1 1 740
+4381066 2 3 3 1 1765
 Toppur
-Brownies
-Large Pizza, Normal:  Skinka Rjomaostur Hakk Bacon Jalapeno Kjuklingur Svinakjot Hvitlaukur Xtra_cheese
+Large Pizza, Deep-dish:  Pepperoni Rjomaostur Laukur Hakk Spinat
+
+Medium Pizza, Deep-dish:  Rjomaostur Hakk Sveppir
+Medium Pizza, Thin Italian:  Pepperoni Rjomaostur
+Coke
+Sprite
+Breadsticks
+

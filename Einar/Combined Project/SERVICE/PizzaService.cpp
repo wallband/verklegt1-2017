@@ -150,7 +150,7 @@ void PizzaService::addSide()
 int PizzaService::finish_Order(int file)
 {
 
-    string phoneNr = "";
+    string phoneNr = pizzaRepo.getPhoneNr();
     char selection;
     int confirm;
     bool done = false;
@@ -189,13 +189,17 @@ int PizzaService::finish_Order(int file)
             cin >> selection;
             if(selection == '1')
             {
-                cout << "\tEnter phone-number:";
-                cin >> phoneNr;
+                if(pizzaRepo.getPhoneNr() == ""){
+                    cout << "\tEnter phone-number:";
+                    cin >> phoneNr;
+                }
+                else{
 
-                //cout << "Save incoming" << endl;
-                //system("pause");
+                    pizzaRepo.saveOrder(file, phoneNr);
+                }
                 confirm = 0;
                 pizzaRepo.saveOrder(file, phoneNr);
+                pizzaRepo.clearMem();
                 done = true;
             }
             if(selection == '2')
