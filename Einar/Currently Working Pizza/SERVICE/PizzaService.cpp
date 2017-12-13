@@ -6,18 +6,21 @@ PizzaService::PizzaService()
     pizzaRepo.init();
 }
 
-void PizzaService::makePizza(){
+void PizzaService::makePizza()
+{
 
     addPizza(pizzaStart());
 
 }
 
-string PizzaService::pizzaStart(){
+string PizzaService::pizzaStart()
+{
 
     char input;
     string pizzaSize = "";
     system("CLS");
-    while(input != '1' || input != '2' || input != '3'){
+    while(input != '1' || input != '2' || input != '3')
+    {
 
         orderHeader();
         cout <<"What size of Pizza?" << endl;
@@ -27,7 +30,8 @@ string PizzaService::pizzaStart(){
         cout <<"3: Large Pizza" << endl;
         cin >> input;
 
-        switch(input){
+        switch(input)
+        {
         case '1':
             pizzaSize = "Small Pizza, ";
             pizzaRepo.orderTotal(150);
@@ -48,12 +52,14 @@ string PizzaService::pizzaStart(){
     return pizzaType(pizzaSize);
 }
 
-string PizzaService::pizzaType(string str){
+string PizzaService::pizzaType(string str)
+{
 
     char input;
     string pizzaType = str;
     system("CLS");
-    while(input != '1' || input != '2' || input != '3'){
+    while(input != '1' || input != '2' || input != '3')
+    {
 
         orderHeader();
         cout <<"What type of Pizza-crust?" << endl;
@@ -63,7 +69,8 @@ string PizzaService::pizzaType(string str){
         cout <<"3: Deep-dish" << endl;
         cin >> input;
 
-        switch(input){
+        switch(input)
+        {
         case '1':
             pizzaType += "Thin Italian: ";
             pizzaRepo.orderTotal(125);
@@ -84,18 +91,21 @@ string PizzaService::pizzaType(string str){
     return pizzaType;
 
 }
-void PizzaService::addPizza(string str){
+void PizzaService::addPizza(string str)
+{
 
     pizzaRepo.input_Toppings(str);
 
 }
 
-void PizzaService::addDrink(){
+void PizzaService::addDrink()
+{
 
     pizzaRepo.input_Drinks();
 }
 
-void PizzaService::addSide(){
+void PizzaService::addSide()
+{
 
     pizzaRepo.input_Sides();
 }
@@ -108,17 +118,20 @@ void PizzaService::deleteItem(){
 }
 */
 
-void PizzaService::finish_Order(){
+void PizzaService::finish_Order()
+{
 
     system("CLS");
-    if(pizzaRepo.numOfItems() == 0){
+    if(pizzaRepo.numOfItems() == 0)
+    {
         cout << "--------------------------------" << endl;
         cout << "     Order is finished." << endl;
         cout << "  - - - - - You have - - - - -" << endl;
         cout << "\n\t   NOTHING!!!\n" << endl;
         cout << "--------------------------------" << endl;
     }
-    else{
+    else
+    {
         cout << "--------------------------------" << endl;
         cout << "     Order is finished." << endl;
         cout << "  - - - - - You have - - - - -" << endl;
@@ -139,7 +152,8 @@ void PizzaService::finish_Order(){
     system("pause");
 }
 
-void PizzaService::orderHeader(){
+void PizzaService::orderHeader()
+{
 
     cout << "-----------------------" << endl;
     cout << "      Order Pizza" << endl;

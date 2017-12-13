@@ -4,13 +4,13 @@
 
 class FileNotFound
 {
-public:
-    FileNotFound();
-    virtual ~FileNotFound();
+    public:
+        FileNotFound();
+        virtual ~FileNotFound();
 
-protected:
+    protected:
 
-private:
+    private:
 };
 
 #endif // FILENOTFOUND_H

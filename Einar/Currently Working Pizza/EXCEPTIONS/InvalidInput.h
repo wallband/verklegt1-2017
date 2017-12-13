@@ -4,13 +4,13 @@
 
 class InvalidInput
 {
-    public:
-        InvalidInput();
-        virtual ~InvalidInput();
+public:
+    InvalidInput();
+    virtual ~InvalidInput();
 
-    protected:
+protected:
 
-    private:
+private:
 };
 
 #endif // INVALIDINPUT_H

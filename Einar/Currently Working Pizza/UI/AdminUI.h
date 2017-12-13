@@ -8,12 +8,12 @@
 
 class AdminUI
 {
-    public:
-        AdminUI();
-        void startUI();
+public:
+    AdminUI();
+    void startUI();
 
-    private:
-        AdminService adminservice;
+private:
+    AdminService adminservice;
 };
 
 #endif // ADMINUI_H

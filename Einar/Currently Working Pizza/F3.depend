@@ -326,3 +326,112 @@
 
 1513089864 c:\users\einar\documents\codeblocks\pizzaverkefni\currently working\exceptions\invalidinput.h
 
+1513096815 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\exceptions\filenotfound.cpp
+	"FileNotFound.h"
+
+1513096815 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\exceptions\filenotfound.h
+
+1513096815 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\main.cpp
+	"../UI/MainUI.h"
+
+1513100055 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\ui\mainui.h
+	"../main.h"
+	"PizzaUI.h"
+	"AdminUI.h"
+
+1513096815 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\main.h
+	<iostream>
+	<stddef.h>
+	<stdlib.h>
+	<cstddef>
+	<fstream>
+	<iostream>
+	<vector>
+	<string>
+	<sstream>
+
+1513100056 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\ui\pizzaui.h
+	"../main.h"
+	"../SERVICE/PizzaService.h"
+	"../REPO/PizzaRepository.h"
+	"../SERVICE/OrderService.h"
+
+1513100055 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\service\pizzaservice.h
+	"../main.h"
+	"../REPO/PizzaRepository.h"
+	"DrinkService.h"
+	"OrderService.h"
+
+1513100055 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\repo\pizzarepository.h
+	"../main.h"
+	"OrderRepository.h"
+
+1513100056 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\repo\orderrepository.h
+	"../main.h"
+
+1513100055 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\service\drinkservice.h
+	"DrinkRepository.h"
+
+1513100055 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\repo\drinkrepository.h
+	<vector>
+	<string>
+	<fstream>
+	<iostream>
+	<locale>
+	"FileNotFound.h"
+	"InvalidInput.h"
+
+1513100009 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\iexceptions\filenotfound.h
+
+1513100055 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\exceptions\invalidinput.h
+
+1513100055 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\service\orderservice.h
+	"../REPO/OrderRepository.h"
+	"../main.h"
+
+1513100055 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\ui\adminui.h
+	"AdminService.h"
+	"FileNotFound.h"
+	"iostream"
+	<typeinfo>
+
+1513100055 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\service\adminservice.h
+	"AdminRepository.h"
+	"DrinkRepository.h"
+
+1513100055 c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\repo\adminrepository.h
+	"DrinkService.h"
+
+1513096815 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\repo\adminrepository.cpp
+	"AdminRepository.h"
+
+1513096815 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\service\adminservice.cpp
+	"AdminService.h"
+
+1513096815 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\service\drinkservice.cpp
+	"DrinkService.h"
+
+1513096815 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\exceptions\invalidinput.cpp
+	"InvalidInput.h"
+
+1513100055 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\repo\drinkrepository.cpp
+	"DrinkRepository.h"
+
+1513100055 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\repo\orderrepository.cpp
+	"OrderRepository.h"
+
+1513100055 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\service\orderservice.cpp
+	"OrderService.h"
+
+1513100055 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\service\pizzaservice.cpp
+	"PizzaService.h"
+
+1513100055 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\ui\adminui.cpp
+	"AdminUI.h"
+
+1513100055 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\ui\mainui.cpp
+	"MainUI.h"
+
+1513100055 source:c:\users\einar\documents\verklegt1_2017\verklegt1-2017\einar\currently working pizza\ui\pizzaui.cpp
+	"PizzaUI.h"
+

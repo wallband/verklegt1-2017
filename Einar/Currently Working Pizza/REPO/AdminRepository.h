@@ -5,12 +5,12 @@
 using namespace std;
 class AdminRepository
 {
-    public:
-        AdminRepository();
-        void add_drink_to_drinklist();
+public:
+    AdminRepository();
+    void add_drink_to_drinklist();
 
-    private:
-        DrinkService drinkService;
+private:
+    DrinkService drinkService;
 
 };
 

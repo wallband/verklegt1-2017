@@ -1,4 +1,3 @@
-Drykkur3
 Drykkur4
+NewDrink
 DrykkurNew
-Exit

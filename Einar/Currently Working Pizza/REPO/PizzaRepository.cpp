@@ -8,47 +8,58 @@ PizzaRepository::PizzaRepository()
     totalSides = 0;
 }
 
-void PizzaRepository::orderTotal(int money){
+void PizzaRepository::orderTotal(int money)
+{
 
     total += money;
 }
 
-int PizzaRepository::get_Total(){
+int PizzaRepository::get_Total()
+{
     return this -> total;
 }
 
-int PizzaRepository::numOfItems(){
+int PizzaRepository::numOfItems()
+{
     return OrderList.size();
 }
 
-int PizzaRepository::getTotalPizza(){
+int PizzaRepository::getTotalPizza()
+{
     return this -> totalPizza;
 }
-int PizzaRepository::getTotalDrink(){
+int PizzaRepository::getTotalDrink()
+{
     return this -> totalDrink;
 }
-int PizzaRepository::getTotalSides(){
+int PizzaRepository::getTotalSides()
+{
     return this -> totalSides;
 }
 
-void PizzaRepository::storePizza(string pizza, int items){
+void PizzaRepository::storePizza(string pizza, int items)
+{
 
-    if(items == 0){
+    if(items == 0)
+    {
         pizza += " Margharita";
     }
     addVectorString(pizza);
 }
 
-void PizzaRepository::saveOrder(){
+void PizzaRepository::saveOrder()
+{
 
     //printOrder(OrderList);
     //cout << "--------------------------------" << endl;
     //system("pause");
     OrderRepo.saveOrder(OrderList, getTotalPizza(), getTotalDrink(), getTotalSides(), get_Total());
 }
-void PizzaRepository::printOrder(){
+void PizzaRepository::printOrder()
+{
 
-    for(unsigned int i = 0; i < OrderList.size(); i++){
+    for(unsigned int i = 0; i < OrderList.size(); i++)
+    {
         cout <<"  - " << OrderList.at(i) << endl;
     }
 }
@@ -95,40 +106,49 @@ void PizzaRepository::removeItem(){
         }while(!done);
 }
 **/
-void PizzaRepository::input_Drinks(){
+void PizzaRepository::input_Drinks()
+{
 
     bool done = false;
     string str = "";
     string input;
-    int inputNR;
+    int inputNR = 0;
     int limit = listOfDrinks.size();
     init();
-    do{
+   // do
+    while(!done)
+    {
         system("cls");
 
         drinksHeader();
 
-        for(int i = 0; i < limit; i++){
+        for(int i = 0; i < limit; i++)
+        {
             cout << " " << (i + 1) << ": " << listOfDrinks.at(i) << endl;
         }
+        cout << " " << limit + 1 << ": Exit" << endl;
         cout <<"\n Selected drinks: " << str << endl;
         cin >> input;
-        inputNR = atoi(input.c_str());
+        inputNR = atoi(input.c_str()) -1;
 
-        if(inputNR >= 1 && inputNR <= (limit - 1)){
+        if(inputNR > 0 && inputNR < limit)
+        {
 
-            str += listOfDrinks.at((inputNR - 1)) + " ";
-            total += listOfDrinkPrice.at((inputNR - 1));
-            addVectorString(listOfDrinks.at((inputNR - 1)));
+            str += (listOfDrinks[inputNR]) + " ";
+            total += listOfDrinkPrice[inputNR];
+            addVectorString(listOfDrinks[inputNR]);
             totalDrink++;
         }
-        else if(inputNR == limit){
+        else if(inputNR == limit + 1)
+        {
             done = true;
         }
-    }while(!done);
+    }
+
 }
 
-void PizzaRepository::input_Sides(){
+void PizzaRepository::input_Sides()
+{
 
     bool done = false;
     string str = "";
@@ -136,19 +156,22 @@ void PizzaRepository::input_Sides(){
     int inputNR;
     int limit = listOfSides.size();
 
-    do{
+    do
+    {
         system("cls");
 
         sidesHeader();
 
-        for(int i = 0; i < limit; i++){
+        for(int i = 0; i < limit; i++)
+        {
             cout << " " << (i + 1) << ": " << listOfSides.at(i) << endl;
         }
         cout <<"\n Selected sides: " << str << endl;
         cin >> input;
         inputNR = atoi(input.c_str());
 
-        if(inputNR >= 1 && inputNR <= (limit - 1)){
+        if(inputNR >= 1 && inputNR <= (limit - 1))
+        {
 
             str += listOfSides.at((inputNR - 1)) + " ";
             total += listOfSidesPrice.at((inputNR - 1));
@@ -156,13 +179,16 @@ void PizzaRepository::input_Sides(){
             totalSides++;
 
         }
-        else if(inputNR == limit){
+        else if(inputNR == limit)
+        {
             done = true;
         }
-    }while(!done);
+    }
+    while(!done);
 }
 
-void PizzaRepository::input_Toppings(string str){
+void PizzaRepository::input_Toppings(string str)
+{
 
     string finished_pizza = str;
     bool done = false;
@@ -171,11 +197,13 @@ void PizzaRepository::input_Toppings(string str){
     int items = 0;
     int limit = listOfToppings.size();
 
-    do{
+    do
+    {
         system("cls");
 
         toppingHeader();
-        for(int i = 0; i < limit; i++){
+        for(int i = 0; i < limit; i++)
+        {
             cout << " "<< (i + 1)<< ": " << listOfToppings.at(i) << endl;
         }
         cout <<"\n" << finished_pizza << endl;
@@ -184,30 +212,35 @@ void PizzaRepository::input_Toppings(string str){
         inputNR = atoi(input.c_str());
 
 
-        if(inputNR >= 1 && inputNR <= (limit - 1)){
+        if(inputNR >= 1 && inputNR <= (limit - 1))
+        {
             //OrderList.push_back(listOfToppings.at((input - 1)));
             finished_pizza += (" " + (listOfToppings.at((inputNR - 1))));
             total += listOfToppingPrice.at(inputNR - 1);
             items++;
 
         }
-        else if(inputNR == limit){
+        else if(inputNR == limit)
+        {
             done = true;
         }
 
-    }while(!done);
+    }
+    while(!done);
     totalPizza++;
     storePizza(finished_pizza, items);
 }
 
-void PizzaRepository::addVectorString(string str){
+void PizzaRepository::addVectorString(string str)
+{
 
     OrderList.push_back(str);
 }
 
 
 ///Initializer function
-void PizzaRepository::init(){
+void PizzaRepository::init()
+{
 
     listOfToppings.clear();
     listOfToppingPrice.clear();
@@ -222,13 +255,16 @@ void PizzaRepository::init(){
 
     fin.open("DATA/TOPPINGS/ToppingList.txt");
 
-    if(fin.fail()){
+    if(fin.fail())
+    {
 
         cerr << "Error opening topping-list file!" << endl;
     }
-    else{
+    else
+    {
 
-        while(fin >> str){
+        while(fin >> str)
+        {
             listOfToppings.push_back(str);
         }
         fin.close();
@@ -236,13 +272,16 @@ void PizzaRepository::init(){
 
     fin.open("DATA/TOPPINGS/ToppingPrice.txt");
 
-    if(fin.fail()){
+    if(fin.fail())
+    {
 
         cerr << "Error opening topping-price file!" << endl;
     }
-    else{
+    else
+    {
 
-        while(fin >> temp){
+        while(fin >> temp)
+        {
             listOfToppingPrice.push_back(temp);
         }
         fin.close();
@@ -250,13 +289,16 @@ void PizzaRepository::init(){
 
     fin.open("DATA/DRINKS/DrinkList.txt");
 
-    if(fin.fail()){
+    if(fin.fail())
+    {
 
         cerr << "Error opening drink-list file!" << endl;
     }
-    else{
+    else
+    {
 
-        while(fin >> str){
+        while(fin >> str)
+        {
             listOfDrinks.push_back(str);
         }
         fin.close();
@@ -264,13 +306,16 @@ void PizzaRepository::init(){
 
     fin.open("DATA/DRINKS/DrinkPrice.txt");
 
-    if(fin.fail()){
+    if(fin.fail())
+    {
 
         cerr << "Error opening drink-price file!" << endl;
     }
-    else{
+    else
+    {
 
-        while(fin >> temp){
+        while(fin >> temp)
+        {
             listOfDrinkPrice.push_back(temp);
         }
         fin.close();
@@ -278,13 +323,16 @@ void PizzaRepository::init(){
 
     fin.open("DATA/SIDE/SideList.txt");
 
-    if(fin.fail()){
+    if(fin.fail())
+    {
 
         cerr << "Error opening side-list file!" << endl;
     }
-    else{
+    else
+    {
 
-        while(fin >> str){
+        while(fin >> str)
+        {
             listOfSides.push_back(str);
         }
         fin.close();
@@ -292,13 +340,16 @@ void PizzaRepository::init(){
 
     fin.open("DATA/SIDE/SidePrice.txt");
 
-    if(fin.fail()){
+    if(fin.fail())
+    {
 
         cerr << "Error opening side-price file!" << endl;
     }
-    else{
+    else
+    {
 
-        while(fin >> temp){
+        while(fin >> temp)
+        {
             listOfSidesPrice.push_back(temp);
         }
         fin.close();
@@ -306,19 +357,22 @@ void PizzaRepository::init(){
 }
 
 ///Header functions for decoration
-void PizzaRepository::toppingHeader(){
+void PizzaRepository::toppingHeader()
+{
 
     cout << "-----------------------" << endl;
     cout << "    Select toppings" << endl;
     cout << "-----------------------" << endl;
 }
-void PizzaRepository::drinksHeader(){
+void PizzaRepository::drinksHeader()
+{
 
     cout << "-----------------------" << endl;
     cout << "     Select drinks" << endl;
     cout << "-----------------------" << endl;
 }
-void PizzaRepository::sidesHeader(){
+void PizzaRepository::sidesHeader()
+{
 
     cout << "-----------------------" << endl;
     cout << "   Select side-dish" << endl;

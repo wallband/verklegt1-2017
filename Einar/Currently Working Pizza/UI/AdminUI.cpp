@@ -26,7 +26,7 @@ void AdminUI::startUI()
             {
                 system("CLS");
                 cout << "There was an error when trying to add drinks, please try again or contact your system administrator" <<
-                endl << endl;
+                     endl << endl;
             }
         }
         if(input == '2')
@@ -39,7 +39,7 @@ void AdminUI::startUI()
             {
                 system("CLS");
                 cout << "There was an error when trying to remove drinks, please try again or contact your system administrator" <<
-                endl << endl;
+                     endl << endl;
             }
             catch(invalid_argument)
             {

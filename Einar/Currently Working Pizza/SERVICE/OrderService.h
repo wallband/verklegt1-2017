@@ -6,14 +6,14 @@
 
 class OrderService
 {
-    public:
-        OrderService();
-        void viewOrderList();
-        void service_header();
+public:
+    OrderService();
+    void viewOrderList();
+    void service_header();
 
 
-    private:
-        OrderRepository orderRepo;
+private:
+    OrderRepository orderRepo;
 
 };
 

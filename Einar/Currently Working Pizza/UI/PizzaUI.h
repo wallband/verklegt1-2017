@@ -10,17 +10,17 @@
 
 class PizzaUI
 {
-    public:
-        PizzaUI();
+public:
+    PizzaUI();
 
-        void startUI();
-        void ui_Header();
-        void view_Orders();
+    void startUI();
+    void ui_Header();
+    void view_Orders();
 
-    private:
-        PizzaService pizza_Service;
-        OrderService order_Service;
-        //PizzaRepository pizzaRepo;
+private:
+    PizzaService pizza_Service;
+    OrderService order_Service;
+    //PizzaRepository pizzaRepo;
 };
 
 #endif // PIZZAUI_H
