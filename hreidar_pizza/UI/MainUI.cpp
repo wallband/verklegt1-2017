@@ -1,8 +1,9 @@
 #include "MainUI.h"
 
 void MainUI::startUI(){
-    string passWd = "12345";
-    string input;
+    //pizzaui.initVector();
+    //string passWd = "12345";
+    //string input;
     char selection = '\0';
 
 
@@ -30,7 +31,7 @@ void MainUI::startUI(){
 
         cout << "1: Order" << endl;
         cout << "2: View orders" << endl;
-        cout << "3: Admin" << endl;
+        //cout << "3: Admin" << endl;
         cout << "\n4: Quit" << endl;
 
         cin >> selection;
@@ -43,6 +44,7 @@ void MainUI::startUI(){
 
             pizzaui.view_Orders();
         }
+        /**
         if(selection == '3'){
             pizzaui.admin_Header();
             cout << "Enter password... ";
@@ -57,6 +59,7 @@ void MainUI::startUI(){
                 system("pause");
             }
         }
+        **/
     }
 }
 

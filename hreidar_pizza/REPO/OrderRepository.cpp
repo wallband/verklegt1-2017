@@ -1,19 +1,19 @@
 #include "OrderRepository.h"
 
 void OrderRepository::saveOrder(int file, vector<string> listOfItems,
-                                string phone, int pizza, int drink, int side, int total){
+                                string phone, int pizza, int drink, int side, int total, char pizzaState){
     //string phone = "1234567";
 
     if(file > 0){
-        overwriteIndex(file, phone, pizza, drink, side, total);
+        overwriteIndex(file, phone, pizza, drink, side, total, pizzaState);
     }
     else{
         int fileNr = file;
         fileNr = addTotalItems();
-        writeToFile(fileNr, listOfItems, phone, pizza, drink, side, total);
+        writeToFile(fileNr, listOfItems, phone, pizza, drink, side, total, pizzaState);
     }
 }
-string OrderRepository::overwriteIndex(int nr, string phone, int pizza, int drink, int side, int total){
+string OrderRepository::overwriteIndex(int nr, string phone, int pizza, int drink, int side, int total, char pizzaState){
 
     string str;
     vector<string> tempList;
@@ -22,7 +22,7 @@ string OrderRepository::overwriteIndex(int nr, string phone, int pizza, int drin
     string sideStr = numToString(side);
     string totalStr = numToString(total);
 
-    string input = phone + " " + pizzaStr + " " + drinkStr + " " + sideStr + " " + totalStr;
+    string input = phone + " " + pizzaState + " "+ pizzaStr + " " + drinkStr + " " + sideStr + " " + totalStr;
     int limit = getTotalItems();
 
     ifstream fin;
@@ -31,7 +31,7 @@ string OrderRepository::overwriteIndex(int nr, string phone, int pizza, int drin
     if(fin.fail()){
 
         cerr << "Error opening Order-Total file!" << endl;
-        system("pause");
+        //system("pause");
     }
     else{
         while(!fin.eof()){
@@ -54,7 +54,7 @@ string OrderRepository::overwriteIndex(int nr, string phone, int pizza, int drin
     if(fout.fail()){
 
         cerr << "Error opening Order-Index file!" << endl;
-        system("pause");
+        //system("pause");
     }
     else{
         for(int i = 0; i < limit; i++){
@@ -66,17 +66,16 @@ string OrderRepository::overwriteIndex(int nr, string phone, int pizza, int drin
 
 }
 void OrderRepository::writeToFile(int fileNr, vector<string> listOfItems,
-                                string phone, int pizza, int drink, int side, int total){
+                                string phone, int pizza, int drink, int side, int total, char pizzaState){
 
     string fileStart = "", strFileNr = "";
     if(fileNr > 0){
-
         strFileNr = numToString(fileNr);
-        fileStart = overwriteIndex(fileNr, phone, pizza, drink, side, total);
+        fileStart = overwriteIndex(fileNr, phone, pizza, drink, side, total, pizzaState);
     }
     else{
         fileNr = addTotalItems();
-        fileStart = addToIndex(phone, pizza, drink, side, total);
+        fileStart = addToIndex(phone, pizza, drink, side, total, pizzaState);
         strFileNr = numToString(fileNr);
     }
         string str;
@@ -97,7 +96,6 @@ void OrderRepository::writeToFile(int fileNr, vector<string> listOfItems,
             }
             fout.close();
         }
-
 }
 
 int OrderRepository::addTotalItems(){
@@ -118,14 +116,14 @@ int OrderRepository::addTotalItems(){
     }
     return totalObj;
 }
-string OrderRepository::addToIndex(string phone, int pizza, int drink, int side, int total){
+string OrderRepository::addToIndex(string phone, int pizza, int drink, int side, int total, char pizzaState){
 
     string pizzaStr = numToString(pizza);
     string drinkStr = numToString(drink);
     string sideStr = numToString(side);
     string totalStr = numToString(total);
 
-    string input = phone + " " + pizzaStr + " " + drinkStr + " " + sideStr + " " + totalStr;
+    string input = phone + " " + pizzaState + " " + pizzaStr + " " + drinkStr + " " + sideStr + " " + totalStr;
     ofstream fout;
 
     fout.open("DATA/ORDER/Index.txt", ios::app);
@@ -146,6 +144,24 @@ string OrderRepository::numToString(int number){
     stringstream numString;
     numString << number;
     return numString.str();
+}
+string OrderRepository::whatPizzaState(char s){
+
+    if(s == '1'){
+        return "In preperation";
+    }
+    if(s == '2'){
+        return "In Oven";
+    }
+    if(s == '3'){
+        return "Ready";
+    }
+    if(s == '4'){
+        return "Paid";
+    }
+    else{
+        return "Not valid state";
+    }
 }
 
 int OrderRepository::getTotalItems(){
@@ -183,6 +199,7 @@ int OrderRepository::readOrderList(){
 
     if(readItemList(totalObjects) == true){
         string number;
+        char pizzaState;
         int pizza, drink, side, total;
         ifstream fin;
         int obj = 1;
@@ -196,8 +213,8 @@ int OrderRepository::readOrderList(){
         else{
             orderHeader();
             while(fin >> number){
-                fin >> pizza >> drink >> side >> total;
-                cout << " - " << obj <<". Owner: " << number <<"\n\t"
+                fin >> pizzaState >> pizza >> drink >> side >> total;
+                cout << " - " << obj <<". Owner: " << number << ", status: "<< whatPizzaState(pizzaState) <<"\n\t"
                 << pizza << " pizza/s, "
                 << drink << " drink/s, "
                 << side << " side/s, "

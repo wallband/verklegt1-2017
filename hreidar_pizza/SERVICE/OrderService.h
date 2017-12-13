@@ -9,6 +9,7 @@ class OrderService
     public:
         int viewOrderList();
         void service_header();
+        void state_header();
 
 
     private:

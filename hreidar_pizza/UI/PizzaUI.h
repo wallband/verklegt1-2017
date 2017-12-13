@@ -11,12 +11,14 @@
 class PizzaUI
 {
     public:
+        void initVector();
         void startUI();
         void contUI(int fileNr);
         void selectItems();
         void ui_Header();
         void admin_Header();
         void view_Orders();
+        void order_Operations(int selection);
 
     private:
         PizzaService pizza_Service;

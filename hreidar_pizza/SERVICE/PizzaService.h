@@ -17,9 +17,11 @@ class PizzaService
         void addPizza(string str);
         void addDrink();
         void addSide();
+        void changePizzaState();
         void orderHeader();
         int finish_Order(int file);
         void clearMem();
+        void initVector();
 
 
     private:

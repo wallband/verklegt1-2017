@@ -7,7 +7,7 @@ PizzaRepository::PizzaRepository()
     totalDrink = 0;
     totalSides = 0;
     phoneNr = "";
-    stateOfPizza = IN_PREP;
+    stateOfPizza = '1';
 }
 void PizzaRepository::clearMem(){
     OrderList.clear();
@@ -37,6 +37,9 @@ int PizzaRepository::getTotalSides(){
 string PizzaRepository::getPhoneNr(){
     return this -> phoneNr;
 }
+char PizzaRepository::getPizzaStatus(){
+    return this -> stateOfPizza;
+}
 
 void PizzaRepository::newTotal(int totalPrice){
     this -> total = totalPrice;
@@ -53,7 +56,28 @@ void PizzaRepository::newTotalSides(int Sides){
 void PizzaRepository::newPhoneNr(string phone){
     this -> phoneNr = phone;
 }
+void PizzaRepository::newPizzaStatus(char pizzaState){
+    this -> stateOfPizza = pizzaState;
+}
 
+string PizzaRepository::whatPizzaState(char s){
+
+    if(s == '1'){
+        return "In preperation";
+    }
+    if(s == '2'){
+        return "In Oven";
+    }
+    if(s == '3'){
+        return "Ready";
+    }
+    if(s == '4'){
+        return "Paid";
+    }
+    else{
+        return "Not valid state";
+    }
+}
 
 void PizzaRepository::storePizza(string pizza, int items){
 
@@ -62,6 +86,7 @@ void PizzaRepository::storePizza(string pizza, int items){
     }
     addVectorString(pizza);
 }
+
 void PizzaRepository::printOrder(){
 
     for(unsigned int i = 0; i < OrderList.size(); i++){
@@ -74,92 +99,52 @@ void PizzaRepository::printOrder(){
 
 void PizzaRepository::saveOrder(int file, string phone){
 
-    cout << "save to file nr "<< file << endl;
-    system("pause");
+    //cout << "save to file nr "<< file << endl;
+    //system("pause");
 
-    OrderRepo.saveOrder(file, OrderList, phone, getTotalPizza(), getTotalDrink(), getTotalSides(), get_Total());
+    OrderRepo.saveOrder(file, OrderList, phone, getTotalPizza(), getTotalDrink(), getTotalSides(), get_Total(), getPizzaStatus());
 }
 
 void PizzaRepository::loadOrder(int file){
 
     string phone, temp;
+    char pizzaState;
     int pizza, drink, side, totalPrice;
 
     ifstream fin;
     string fileNr = OrderRepo.numToString(file);
     string fileName = "DATA/ORDER/order" + fileNr + ".txt";
     fin.open(fileName.c_str());
-    cout << "open " << fileName <<endl;
-    system("pause");
+    //cout << "open " << fileName <<endl;
+    //system("pause");
     if(fin.fail()){
         cerr << "Error opening file " + fileName <<endl;
-        system("pause");
+        //system("pause");
     }
     else{
-        fin >> phone >> pizza >> drink >> side >> totalPrice;
+        fin >> phone >> pizzaState >> pizza >> drink >> side >> totalPrice;
         newPhoneNr(phone);
+        newPizzaStatus(pizzaState);
         newTotalPizza(pizza);
         newTotalDrink(drink);
         newTotalSides(side);
         newTotal(totalPrice);
-
-        cout <<"phone: " << getPhoneNr() << ", pizza: " << getTotalPizza();
-        cout <<", drink: " << getTotalDrink() << ", side: " << getTotalSides();
+/*
+        cout <<"phone: " << getPhoneNr() <<", pizzaState: " << getPizzaStatus();
+        cout << ", pizza: " << getTotalPizza();
+        cout <<", drink: " << getTotalDrink();
+        cout << ", side: " << getTotalSides();
         cout <<", Total price: " << get_Total() << endl;
         system("pause");
+        */
         while(!fin.eof()){
             getline(fin, temp);
             OrderList.push_back(temp);
             if(fin.eof()){ break; }
         }
         fin.close();
-
     }
-
 }
-/** //I am scared of this bit, almost ruined my program
-void PizzaRepository::removeItem(){
-
-    bool done = false;
-    string input;
-    int inputNR;
-    //char select;
-    int limit = OrderList.size();
-        do{
-            removeHeader();
-            for(int i = 0; i < limit; i++){
-                cout << (i + 1) <<": " << OrderList.at(i) << endl;
-            }
-            cout <<limit + 1 << ": Back" << endl;
-            cin >> input;
-            inputNR = atoi(input.c_str());
-            if(inputNR >= 1 && inputNR <= limit){
-
-                while(select != '2'){
-                    cout << "Do you want to remove item "
-                    << OrderList.at((inputNR - 1)) <<"?" << endl;
-                    cout << "1: Yes" << endl;
-                    cout << "2: No" << endl;
-                    cin >> select;
-                    if(select == '1'){
-                        //int strlength = strlen(OrderList.at((inputNR - 1)));
-                        int strlength = OrderList.at((inputNR - 1)).size();
-                        OrderList.erase(OrderList.begin() + (inputNR - 1));
-                        if(strlength > 6){ totalDrink--; }
-                        else if(strlength > 11){ totalSides--; }
-                        else{ totalPizza--; }
-                    }
-                }
-
-            cout << "Almost done" << endl;
-            }
-            else if(inputNR == (limit + 1)){
-                done = true;
-            }
-
-        }while(!done);
-}
-**/
 void PizzaRepository::input_Drinks(){
 
     bool done = false;
@@ -250,7 +235,6 @@ void PizzaRepository::input_Toppings(string str){
 
 
         if(inputNR >= 1 && inputNR <= (limit - 1)){
-            //OrderList.push_back(listOfToppings.at((input - 1)));
             finished_pizza += (" " + (listOfToppings.at((inputNR - 1))));
             total += listOfToppingPrice.at(inputNR - 1);
             items++;
@@ -265,11 +249,40 @@ void PizzaRepository::input_Toppings(string str){
     storePizza(finished_pizza, items);
 }
 
+string PizzaRepository::select_Combo(string str){
+    string combo = str;
+    bool done = false;
+    string input = "";
+    int inputNr;
+    int limit = listOfCombo.size();
+
+    do{
+        system("cls");
+        comboHeader();
+        for(int i = 0; i < limit; i++){
+            cout <<" " << (i + 1) <<". " << listOfCombo.at(i) <<": " << comboToppings.at(i) << endl;
+        }
+        cin >> input;
+        inputNr = atoi(input.c_str());
+
+        if(inputNr >=1 && inputNr < limit){
+            combo += comboToppings.at((inputNr - 1));
+            totalPizza++;
+            done = true;
+        }
+        else if(inputNr == limit){
+            combo = "";
+            done = true;
+        }
+
+    }while(!done);
+    return combo;
+}
+
 void PizzaRepository::addVectorString(string str){
 
     OrderList.push_back(str);
 }
-
 
 ///Initializer function
 void PizzaRepository::init(){
@@ -280,91 +293,96 @@ void PizzaRepository::init(){
     listOfDrinkPrice.clear();
     listOfSides.clear();
     listOfSidesPrice.clear();
+    listOfCombo.clear();
+    comboToppings.clear();
+    listOfComboPrice.clear();
+
     string str;
     int temp;
 
     ifstream fin;
-
     fin.open("DATA/TOPPINGS/ToppingList.txt");
-
     if(fin.fail()){
-
         cerr << "Error opening topping-list file!" << endl;
     }
     else{
-
         while(fin >> str){
             listOfToppings.push_back(str);
         }
         fin.close();
     }
-
     fin.open("DATA/TOPPINGS/ToppingPrice.txt");
-
     if(fin.fail()){
-
         cerr << "Error opening topping-price file!" << endl;
     }
     else{
-
         while(fin >> temp){
             listOfToppingPrice.push_back(temp);
         }
         fin.close();
     }
-
     fin.open("DATA/DRINKS/DrinkList.txt");
-
     if(fin.fail()){
-
         cerr << "Error opening drink-list file!" << endl;
     }
     else{
-
         while(fin >> str){
             listOfDrinks.push_back(str);
         }
         fin.close();
     }
-
     fin.open("DATA/DRINKS/DrinkPrice.txt");
-
     if(fin.fail()){
-
         cerr << "Error opening drink-price file!" << endl;
     }
     else{
-
         while(fin >> temp){
             listOfDrinkPrice.push_back(temp);
         }
         fin.close();
     }
-
     fin.open("DATA/SIDE/SideList.txt");
-
     if(fin.fail()){
-
         cerr << "Error opening side-list file!" << endl;
     }
     else{
-
         while(fin >> str){
             listOfSides.push_back(str);
         }
         fin.close();
     }
-
     fin.open("DATA/SIDE/SidePrice.txt");
-
     if(fin.fail()){
-
         cerr << "Error opening side-price file!" << endl;
     }
     else{
-
         while(fin >> temp){
             listOfSidesPrice.push_back(temp);
+        }
+        fin.close();
+    }
+    fin.open("DATA/COMBO/ComboName.txt");
+    if(fin.fail()){
+        cerr << "Error opening combo-name file!" << endl;
+        system("pause");
+    }
+    else{
+        while(fin >> str){
+            listOfCombo.push_back(str);
+            getline(fin, str);
+            comboToppings.push_back(str);
+        }
+        fin.close();
+    }
+
+    fin.open("DATA/COMBO/ComboPrice.txt");
+    if(fin.fail()){
+        cerr << "Error opening combo-price file!" << endl;
+        system("pause");
+    }
+    else{
+        while(fin >> temp){
+            listOfComboPrice.push_back(temp);
         }
         fin.close();
     }
@@ -375,6 +393,11 @@ void PizzaRepository::toppingHeader(){
 
     cout << "-----------------------" << endl;
     cout << "    Select toppings" << endl;
+    cout << "-----------------------" << endl;
+}
+void PizzaRepository::comboHeader(){
+    cout << "-----------------------" << endl;
+    cout << "     Select combo" << endl;
     cout << "-----------------------" << endl;
 }
 void PizzaRepository::drinksHeader(){

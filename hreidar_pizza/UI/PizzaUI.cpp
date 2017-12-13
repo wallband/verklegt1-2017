@@ -1,5 +1,9 @@
 #include "PizzaUI.h"
 
+void PizzaUI::initVector(){
+    pizza_Service.initVector();
+}
+
 void PizzaUI::startUI(){
 
     selectItems();
@@ -63,14 +67,40 @@ void PizzaUI::selectItems(){
 void PizzaUI::view_Orders(){
     int selection = order_Service.viewOrderList();
     if(selection > 0){
-        cout << "selected item: " << selection << endl;
-        system("pause");
-        contUI(selection);
-    }
+        //cout << "selected item: " << selection << endl;
+        //system("pause");
+        //contUI(selection);
+        order_Operations(selection);
+    }/*
     else{
         cout << "no selection" <<endl;
         system("pause");
+    }*/
+}
+void PizzaUI::order_Operations(int selection){
+    int s = selection;
+    char select;
+    system("cls");
+    pizza_Service.orderHeader();
+    cout << "1: Add item to order" << endl;
+    cout << "2: Change state of order" << endl;
+    cout << "3: Cancel" << endl;
+    cin >> select;
+    if(select == '1'){
+        contUI(selection);
     }
+    else if(select == '2'){
+        pizza_Service.loadPizza(selection);
+        pizza_Service.changePizzaState();
+        pizza_Service.finish_Order(s);
+    }
+    else if(select == '3'){
+        view_Orders();
+    }
+    else{
+        order_Operations(s);
+    }
+
 }
 
 

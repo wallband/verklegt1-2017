@@ -90,7 +90,33 @@ string PizzaService::pizzaType(string str){
 }
 void PizzaService::addPizza(string str){
 
-    pizzaRepo.input_Toppings(str);
+    char selection;
+    system("cls");
+    orderHeader();
+    cout << "What kind of pizza do you want?\n" << endl;
+    cout << "1: Custom pizza" << endl;
+    cout << "2: Pizza from menu" << endl;
+    cin >> selection;
+    if(selection == '1'){
+        pizzaRepo.input_Toppings(str);
+    }
+
+    else if(selection == '2'){
+        //system("pause");
+        string combo = pizzaRepo.select_Combo(str);
+        if(combo != ""){
+            pizzaRepo.addVectorString(combo);
+        }
+        else{
+            addPizza(str);
+        }
+        //cout << "Menu is broken :(" << endl;
+        //system("pause");
+    }
+
+    else{
+        addPizza(str);
+    }
 
 }
 
@@ -122,6 +148,7 @@ int PizzaService::finish_Order(int file){
         return 0;
     }
     else{
+        string state = pizzaRepo.whatPizzaState(pizzaRepo.getPizzaStatus());
         cout << "--------------------------------" << endl;
         cout << "     Order is finished." << endl;
         cout << "  - - - - - You have - - - - -" << endl;
@@ -134,6 +161,7 @@ int PizzaService::finish_Order(int file){
         cout << endl;
         cout << "  The total is " << pizzaRepo.get_Total() << endl;
         cout << "--------------------------------" << endl;
+        cout << "  Pizza is "<< state << endl;
         do{
             cout << "Confirm order?" << endl;
             cout << "1: Yes" << endl;
@@ -143,8 +171,8 @@ int PizzaService::finish_Order(int file){
                 cout << "\tEnter phone-number:";
                 cin >> phoneNr;
 
-                cout << "Save incoming" << endl;
-                system("pause");
+                //cout << "Save incoming" << endl;
+                //system("pause");
                 confirm = 0;
                 pizzaRepo.saveOrder(file, phoneNr);
                 done = true;
@@ -161,6 +189,35 @@ int PizzaService::finish_Order(int file){
 }
 void PizzaService::clearMem(){
     pizzaRepo.clearMem();
+}
+void PizzaService::initVector(){
+    pizzaRepo.init();
+}
+void PizzaService::changePizzaState(){
+    char selection;
+    orderService.state_header();
+    cout << " - Please choose a state for this order" << endl;
+    cout << "                   owner: " << pizzaRepo.getPhoneNr() <<endl;
+    cout << "1: In preperation" << endl;
+    cout << "2: In Oven" << endl;
+    cout << "3: Ready" << endl;
+    cout << "4: Paid" << endl;
+    cin >> selection;
+    if(selection == '1'){
+        pizzaRepo.newPizzaStatus('1');
+    }
+    else if(selection == '2'){
+        pizzaRepo.newPizzaStatus('2');
+    }
+    else if(selection == '3'){
+        pizzaRepo.newPizzaStatus('3');
+    }
+    else if(selection == '4'){
+        pizzaRepo.newPizzaStatus('4');
+    }
+    else{
+        changePizzaState();
+    }
 }
 
 void PizzaService::orderHeader(){
