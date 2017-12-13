@@ -11,13 +11,13 @@ using namespace std;
 
 class MainUI
 {
-public:
-    MainUI();
+    public:
+        MainUI();
 
-    void startUI();
+        void startUI();
 
-private:
-    PizzaUI pizzaui;
+    private:
+        PizzaUI pizzaui;
 };
 
 #endif // MAINUI_H

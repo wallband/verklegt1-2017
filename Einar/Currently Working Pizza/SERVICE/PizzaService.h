@@ -8,23 +8,23 @@
 
 class PizzaService
 {
-public:
-    PizzaService();
-    void makePizza();
-    string pizzaStart();
-    string pizzaType(string str);
-    void addPizza(string str);
-    void addDrink();
-    void addSide();
-    void orderHeader();
-    void finish_Order();
-    //void deleteItem();
+    public:
+        PizzaService();
+        void makePizza();
+        string pizzaStart();
+        string pizzaType(string str);
+        void addPizza(string str);
+        void addDrink();
+        void addSide();
+        void orderHeader();
+        void finish_Order();
+        //void deleteItem();
 
 
-private:
+    private:
 
-    PizzaRepository pizzaRepo;
-    OrderService orderService;
+        PizzaRepository pizzaRepo;
+        OrderService orderService;
 };
 
 #endif // PIZZASERVICE_H

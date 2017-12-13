@@ -112,11 +112,10 @@ void PizzaRepository::input_Drinks()
     bool done = false;
     string str = "";
     string input;
-    int inputNR = 0;
+    int inputNR;
     int limit = listOfDrinks.size();
     init();
-   // do
-    while(!done)
+    do
     {
         system("cls");
 
@@ -126,25 +125,24 @@ void PizzaRepository::input_Drinks()
         {
             cout << " " << (i + 1) << ": " << listOfDrinks.at(i) << endl;
         }
-        cout << " " << limit + 1 << ": Exit" << endl;
         cout <<"\n Selected drinks: " << str << endl;
         cin >> input;
-        inputNR = atoi(input.c_str()) -1;
+        inputNR = atoi(input.c_str());
 
-        if(inputNR > 0 && inputNR < limit)
+        if(inputNR >= 1 && inputNR <= (limit - 1))
         {
 
-            str += (listOfDrinks[inputNR]) + " ";
-            total += listOfDrinkPrice[inputNR];
-            addVectorString(listOfDrinks[inputNR]);
+            str += listOfDrinks.at((inputNR - 1)) + " ";
+            total += listOfDrinkPrice.at((inputNR - 1));
+            addVectorString(listOfDrinks.at((inputNR - 1)));
             totalDrink++;
         }
-        else if(inputNR == limit + 1)
+        else if(inputNR == limit)
         {
             done = true;
         }
     }
-
+    while(!done);
 }
 
 void PizzaRepository::input_Sides()
@@ -155,6 +153,7 @@ void PizzaRepository::input_Sides()
     string input;
     int inputNR;
     int limit = listOfSides.size();
+    init();
 
     do
     {
@@ -196,6 +195,7 @@ void PizzaRepository::input_Toppings(string str)
     int inputNR;
     int items = 0;
     int limit = listOfToppings.size();
+    init();
 
     do
     {
@@ -274,7 +274,6 @@ void PizzaRepository::init()
 
     if(fin.fail())
     {
-
         cerr << "Error opening topping-price file!" << endl;
     }
     else
@@ -296,11 +295,13 @@ void PizzaRepository::init()
     }
     else
     {
-
-        while(fin >> str)
+        while(fin.good())
         {
+            fin >> ws;
+            getline(fin,str);
             listOfDrinks.push_back(str);
         }
+        listOfDrinks.pop_back();
         fin.close();
     }
 
@@ -331,10 +332,13 @@ void PizzaRepository::init()
     else
     {
 
-        while(fin >> str)
+        while(fin.good())
         {
+            fin >> ws;
+            getline(fin,str);
             listOfSides.push_back(str);
         }
+        listOfSides.pop_back();
         fin.close();
     }
 

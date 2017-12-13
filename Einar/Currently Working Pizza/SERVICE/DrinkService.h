@@ -5,12 +5,12 @@
 
 class DrinkService
 {
-public:
-    DrinkService();
-    void add_drink();
+    public:
+        DrinkService();
+        void add_drink();
 
-private:
-    DrinkRepository drinkRepo;
+    private:
+        DrinkRepository drinkRepo;
 };
 
 #endif // DRINKSERVICE_H

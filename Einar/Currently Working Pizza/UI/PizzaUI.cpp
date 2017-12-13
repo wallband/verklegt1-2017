@@ -5,12 +5,10 @@ PizzaUI::PizzaUI()
     //ctor
 }
 
-void PizzaUI::startUI()
-{
+void PizzaUI::startUI(){
 
     char selection;
-    while(selection != '5')
-    {
+    while(selection != '5'){
         ui_Header();
         cout << "1: Add Pizza" << endl;
         cout << "2: Add Drink"<< endl;
@@ -19,22 +17,19 @@ void PizzaUI::startUI()
         cout << "\n5: Finish Order" << endl;
         cin >> selection;
 
-        if(selection == '1')
-        {
+        if(selection == '1'){
 
             pizza_Service.makePizza();
             cout << endl;
         }
 
-        if(selection == '2')
-        {
+        if(selection == '2'){
 
             pizza_Service.addDrink();
             cout <<endl;
         }
 
-        if(selection == '3')
-        {
+        if(selection == '3'){
 
             pizza_Service.addSide();
         }/*
@@ -47,14 +42,12 @@ void PizzaUI::startUI()
     pizza_Service.finish_Order();
 }
 
-void PizzaUI::view_Orders()
-{
+void PizzaUI::view_Orders(){
     order_Service.viewOrderList();
 }
 
 
-void PizzaUI::ui_Header()
-{
+void PizzaUI::ui_Header(){
 
     system("CLS");
     cout << "-----------------------" << endl;

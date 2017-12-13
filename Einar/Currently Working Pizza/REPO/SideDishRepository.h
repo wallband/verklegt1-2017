@@ -1,5 +1,5 @@
-#ifndef DRINKREPOSITORY_H
-#define DRINKREPOSITORY_H
+#ifndef SIDEDISHREPOSITORY_H
+#define SIDEDISHREPOSITORY_H
 #include <vector>
 #include <string>
 #include <fstream>
@@ -10,22 +10,22 @@
 
 using namespace std;
 
-class DrinkRepository
+class SideDishRepository
 {
     public:
-        DrinkRepository();
+        SideDishRepository();
         void clean_vectors();
-        void add_drink_to_drinklist();
-        void read_drinklist();
-        void read_drinkpricelist();
+        void add_dish_to_side_dish_list();
+        void remove_dish_from_side_dish_list();
+        void read_dishlist();
+        void read_dishpricelist();
         void write_to_file_from_vector(/*vector<string> &drink, vector<string> &price*/);
-        void remove_drink_from_drinklist();
         bool have_vectors_been_changed;
         void check_vectors();
 
     private:
-        vector<string> drink_vector;
+        vector<string> dish_vector;
         vector<string> price_vector;
 };
 
-#endif // DRINKREPOSITORY_H
+#endif // SIDEDISHREPOSITORY_H

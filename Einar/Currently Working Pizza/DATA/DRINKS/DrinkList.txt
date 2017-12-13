@@ -1,3 +1,5 @@
+Drykkur3
 Drykkur4
-NewDrink
-DrykkurNew
+EinarTest
+Coke Cola
+Exit

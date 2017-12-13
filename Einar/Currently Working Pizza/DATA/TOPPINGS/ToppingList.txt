@@ -7,5 +7,7 @@ Bacon
 Paprika
 Jalapeno
 Kjuklingur
+Svepperoni
 Laukur
+Einar
 Done

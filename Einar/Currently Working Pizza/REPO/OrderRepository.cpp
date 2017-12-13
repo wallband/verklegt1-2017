@@ -6,8 +6,7 @@ OrderRepository::OrderRepository()
 }
 
 void OrderRepository::saveOrder(vector<string> listOfItems,
-                                int pizza, int drink, int side, int total)
-{
+                                int pizza, int drink, int side, int total){
     string phone = "1234567";
 
     int fileNr = 0;
@@ -21,15 +20,12 @@ void OrderRepository::saveOrder(vector<string> listOfItems,
 
     ofstream fout;
     fout.open(fileName.c_str());
-    if(fout.fail())
-    {
+    if(fout.fail()){
         cerr << "Error opening output file " + strFileNr <<endl;
     }
-    else
-    {
+    else{
         //fout << fileStart << endl;
-        for(unsigned int i = 0; i < listOfItems.size(); i++)
-        {
+        for(unsigned int i = 0; i < listOfItems.size(); i++){
 
             fout << listOfItems.at(i) << endl;
         }
@@ -40,8 +36,7 @@ void OrderRepository::saveOrder(vector<string> listOfItems,
 
 }
 
-int OrderRepository::addTotalItems()
-{
+int OrderRepository::addTotalItems(){
 
     int totalObj = (getTotalItems() + 1);
 
@@ -49,22 +44,19 @@ int OrderRepository::addTotalItems()
 
     fout.open("DATA/ORDER/TOTAL.txt");
 
-    if(fout.fail())
-    {
+    if(fout.fail()){
 
         cerr << "Error opening Order-Total file!" << endl;
     }
-    else
-    {
+    else{
         //while(!fout.eof()){
-        fout << totalObj;
+            fout << totalObj;
         //}
         fout.close();
     }
     return totalObj;
 }
-string OrderRepository::addToIndex(string phone, int pizza, int drink, int side, int total)
-{
+string OrderRepository::addToIndex(string phone, int pizza, int drink, int side, int total){
 
     string pizzaStr = numToString(pizza);
     string drinkStr = numToString(drink);
@@ -76,43 +68,36 @@ string OrderRepository::addToIndex(string phone, int pizza, int drink, int side,
 
     fout.open("DATA/ORDER/INDEX.txt", ios::app);
 
-    if(fout.fail())
-    {
+    if(fout.fail()){
 
         cerr << "Error opening Order-Total file!" << endl;
     }
-    else
-    {
+    else{
         fout << input << endl;
         fout.close();
     }
     return input;
 }
 
-string OrderRepository::numToString(int number)
-{
+string OrderRepository::numToString(int number){
 
     stringstream numString;
     numString << number;
     return numString.str();
 }
 
-int OrderRepository::getTotalItems()
-{
+int OrderRepository::getTotalItems(){
 
 
     ifstream fin;
     int totalObj;
     fin.open("DATA/ORDER/TOTAL.txt");
 
-    if(fin.fail())
-    {
+    if(fin.fail()){
         cerr << "Error opening Order-Total file!" << endl;
     }
-    else
-    {
-        while(!fin.eof())
-        {
+    else{
+        while(!fin.eof()){
             fin >> totalObj;
         }
         fin.close();
@@ -120,26 +105,21 @@ int OrderRepository::getTotalItems()
     return totalObj;
 }
 
-bool OrderRepository::readItemList(int obj)
-{
+bool OrderRepository::readItemList(int obj){
 
-    if(obj == 0)
-    {
+    if(obj == 0){
         return false;
     }
-    else
-    {
+    else{
         return true;
     }
 }
 
-int OrderRepository::readOrderList()
-{
+int OrderRepository::readOrderList(){
 
     int totalObjects = getTotalItems();
 
-    if(readItemList(totalObjects) == true)
-    {
+    if(readItemList(totalObjects) == true){
         string number;
         int pizza, drink, side, total;
         ifstream fin;
@@ -147,29 +127,23 @@ int OrderRepository::readOrderList()
 
         fin.open("DATA/ORDER/INDEX.txt");
 
-        if(fin.fail())
-        {
+        if(fin.fail()){
 
             cerr << "Error opening Order-Index file!" << endl;
         }
-        else
-        {
+        else{
             orderHeader();
-            while(!fin.eof())
-            {
+            while(!fin.eof()){
                 //getline(fin, number, ',');
                 fin >> number >> pizza >> drink >> side >> total;
                 cout << " - " << obj <<". Owner: " << number <<"\n\t"
-                     << pizza << " pizza/s, "
-                     << drink << " drink/s, "
-                     << side << " side/s, "
-                     << "total price: " << total<<endl;
+                << pizza << " pizza/s, "
+                << drink << " drink/s, "
+                << side << " side/s, "
+                << "total price: " << total<<endl;
                 obj++;
                 //system("pause");
-                if(fin.eof())
-                {
-                    break;
-                }
+                if(fin.eof()){ break; }
             }
             fin.close();
             cout << obj <<": Back"<< endl;
@@ -177,35 +151,29 @@ int OrderRepository::readOrderList()
         return orderSelect(totalObjects);
     }
     //int value = orderSelect(totalObj);
-    else
-    {
+    else{
         cout << "There are no Orders" << endl;
         return 0;
     }
 
 }
 
-int OrderRepository::orderSelect(int totalObj)
-{
+int OrderRepository::orderSelect(int totalObj){
 
     string selection;
     int selectNR;
     cout <<"\nSelect a order to view..." << endl;
-    while(selectNR != (totalObj + 1))
-    {
+    while(selectNR != (totalObj + 1)){
         cin >> selection;
         selectNR = atoi(selection.c_str());
-        if(selectNR >= 1 && selectNR <= totalObj)
-        {
+        if(selectNR >= 1 && selectNR <= totalObj){
             break;
         }
-        if(selectNR == (totalObj + 1))
-        {
+        if(selectNR == (totalObj + 1)){
             selectNR = 0;
             break;
         }
-        else
-        {
+        else{
             cout << "Invalid Order..." << endl;
         }
     }
@@ -213,8 +181,7 @@ int OrderRepository::orderSelect(int totalObj)
 
 }
 
-void OrderRepository::orderHeader()
-{
+void OrderRepository::orderHeader(){
 
     system("cls");
     cout << "-----------------------" << endl;
