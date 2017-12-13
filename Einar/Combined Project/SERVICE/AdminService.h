@@ -4,6 +4,7 @@
 #include "DrinkRepository.h"
 #include "SideDishRepository.h"
 #include "ToppingRepository.h"
+#include "ComboRepository.h"
 
 
 class AdminService
@@ -19,10 +20,14 @@ public:
     void add_topping_to_topping_list();
     void remove_topping_from_topping_list();
 
+    void remove_combo_from_list();
+    void add_combo_to_list();
+
 private:
     DrinkRepository drinkRepo;
     SideDishRepository sideRepo;
     ToppingRepository toppingRepo;
+    ComboRepository comboRepo;
 };
 
 #endif // ADMINSERVICE_H

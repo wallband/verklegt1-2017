@@ -30,3 +30,12 @@ void AdminService::remove_topping_from_topping_list()
 {
     toppingRepo.remove_topping_from_topping_list();
 }
+
+void AdminService::remove_combo_from_list()
+{
+    comboRepo.remove_combo_from_list();
+}
+void AdminService::add_combo_to_list()
+{
+    comboRepo.add_combo_to_list();
+}

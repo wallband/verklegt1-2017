@@ -16,6 +16,7 @@
 					<Add directory="REPO" />
 					<Add directory="include/service" />
 					<Add directory="SERVICE" />
+					<Add directory="MODEL" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -28,6 +29,7 @@
 					<Add directory="REPO" />
 					<Add directory="include/service" />
 					<Add directory="SERVICE" />
+					<Add directory="MODEL" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -51,10 +53,14 @@
 		<Unit filename="EXCEPTIONS/FileNotFound.h" />
 		<Unit filename="EXCEPTIONS/InvalidInput.cpp" />
 		<Unit filename="EXCEPTIONS/InvalidInput.h" />
+		<Unit filename="MODEL/Combo.cpp" />
+		<Unit filename="MODEL/Combo.h" />
 		<Unit filename="MODEL/Pizza.cpp" />
 		<Unit filename="MODEL/Pizza.h" />
 		<Unit filename="MODEL/Topping.cpp" />
 		<Unit filename="MODEL/Topping.h" />
+		<Unit filename="REPO/ComboRepository.cpp" />
+		<Unit filename="REPO/ComboRepository.h" />
 		<Unit filename="REPO/DrinkRepository.cpp" />
 		<Unit filename="REPO/DrinkRepository.h" />
 		<Unit filename="REPO/OrderRepository.cpp" />
