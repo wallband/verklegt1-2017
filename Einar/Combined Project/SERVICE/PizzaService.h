@@ -18,6 +18,8 @@ public:
     void addDrink();
     void addSide();
     void changePizzaState();
+    void changePizzaStateBaker();
+    void changePizzaStateSales();
     void orderHeader();
     int finish_Order(int file);
     void clearMem();

@@ -26,9 +26,9 @@ void DrinkRepository::read_drinklist()      /// This function is used to read fr
     {
         cout << "Inni i read_drinklist (if!fin.is.open)" << endl;
         system("PAUSE");
-       /* fstream fout;
-        fout.open("DATA/DRINKS/DrinkList.txt");
-        fout.close();*/
+        /* fstream fout;
+         fout.open("DATA/DRINKS/DrinkList.txt");
+         fout.close();*/
         throw FileNotFound();
     }
     fin.close();
@@ -47,9 +47,9 @@ void DrinkRepository::read_drinkpricelist()     /// This function is used to rea
     }
     if(!fin.is_open())
     {
-       /* fstream fout;
-        fout.open("DATA/DRINKS/DrinkPrice.txt");
-        fout.close();*/
+        /* fstream fout;
+         fout.open("DATA/DRINKS/DrinkPrice.txt");
+         fout.close();*/
         throw FileNotFound();
     }
     fin.close();
@@ -84,7 +84,8 @@ void DrinkRepository::write_to_file_from_vector(/*vector<string> &drink, vector<
 
 }
 void DrinkRepository::add_drink_to_drinklist()              /// I use this function to enter a new drink into the DrinkList.txt file ///
-{                                                           /// using input from the user. ///
+{
+    /// using input from the user. ///
 
     check_vectors();
     /*if(drink_vector.size() == 0)

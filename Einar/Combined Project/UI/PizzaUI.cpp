@@ -121,6 +121,96 @@ void PizzaUI::order_Operations(int selection)
     }
 
 }
+void PizzaUI::view_OrdersBaker()
+{
+    int selection = order_Service.viewOrderList();
+    if(selection > 0)
+    {
+        //cout << "selected item: " << selection << endl;
+        //system("pause");
+        //contUI(selection);
+        order_OperationsBaker(selection);
+    }/*
+    else{
+        cout << "no selection" <<endl;
+        system("pause");
+    }*/
+}
+void PizzaUI::order_OperationsBaker(int selection)
+{
+    int s = selection;
+    char select;
+    system("cls");
+    pizza_Service.orderHeader();
+    cout << "1: Add item to order" << endl;
+    cout << "2: Change state of order" << endl;
+    cout << "3: Cancel" << endl;
+    cin >> select;
+    if(select == '1')
+    {
+        contUI(selection);
+    }
+    else if(select == '2')
+    {
+        pizza_Service.loadPizza(selection);
+        pizza_Service.changePizzaStateBaker();
+        pizza_Service.finish_Order(s);
+    }
+    else if(select == '3')
+    {
+        view_Orders();
+    }
+    else
+    {
+        order_Operations(s);
+    }
+
+}
+void PizzaUI::view_OrdersSales()
+{
+    int selection = order_Service.viewOrderList();
+    if(selection > 0)
+    {
+        //cout << "selected item: " << selection << endl;
+        //system("pause");
+        //contUI(selection);
+        order_OperationsSales(selection);
+    }/*
+    else{
+        cout << "no selection" <<endl;
+        system("pause");
+    }*/
+}
+void PizzaUI::order_OperationsSales(int selection)
+{
+    int s = selection;
+    char select;
+    system("cls");
+    pizza_Service.orderHeader();
+    cout << "1: Add item to order" << endl;
+    cout << "2: Change state of order" << endl;
+    cout << "3: Cancel" << endl;
+    cin >> select;
+    if(select == '1')
+    {
+        contUI(selection);
+    }
+    else if(select == '2')
+    {
+        pizza_Service.loadPizza(selection);
+        pizza_Service.changePizzaStateSales();
+        pizza_Service.finish_Order(s);
+    }
+    else if(select == '3')
+    {
+        view_Orders();
+    }
+    else
+    {
+        order_Operations(s);
+    }
+
+}
 
 
 void PizzaUI::ui_Header()

@@ -23,7 +23,7 @@ class ComboRepository
         void write_to_file_from_vector(/*vector<string> &drink, vector<string> &price*/);
         bool have_vectors_been_changed;
         void check_vectors();
-        void read_toppinglist();
+    void read_toppinglist();
 
 
 

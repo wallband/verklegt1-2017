@@ -259,6 +259,60 @@ void PizzaService::changePizzaState()
         changePizzaState();
     }
 }
+void PizzaService::changePizzaStateBaker()
+{
+    char selection;
+    orderService.state_header();
+    cout << " - Please choose a state for this order" << endl;
+    cout << "                   owner: " << pizzaRepo.getPhoneNr() <<endl;
+    cout << "1: In preperation" << endl;
+    cout << "2: In Oven" << endl;
+    //cout << "3: Ready" << endl;
+    //cout << "4: Paid" << endl;
+    //cout << "5: Paid and delivered" << endl;
+    cin >> selection;
+    if(selection == '1')
+    {
+        pizzaRepo.newPizzaStatus('1');     ///In preperation
+    }
+    else if(selection == '2')
+    {
+        pizzaRepo.newPizzaStatus('2');      ///In oven
+    }
+    else
+    {
+        changePizzaState();
+    }
+}
+void PizzaService::changePizzaStateSales()
+{
+    char selection;
+    orderService.state_header();
+    cout << " - Please choose a state for this order" << endl;
+    cout << "                   owner: " << pizzaRepo.getPhoneNr() <<endl;
+   // cout << "1: In preperation" << endl;
+   // cout << "2: In Oven" << endl;
+    cout << "1: Ready" << endl;
+    cout << "2: Paid" << endl;
+    cout << "3: Paid and delivered" << endl;
+    cin >> selection;
+    if(selection == '1')
+    {
+        pizzaRepo.newPizzaStatus('3');  ///Ready
+    }
+    else if(selection == '2')
+    {
+        pizzaRepo.newPizzaStatus('4');  ///Paid
+    }
+    else if(selection == '3')
+    {
+        pizzaRepo.newPizzaStatus('5');  ///Paid and delivered
+    }
+    else
+    {
+        changePizzaState();
+    }
+}
 
 void PizzaService::orderHeader()
 {

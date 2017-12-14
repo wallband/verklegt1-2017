@@ -27,9 +27,9 @@ void ComboRepository::read_combolist()      /// This function is used to read fr
     {
         cout << "Inni i read_combolist (if!fin.is.open)" << endl;
         system("PAUSE");
-       /* fstream fout;
-        fout.open("DATA/DRINKS/DrinkList.txt");
-        fout.close();*/
+        /* fstream fout;
+         fout.open("DATA/DRINKS/DrinkList.txt");
+         fout.close();*/
         throw FileNotFound();
     }
     fin.close();
@@ -50,9 +50,9 @@ void ComboRepository::read_drinkpricelist()     /// This function is used to rea
     }
     if(!fin.is_open())
     {
-       /* fstream fout;
-        fout.open("DATA/DRINKS/DrinkPrice.txt");
-        fout.close();*/
+        /* fstream fout;
+         fout.open("DATA/DRINKS/DrinkPrice.txt");
+         fout.close();*/
         throw FileNotFound();
     }
     fin.close();
@@ -86,7 +86,8 @@ void ComboRepository::write_to_file_from_vector(/*vector<string> &drink, vector<
 
 }
 void ComboRepository::add_combo_to_list()              /// I use this function to enter a new drink into the DrinkList.txt file ///
-{                                                           /// using input from the user. ///
+{
+    /// using input from the user. ///
     system("CLS");
     check_vectors();
     /*if(combo_vector.size() == 0)
@@ -135,7 +136,8 @@ void ComboRepository::add_combo_to_list()              /// I use this function t
         {
             throw InvalidInput();
         }
-    }while(!done);
+    }
+    while(!done);
     comboToppings.resize(price_size + 1);
     comboToppings.insert(comboToppings.end() -2, topping);
 

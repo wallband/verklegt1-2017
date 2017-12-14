@@ -11,7 +11,7 @@ void BakerUI::startUI()
     cin >> input;
     if(input == '1')
     {
-        pizzaui.view_Orders();
+        pizzaui.view_OrdersSales();
     }
 }
 void BakerUI::bakerui_header()

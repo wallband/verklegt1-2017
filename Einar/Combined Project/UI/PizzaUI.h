@@ -18,7 +18,11 @@ public:
     void ui_Header();
     void admin_Header();
     void view_Orders();
+    void view_OrdersBaker();
+    void view_OrdersSales();
     void order_Operations(int selection);
+    void order_OperationsBaker(int selection);
+    void order_OperationsSales(int selection);
 
 private:
     PizzaService pizza_Service;

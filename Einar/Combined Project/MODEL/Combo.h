@@ -8,18 +8,18 @@ using namespace std;
 
 class Combo
 {
-    public:
-        Combo();
-        void set_name(string name);
-        void set_price(int price);
-        string get_name();
-        vector<string> list_of_toppings;
-        int get_topping_vector_size();
+public:
+    Combo();
+    void set_name(string name);
+    void set_price(int price);
+    string get_name();
+    vector<string> list_of_toppings;
+    int get_topping_vector_size();
 
 
-    private:
-        string name;
-        int price;
+private:
+    string name;
+    int price;
 
 };
 

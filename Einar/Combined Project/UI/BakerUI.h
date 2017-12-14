@@ -6,13 +6,13 @@
 
 class BakerUI
 {
-    public:
-        BakerUI();
-        void startUI();
-        void bakerui_header();
+public:
+    BakerUI();
+    void startUI();
+    void bakerui_header();
 
-    private:
-        PizzaUI pizzaui;
+private:
+    PizzaUI pizzaui;
 };
 
 #endif // BAKERUI_H
