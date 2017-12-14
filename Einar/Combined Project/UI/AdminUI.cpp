@@ -159,7 +159,7 @@ void AdminUI::startUI()
             catch(FileNotFound e)
             {
                 system("CLS");
-                cout << "There was an error when trying to add Pizza Combo, please try again or contact your system administrator" <<
+                cout << "There was an error when trying to add side-dish, please try again or contact your system administrator" <<
                      endl << endl;
             }
         }
@@ -172,7 +172,7 @@ void AdminUI::startUI()
             catch(FileNotFound e)
             {
                 system("CLS");
-                cout << "There was an error when trying to remove Pizza Combo, please try again or contact your system administrator" <<
+                cout << "There was an error when trying to remove side-dish, please try again or contact your system administrator" <<
                      endl << endl;
             }
             catch(invalid_argument)

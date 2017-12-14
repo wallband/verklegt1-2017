@@ -17,6 +17,7 @@
 					<Add directory="include/service" />
 					<Add directory="SERVICE" />
 					<Add directory="MODEL" />
+					<Add directory="UI" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -30,6 +31,7 @@
 					<Add directory="include/service" />
 					<Add directory="SERVICE" />
 					<Add directory="MODEL" />
+					<Add directory="UI" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -45,6 +47,7 @@
 		<Unit filename="DATA/DRINKS/DrinkList.txt" />
 		<Unit filename="DATA/DRINKS/DrinkPrice.txt" />
 		<Unit filename="DATA/ORDER/Index.txt" />
+		<Unit filename="DATA/ORDER/Total.txt" />
 		<Unit filename="DATA/SIDE/SideList.txt" />
 		<Unit filename="DATA/SIDE/SidePrice.txt" />
 		<Unit filename="DATA/TOPPINGS/ToppingList.txt" />
@@ -85,6 +88,8 @@
 		<Unit filename="SERVICE/ToppingService.h" />
 		<Unit filename="UI/AdminUI.cpp" />
 		<Unit filename="UI/AdminUI.h" />
+		<Unit filename="UI/BakerUI.cpp" />
+		<Unit filename="UI/BakerUI.h" />
 		<Unit filename="UI/MainUI.cpp" />
 		<Unit filename="UI/MainUI.h" />
 		<Unit filename="UI/PizzaUI.cpp" />

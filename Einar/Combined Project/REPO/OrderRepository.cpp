@@ -188,6 +188,10 @@ string OrderRepository::whatPizzaState(char s)
     {
         return "Paid";
     }
+    if(s == '5')
+    {
+        return "Paid and delivered";
+    }
     else
     {
         return "Not valid state";

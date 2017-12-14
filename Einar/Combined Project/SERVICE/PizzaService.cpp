@@ -232,6 +232,7 @@ void PizzaService::changePizzaState()
     cout << "2: In Oven" << endl;
     cout << "3: Ready" << endl;
     cout << "4: Paid" << endl;
+    cout << "5: Paid and delivered" << endl;
     cin >> selection;
     if(selection == '1')
     {
@@ -248,6 +249,10 @@ void PizzaService::changePizzaState()
     else if(selection == '4')
     {
         pizzaRepo.newPizzaStatus('4');
+    }
+    else if(selection == '5')
+    {
+        pizzaRepo.newPizzaStatus('5');
     }
     else
     {

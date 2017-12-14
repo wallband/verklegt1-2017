@@ -3,6 +3,7 @@
 #include "../main.h"
 #include "PizzaUI.h"
 #include "AdminUI.h"
+#include "BakerUI.h"
 
 //#include <iostream>
 //#include <vector>

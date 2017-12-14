@@ -1,6 +1,6 @@
 #ifndef ADMINREPOSITORY_H
 #define ADMINREPOSITORY_H
-#include "../SERVICE/DrinkService.h"
+#include "DrinkService.h"
 
 using namespace std;
 class AdminRepository

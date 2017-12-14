@@ -10,7 +10,7 @@ void MainUI::startUI()
 
 
 
-    while(selection != '4')
+    while(selection != '6')
     {
         system("CLS");
 
@@ -35,7 +35,11 @@ void MainUI::startUI()
         cout << "1: Order" << endl;
         cout << "2: View orders" << endl;
         cout << "3: Admin" << endl;
-        cout << "\n4: Quit" << endl;
+        cout << "4: Baker" << endl;
+        cout << "5: Sales" << endl;
+
+
+        cout << "\n6: Quit" << endl;
 
         cin >> selection;
 
@@ -53,6 +57,11 @@ void MainUI::startUI()
         {
             AdminUI adminui;
             adminui.startUI();
+        }
+        if(selection == '4')
+        {
+            BakerUI bakerui;
+            bakerui.startUI();
         }
         /*if(selection == '3'){
             pizzaui.admin_Header();

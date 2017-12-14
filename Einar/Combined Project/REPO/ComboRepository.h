@@ -23,12 +23,16 @@ class ComboRepository
         void write_to_file_from_vector(/*vector<string> &drink, vector<string> &price*/);
         bool have_vectors_been_changed;
         void check_vectors();
-        int count_lines(string filename);
+        void read_toppinglist();
+
+
 
     private:
-        vector<string> drink_vector;
+        vector<string> combo_vector;
+        vector<string> comboToppings;
         vector<string> price_vector;
-        vector<Combo> combo_vector;
+        vector<string> topping_vector;
+       // vector<Combo> combo_vector;
         //Combo combo;
 };
 

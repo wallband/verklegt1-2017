@@ -94,6 +94,10 @@ string PizzaRepository::whatPizzaState(char s)
     {
         return "Paid";
     }
+    if(s == '5')
+    {
+        return "Paid&delivered";
+    }
     else
     {
         return "Not valid state";
