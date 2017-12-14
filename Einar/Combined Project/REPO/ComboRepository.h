@@ -23,9 +23,7 @@ class ComboRepository
         void write_to_file_from_vector(/*vector<string> &drink, vector<string> &price*/);
         bool have_vectors_been_changed;
         void check_vectors();
-
-        void add_drink_to_drinklist();           ///Remove
-        void remove_drink_from_drinklist();      ///Remove
+        int count_lines(string filename);
 
     private:
         vector<string> drink_vector;

@@ -16,6 +16,10 @@ string Combo::get_name()
 {
     return this->name;
 }
+int Combo::get_price()
+{
+    return this->price;
+}
 
 int Combo::get_topping_vector_size()
 {
