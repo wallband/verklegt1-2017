@@ -6,7 +6,7 @@ AdminUI::AdminUI()
 
 void AdminUI::startUI()
 {
-    system ("CLS");
+   // system ("CLS");
     char input;
     while(input != '9')
     {
@@ -48,23 +48,23 @@ void AdminUI::startUI()
             }
             catch(FileNotFound e)
             {
-                system("CLS");
+                //system("CLS");
                 cout << "There was an error when trying to remove drinks, please try again or contact your system administrator" <<
                      endl << endl;
             }
             catch(invalid_argument)
             {
-                system("CLS");
+                //system("CLS");
                 cout << "terminate called after throwing an instance of 'std::invalid_argument' what():  stoi" << endl << endl;
             }
             catch(std::bad_cast)
             {
-                system("CLS");
+                //system("CLS");
                 cout << "terminate called after throwing an instance of 'std::bad_cast' what():  std::bad_cast" << endl << endl;
             }
             catch(InvalidInput e)
             {
-                system("CLS");
+
                 cout << "Input invalid, try again" << endl << endl;
             }
         }
@@ -195,8 +195,8 @@ void AdminUI::startUI()
 }
 void AdminUI::ui_Header()
 {
-
     system("CLS");
+
     cout << "-----------------------" << endl;
     cout << "    Administration     " << endl;
     cout << "-----------------------" << endl;

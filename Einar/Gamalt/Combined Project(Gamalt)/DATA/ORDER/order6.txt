@@ -1,0 +1,5 @@
+6960666 1 4 0 0 1515
+Medium Pizza, Thin Italian:  Pepperoni Skinka Rjomaostur 
+Medium Pizza, Normal:  Margharita
+Large Pizza, Normal:  Margharita
+Large Pizza, Normal:  Pepperoni Skinka

@@ -5,6 +5,5 @@ Surprise Skinka Jalapeno Hvitlaukur Rjomaostur,
 Berserkur Skinka Rjomaostur Hakk Bacon Jalapeno Kjuklingur Svinakjot Hvitlaukur Xtra_cheese,
 Piderman Pepperoni Rjomaostur Laukur Hakk Spinat,
 PepperoniMadness Pepperoni Pepperoni Small Pepperoni
-Testy Pepperoni Skinka Rjomaostur 
+LoopTestKjuklingur 
 Cancel   
-

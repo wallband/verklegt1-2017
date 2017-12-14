@@ -150,7 +150,8 @@ void PizzaService::addSide()
 int PizzaService::finish_Order(int file)
 {
 
-    string phoneNr = pizzaRepo.getPhoneNr();
+    string phoneNr = "";
+    phoneNr = pizzaRepo.getPhoneNr();
     char selection;
     int confirm;
     bool done = false;
@@ -187,15 +188,12 @@ int PizzaService::finish_Order(int file)
             cout << "1: Yes" << endl;
             cout << "2: No" << endl;
             cin >> selection;
-            if(selection == '1')
-            {
-                if(pizzaRepo.getPhoneNr() == ""){
-                    cout << "\tEnter phone-number:";
-                    cin >> phoneNr;
-                }
-                else{
-
-                    pizzaRepo.saveOrder(file, phoneNr);
+            if(selection == '1'){
+                if(phoneNr == ""){
+                    //cout << "\tEnter phone-number:";
+                    //cin >> phoneNr;
+                    inputPhone();
+                    phoneNr = pizzaRepo.getPhoneNr();
                 }
                 confirm = 0;
                 pizzaRepo.saveOrder(file, phoneNr);
@@ -210,6 +208,11 @@ int PizzaService::finish_Order(int file)
 
         }
         while(!done);
+        pizzaRepo.newPhoneNr("");
+        pizzaRepo.newTotal(0);
+        pizzaRepo.newTotalDrink(0);
+        pizzaRepo.newTotalPizza(0);
+        pizzaRepo.newTotalSides(0);
 
         return confirm;
     }
@@ -290,8 +293,8 @@ void PizzaService::changePizzaStateSales()
     orderService.state_header();
     cout << " - Please choose a state for this order" << endl;
     cout << "                   owner: " << pizzaRepo.getPhoneNr() <<endl;
-   // cout << "1: In preperation" << endl;
-   // cout << "2: In Oven" << endl;
+    // cout << "1: In preperation" << endl;
+    // cout << "2: In Oven" << endl;
     cout << "1: Ready" << endl;
     cout << "2: Paid" << endl;
     cout << "3: Paid and delivered" << endl;
@@ -311,6 +314,36 @@ void PizzaService::changePizzaStateSales()
     else
     {
         changePizzaState();
+    }
+}
+void PizzaService::inputPhone(){
+    char phone [7];
+    cout << "\tEnter phone-number:";
+    cin >> phone;
+    bool flag = true;
+    if(strlen(phone) == 7){
+        for(int i = 0; i < 7; i++){
+            if(isdigit(phone[i])){
+                flag = true;
+            }
+            else{
+                flag = false;
+            }
+
+        }
+        if(flag == false){
+            cout << "Number can only be 7 digits" << endl;
+            inputPhone();
+        }
+        else{
+            string phoneRet(phone);
+            pizzaRepo.newPhoneNr(phoneRet);
+
+        }
+    }
+    else if(strlen(phone) != 7){
+        cout << "Number can only be 7 in length" << endl;
+        inputPhone();
     }
 }
 

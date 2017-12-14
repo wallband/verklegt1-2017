@@ -3,12 +3,12 @@
 ComboRepository::ComboRepository()
 {}
 
-void ComboRepository::clean_vectors()
+void ComboRepository::clean_vectors()       /// This function is used to clear out the vectors. Setting them to size 0.
 {
     combo_vector.clear();
     price_vector.clear();
 }
-void ComboRepository::read_combolist()      /// This function is used to read from DrinkList.txt into the combo_vector ///
+void ComboRepository::read_combolist()      /// This function is used to read from ComboName.txt into the combo_vector ///
 {
     ifstream fin;
     string str;
@@ -35,7 +35,7 @@ void ComboRepository::read_combolist()      /// This function is used to read fr
     fin.close();
 
 }
-void ComboRepository::read_drinkpricelist()     /// This function is used to read from Drinkprice.txt into the price_vector ///
+void ComboRepository::read_drinkpricelist()     /// This function is used to read from Comboprice.txt into the price_vector ///
 {
     ifstream fin;
     string str;
@@ -64,7 +64,7 @@ void ComboRepository::write_to_file_from_vector(/*vector<string> &drink, vector<
     //remove ("DATA/DRINKS/DrinkList.txt");
     fstream fout;
     fout.open("DATA/COMBO/ComboName.txt", ios::out|ios::trunc);
-    for(unsigned int i = 0; i < combo_vector.size(); i++)                      /// I use this functino to write the modified side-dish menu to the SideList.txt ///
+    for(unsigned int i = 0; i < combo_vector.size(); i++)                      /// I use this functino to write the modified Pizza Combo menu to the ComboName.txt ///
     {
         cout << "Writing " << combo_vector[i] << " to file:" << '\n' ;
         fout << combo_vector[i] << comboToppings[i] << endl;
@@ -74,18 +74,18 @@ void ComboRepository::write_to_file_from_vector(/*vector<string> &drink, vector<
     //remove ("DATA/DRINKS/DrinkPrice.txt");
     fstream fout2;
     fout2.open("DATA/COMBO/ComboPrice.txt", ios::out|ios::trunc);
-    for(unsigned int i = 0; i < price_vector.size(); i++)                      /// I use this functino to write the modified price menu to the DrinkList.txt ///
+    for(unsigned int i = 0; i < price_vector.size(); i++)                      /// I use this functino to write the modified Pizza Combo price menu to the ComboList.txt ///
     {
         /// and the DrinkPrice.txt files. ///
         cout << "Writing " << price_vector[i] << " to file:" << '\n' ;
         fout2 << price_vector[i] << '\n';
     }
     fout2.close();
-
+    system("PAUSE");
 
 
 }
-void ComboRepository::add_combo_to_list()              /// I use this function to enter a new drink into the DrinkList.txt file ///
+void ComboRepository::add_combo_to_list()              /// I use this function to enter a new pizza combo into the ComboName.txt file ///
 {
     /// using input from the user. ///
     system("CLS");
@@ -141,7 +141,7 @@ void ComboRepository::add_combo_to_list()              /// I use this function t
     comboToppings.resize(price_size + 1);
     comboToppings.insert(comboToppings.end() -2, topping);
 
-    cout << "Enter price for new combo " << endl;               // TODO (einar#1#12/13/17): Kominn hingað.  Redda Combo
+    cout << "Enter price for new combo " << endl;
     cin >> price;
     price_vector.resize(price_size + 1);
     price_vector.insert(price_vector.end() -2, price);
@@ -149,8 +149,9 @@ void ComboRepository::add_combo_to_list()              /// I use this function t
     write_to_file_from_vector(/*combo_vector, price_vector*/);
 }
 
-void ComboRepository::check_vectors()
+void ComboRepository::check_vectors()                                       ///Check if vectors are empty or if they have changed since they were loaded last.
 {
+    /// if the files have been changed they are reloaded to the vectors.
     if(combo_vector.size() == 0 || have_vectors_been_changed == true)
     {
         cout << "Drinklist empty, reading from file" << endl;
@@ -179,7 +180,7 @@ void ComboRepository::check_vectors()
     }*/
 }
 
-void ComboRepository::remove_combo_from_list()
+void ComboRepository::remove_combo_from_list()                  ///Removes the selected pizza combo from the menu.
 {
     string input;
     char yes_no;
@@ -198,6 +199,7 @@ void ComboRepository::remove_combo_from_list()
     //do
     //{
     cin >> input;
+
 
     unsigned int intput = atoi(input.c_str());
     if(intput < 0 || intput > combo_vector.size())
@@ -239,7 +241,7 @@ void ComboRepository::remove_combo_from_list()
     }*/
     // }while(intput >= 0 && intput <= combo_vector.size() -1 );
 }
-void ComboRepository::read_toppinglist()      /// This function is used to read from SideList.txt into the drink_vector ///
+void ComboRepository::read_toppinglist()      /// This function is used to read from ToppingList.txt into the toppings_vector ///
 {
     ifstream fin;
     string str;

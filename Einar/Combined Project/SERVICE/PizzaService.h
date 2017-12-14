@@ -24,6 +24,7 @@ public:
     int finish_Order(int file);
     void clearMem();
     void initVector();
+    void inputPhone();
 
 
 private:

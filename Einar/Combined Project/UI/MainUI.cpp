@@ -63,6 +63,11 @@ void MainUI::startUI()
             BakerUI bakerui;
             bakerui.startUI();
         }
+        if(selection == '5')
+        {
+            SalesUI salesui;
+            salesui.startUI();
+        }
         /*if(selection == '3'){
             pizzaui.admin_Header();
             cout << "Enter password... ";

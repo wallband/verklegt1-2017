@@ -72,13 +72,14 @@ void DrinkRepository::write_to_file_from_vector(/*vector<string> &drink, vector<
     //remove ("DATA/DRINKS/DrinkPrice.txt");
     fstream fout2;
     fout2.open("DATA/DRINKS/DrinkPrice.txt", ios::out|ios::trunc);
-    for(unsigned int i = 0; i < price_vector.size(); i++)                      /// I use this functino to write the modified drink menu to the DrinkList.txt ///
+    for(unsigned int i = 0; i < price_vector.size(); i++)                      /// I use this functino to write the modified drink price to the DrinkPrice.txt ///
     {
         /// and the DrinkPrice.txt files. ///
         cout << "Writing " << price_vector[i] << " to file:" << '\n' ;
         fout2 << price_vector[i] << '\n';
     }
     fout2.close();
+    system("PAUSE");
 
 
 
@@ -113,8 +114,9 @@ void DrinkRepository::add_drink_to_drinklist()              /// I use this funct
 
     write_to_file_from_vector(/*drink_vector, price_vector*/);
 }
-void DrinkRepository::check_vectors()
+void DrinkRepository::check_vectors()                                       ///Check if vectors are empty or if they have changed since they were loaded last.
 {
+    /// if the files have been changed they are reloaded to the vectors.
     if(drink_vector.size() == 0 || have_vectors_been_changed == true)
     {
         cout << "Drinklist empty, reading from file" << endl;
@@ -136,13 +138,13 @@ void DrinkRepository::check_vectors()
     }*/
 }
 
-void DrinkRepository::remove_drink_from_drinklist()
+void DrinkRepository::remove_drink_from_drinklist()                             ///Remove a selected drink from the list of available drinks.
 {
     string input;
     char yes_no;
     locale loc;
     check_vectors();
-    cout << "Price vector is size = " << price_vector.size() << endl;
+    cout << "Drink vector is size = " << drink_vector.size() << endl;
 
     for(unsigned int i = 0; i < drink_vector.size() - 1; i++)
     {
@@ -157,33 +159,42 @@ void DrinkRepository::remove_drink_from_drinklist()
     unsigned int intput = atoi(input.c_str());
     if(intput < 0 || intput > drink_vector.size())
     {
+        cout << "Throw 2";
         throw InvalidInput();
     }
     /*if(input - '0' >= 0 && input - '0' <= drink_vector.size() -1)
     {*/
-    cout << "Are you sure you want to remove " << drink_vector[intput] << " ?" << endl;
-    cout << "y/n ->";
-    cin >> yes_no;
-    if(yes_no == 'y' || yes_no == 'Y')
-    {
-        drink_vector.erase (drink_vector.begin() + (intput));
-        price_vector.erase (price_vector.begin() + (intput));
-        cout << "Vector size after you removed drink" << drink_vector.size() << endl;
-        for(unsigned int i = 0; i < drink_vector.size(); i++)
+
+
+        cout << "Are you sure you want to remove " << drink_vector[intput] << " ?" << endl;
+        cout << "y/n ->";
+        cin >> yes_no;
+        if(yes_no == 'y' || yes_no == 'Y')
         {
-            cout << "Drink: " << drink_vector[i] << " Price: " << price_vector[i] << endl;
+            drink_vector.erase (drink_vector.begin() + (intput));
+            price_vector.erase (price_vector.begin() + (intput));
+            cout << "Vector size after you removed drink" << drink_vector.size() << endl;
+            for(unsigned int i = 0; i < drink_vector.size(); i++)
+            {
+                cout << "Drink: " << drink_vector[i] << " Price: " << price_vector[i] << endl;
+            }
+            cout << endl << "Saving new list to file" << endl;
+            system("PAUSE");
+            write_to_file_from_vector(/*drink_vector, price_vector*/);
+            have_vectors_been_changed = true;
+            clean_vectors();
         }
-        cout << endl << "Saving new list to file" << endl;
-        system("PAUSE");
-        write_to_file_from_vector(/*drink_vector, price_vector*/);
-        have_vectors_been_changed = true;
-        clean_vectors();
-    }
-    else
-    {
-        cout << "Nothing has changed, " << drink_vector[intput] << " was not removed" << endl;
-        //break;
-    }
+
+    else if(yes_no == 'n' || yes_no == 'N')
+        {
+            cout << "Nothing has changed, " << drink_vector[intput] << " was not removed" << endl;
+          //  break;
+        }
+        else
+        {
+            throw InvalidInput();
+        }
+
 
 
     //}

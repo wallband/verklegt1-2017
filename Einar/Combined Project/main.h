@@ -12,5 +12,6 @@ using namespace std;
 #include <algorithm>
 #include <string>
 #include <sstream>
+#include <cstring>
 
 #endif // MAIN_H_INCLUDED

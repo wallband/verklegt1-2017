@@ -6,6 +6,8 @@
 #include <stdlib.h>
 #include <iostream>
 #include <locale>
+#include <stdio.h>
+#include <ctype.h>
 #include "../EXCEPTIONS/FileNotFound.h"
 #include "../EXCEPTIONS/InvalidInput.h"
 

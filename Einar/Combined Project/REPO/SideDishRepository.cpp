@@ -9,7 +9,7 @@ void SideDishRepository::clean_vectors()
     dish_vector.clear();
     price_vector.clear();
 }
-void SideDishRepository::read_dishlist()      /// This function is used to read from SideList.txt into the drink_vector ///
+void SideDishRepository::read_dishlist()      /// This function is used to read from SideList.txt into the dish_vector ///
 {
     ifstream fin;
     string str;
@@ -73,11 +73,11 @@ void SideDishRepository::write_to_file_from_vector(/*vector<string> &drink, vect
         fout2 << price_vector[i] << '\n';
     }
     fout2.close();
-
+    system("PAUSE");
 
 
 }
-void SideDishRepository::add_dish_to_side_dish_list()
+void SideDishRepository::add_dish_to_side_dish_list()                   /// Adds a side-dish to the side dish menu. Input by the user.
 {
     check_vectors();
     /*if(drink_vector.size() == 0)
@@ -106,7 +106,7 @@ void SideDishRepository::add_dish_to_side_dish_list()
 
     write_to_file_from_vector(/*dish_vector, price_vector*/);
 }
-void SideDishRepository::remove_dish_from_side_dish_list()
+void SideDishRepository::remove_dish_from_side_dish_list()              ///Removes a side-dish from the side-dish menu. Selected by the user.
 {
     string input;
     char yes_no;
@@ -164,8 +164,8 @@ void SideDishRepository::remove_dish_from_side_dish_list()
     // }while(intput >= 0 && intput <= drink_vector.size() -1 );
     system("PAUSE");
 }
-void SideDishRepository::check_vectors()
-{
+void SideDishRepository::check_vectors()                                            ///Check if vectors are empty or if they have changed since they were loaded last.
+{                                                                                   /// if the files have been changed they are reloaded to the vectors.
     if(dish_vector.size() == 0 || have_vectors_been_changed == true)
     {
         cout << "Side-dish list empty, reading from file" << endl;

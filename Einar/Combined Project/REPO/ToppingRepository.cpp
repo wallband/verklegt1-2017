@@ -11,7 +11,7 @@ void ToppingRepository::clean_vectors()
     topping_vector.clear();
     price_vector.clear();
 }
-void ToppingRepository::read_toppinglist()      /// This function is used to read from SideList.txt into the drink_vector ///
+void ToppingRepository::read_toppinglist()      /// This function is used to read from ToppingList.txt into the topping_vector ///
 {
     ifstream fin;
     string str;
@@ -32,7 +32,7 @@ void ToppingRepository::read_toppinglist()      /// This function is used to rea
     }
     fin.close();
 }
-void ToppingRepository::read_toppingpricelist()     /// This function is used to read from Sideprice.txt into the price_vector ///
+void ToppingRepository::read_toppingpricelist()     /// This function is used to read from ToppingPrice.txt into the price_vector ///
 {
     ifstream fin;
     string str;
@@ -57,7 +57,7 @@ void ToppingRepository::write_to_file_from_vector(/*vector<string> &drink, vecto
     //remove ("DATA/DRINKS/DrinkList.txt");
     fstream fout;
     fout.open("DATA/TOPPINGS/ToppingList.txt", ios::out|ios::trunc);
-    for(unsigned int i = 0; i < topping_vector.size(); i++)                      /// I use this functino to write the modified side-dish menu to the SideList.txt ///
+    for(unsigned int i = 0; i < topping_vector.size(); i++)                      /// I use this function to write the modified Toppings menu to the ToppingList.txt ///
     {
         /// and the DrinkPrice.txt files. ///
         cout << "Writing " << topping_vector[i] << " to file:" << '\n' ;
@@ -68,18 +68,19 @@ void ToppingRepository::write_to_file_from_vector(/*vector<string> &drink, vecto
     //remove ("DATA/DRINKS/DrinkPrice.txt");
     fstream fout2;
     fout2.open("DATA/TOPPINGS/ToppingPrice.txt", ios::out|ios::trunc);
-    for(unsigned int i = 0; i < price_vector.size(); i++)                      /// I use this functino to write the modified price to the SidePrice.txt ///
+    for(unsigned int i = 0; i < price_vector.size(); i++)                      /// I use this function to write the modified price to the ToppingPrice.txt ///
     {
         /// and the DrinkPrice.txt files. ///
         cout << "Writing " << price_vector[i] << " to file:" << '\n' ;
         fout2 << price_vector[i] << '\n';
     }
     fout2.close();
+    system("PAUSE");
 
 
 
 }
-void ToppingRepository::add_topping_to_topping_list()
+void ToppingRepository::add_topping_to_topping_list()               ///This function lets the user input a new topping to the ToppingList and price ofcourse.
 {
     check_vectors();
     /*if(drink_vector.size() == 0)
@@ -107,7 +108,7 @@ void ToppingRepository::add_topping_to_topping_list()
 
     write_to_file_from_vector(/*topping_vector, price_vector*/);
 }
-void ToppingRepository::remove_topping_from_topping_list()
+void ToppingRepository::remove_topping_from_topping_list()              ///This function lets the user select a topping to be removed from the ToppingList.
 {
     string input;
     char yes_no;
@@ -165,8 +166,9 @@ void ToppingRepository::remove_topping_from_topping_list()
     // }while(intput >= 0 && intput <= drink_vector.size() -1 );
     system("PAUSE");
 }
-void ToppingRepository::check_vectors()
+void ToppingRepository::check_vectors()                                             ///Check if vectors are empty or if they have changed since they were loaded last.
 {
+    /// if the files have been changed they are reloaded to the vectors.
     if(topping_vector.size() == 0 || have_vectors_been_changed == true)
     {
         cout << "Topping list empty, reading from file" << endl;

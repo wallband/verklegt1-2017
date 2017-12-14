@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="F3" />
+		<Option title="F3(FinalFinal)" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
@@ -94,6 +94,8 @@
 		<Unit filename="UI/MainUI.h" />
 		<Unit filename="UI/PizzaUI.cpp" />
 		<Unit filename="UI/PizzaUI.h" />
+		<Unit filename="UI/SalesUI.cpp" />
+		<Unit filename="UI/SalesUI.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="main.h" />
 		<Extensions>

@@ -1,10 +1,4 @@
 Coke
 Fanta
-Sprite
 Einar
-New
-Toppur
-EinarTEST
-LoopMahoop
 Done
-

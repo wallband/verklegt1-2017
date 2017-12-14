@@ -622,13 +622,14 @@
 1513261255 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\main.cpp
 	"../UI/mainUI.h"
 
-1513262232 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\mainui.h
+1513284166 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\mainui.h
 	"../main.h"
 	"PizzaUI.h"
 	"AdminUI.h"
 	"BakerUI.h"
+	"SalesUI.h"
 
-1513261405 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\main.h
+1513284393 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\main.h
 	<iostream>
 	<stddef.h>
 	<stdlib.h>
@@ -639,6 +640,7 @@
 	<algorithm>
 	<string>
 	<sstream>
+	<cstring>
 
 1513265131 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\pizzaui.h
 	"../main.h"
@@ -646,7 +648,7 @@
 	"../REPO/PizzaRepository.h"
 	"../SERVICE/OrderService.h"
 
-1513265493 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\pizzaservice.h
+1513284363 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\pizzaservice.h
 	"../main.h"
 	"../REPO/PizzaRepository.h"
 	"DrinkService.h"
@@ -662,13 +664,15 @@
 1513185554 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\drinkservice.h
 	"DrinkRepository.h"
 
-1513185554 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\drinkrepository.h
+1513286108 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\drinkrepository.h
 	<vector>
 	<string>
 	<fstream>
 	<stdlib.h>
 	<iostream>
 	<locale>
+	<stdio.h>
+	<ctype.h>
 	"../EXCEPTIONS/FileNotFound.h"
 	"../EXCEPTIONS/InvalidInput.h"
 
@@ -727,7 +731,7 @@
 1513185554 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\model\topping.cpp
 	"Topping.h"
 
-1513265131 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\drinkrepository.cpp
+1513287962 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\drinkrepository.cpp
 	"DrinkRepository.h"
 
 1513263488 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\orderrepository.cpp
@@ -736,13 +740,13 @@
 1513263896 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\pizzarepository.cpp
 	"../REPO/PizzaRepository.h"
 
-1513185554 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\sidedishrepository.cpp
+1513287962 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\sidedishrepository.cpp
 	"SideDishRepository.h"
 
-1513185554 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\toppingrepository.cpp
+1513287962 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\toppingrepository.cpp
 	"ToppingRepository.h"
 
-1513188035 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\adminservice.cpp
+1513278792 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\adminservice.cpp
 	"AdminService.h"
 
 1513185554 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\drinkservice.cpp
@@ -751,7 +755,7 @@
 1513185554 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\orderservice.cpp
 	"OrderService.h"
 
-1513265456 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\pizzaservice.cpp
+1513284856 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\pizzaservice.cpp
 	"PizzaService.h"
 
 1513185554 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\sidedishservice.cpp
@@ -764,16 +768,16 @@
 
 1513185554 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\toppingservice.h
 
-1513187615 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\adminui.cpp
+1513287962 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\adminui.cpp
 	"AdminUI.h"
 
-1513262313 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\mainui.cpp
+1513284139 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\mainui.cpp
 	"../UI/MainUI.h"
 
 1513265131 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\pizzaui.cpp
 	"PizzaUI.h"
 
-1513265131 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\comborepository.h
+1513286541 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\comborepository.h
 	"Combo.h"
 	<vector>
 	<string>
@@ -781,6 +785,8 @@
 	<stdlib.h>
 	<iostream>
 	<locale>
+	<stdio.h>
+	<ctype.h>
 	"../EXCEPTIONS/FileNotFound.h"
 	"../EXCEPTIONS/InvalidInput.h"
 
@@ -791,7 +797,7 @@
 1513191382 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\model\combo.cpp
 	"Combo.h"
 
-1513265131 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\comborepository.cpp
+1513286541 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\comborepository.cpp
 	"ComboRepository.h"
 	"Combo.h"
 
@@ -799,7 +805,7 @@
 	"../main.h"
 	"PizzaUI.h"
 
-1513262863 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\bakerui.cpp
+1513270966 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\bakerui.cpp
 	"BakerUI.h"
 
 1513251645 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\bakerservice.h
@@ -808,4 +814,11 @@
 
 1513251645 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\bakerservice.cpp
 	"BakerService.h"
+
+1513284420 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\salesui.cpp
+	"SalesUI.h"
+
+1513284139 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\salesui.h
+	<iostream>
+	"PizzaUI.h"
 
