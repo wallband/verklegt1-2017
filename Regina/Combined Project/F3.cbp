@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="F3" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/F3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="REPO" />
+					<Add directory="include/service" />
+					<Add directory="SERVICE" />
+					<Add directory="MODEL" />
+					<Add directory="UI" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/F3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="REPO" />
+					<Add directory="include/service" />
+					<Add directory="SERVICE" />
+					<Add directory="MODEL" />
+					<Add directory="UI" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="DATA/COMBO/ComboName.txt" />
+		<Unit filename="DATA/COMBO/ComboPrice.txt" />
+		<Unit filename="DATA/DRINKS/DrinkList.txt" />
+		<Unit filename="DATA/DRINKS/DrinkPrice.txt" />
+		<Unit filename="DATA/ORDER/Index.txt" />
+		<Unit filename="DATA/ORDER/Total.txt" />
+		<Unit filename="DATA/SIDE/SideList.txt" />
+		<Unit filename="DATA/SIDE/SidePrice.txt" />
+		<Unit filename="DATA/TOPPINGS/ToppingList.txt" />
+		<Unit filename="DATA/TOPPINGS/ToppingPrice.txt" />
+		<Unit filename="EXCEPTIONS/FileNotFound.cpp" />
+		<Unit filename="EXCEPTIONS/FileNotFound.h" />
+		<Unit filename="EXCEPTIONS/InvalidInput.cpp" />
+		<Unit filename="EXCEPTIONS/InvalidInput.h" />
+		<Unit filename="MODEL/Combo.cpp" />
+		<Unit filename="MODEL/Combo.h" />
+		<Unit filename="MODEL/Pizza.cpp" />
+		<Unit filename="MODEL/Pizza.h" />
+		<Unit filename="MODEL/Topping.cpp" />
+		<Unit filename="MODEL/Topping.h" />
+		<Unit filename="REPO/ComboRepository.cpp" />
+		<Unit filename="REPO/ComboRepository.h" />
+		<Unit filename="REPO/DrinkRepository.cpp" />
+		<Unit filename="REPO/DrinkRepository.h" />
+		<Unit filename="REPO/OrderRepository.cpp" />
+		<Unit filename="REPO/OrderRepository.h" />
+		<Unit filename="REPO/PizzaRepository.cpp" />
+		<Unit filename="REPO/PizzaRepository.h" />
+		<Unit filename="REPO/SideDishRepository.cpp" />
+		<Unit filename="REPO/SideDishRepository.h" />
+		<Unit filename="REPO/ToppingRepository.cpp" />
+		<Unit filename="REPO/ToppingRepository.h" />
+		<Unit filename="SERVICE/AdminService.cpp" />
+		<Unit filename="SERVICE/AdminService.h" />
+		<Unit filename="SERVICE/DrinkService.cpp" />
+		<Unit filename="SERVICE/DrinkService.h" />
+		<Unit filename="SERVICE/OrderService.cpp" />
+		<Unit filename="SERVICE/OrderService.h" />
+		<Unit filename="SERVICE/PizzaService.cpp" />
+		<Unit filename="SERVICE/PizzaService.h" />
+		<Unit filename="SERVICE/SideDishService.cpp" />
+		<Unit filename="SERVICE/SideDishService.h" />
+		<Unit filename="SERVICE/ToppingService.cpp" />
+		<Unit filename="SERVICE/ToppingService.h" />
+		<Unit filename="UI/AdminUI.cpp" />
+		<Unit filename="UI/AdminUI.h" />
+		<Unit filename="UI/BakerUI.cpp" />
+		<Unit filename="UI/BakerUI.h" />
+		<Unit filename="UI/MainUI.cpp" />
+		<Unit filename="UI/MainUI.h" />
+		<Unit filename="UI/PizzaUI.cpp" />
+		<Unit filename="UI/PizzaUI.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

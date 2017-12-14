@@ -1,0 +1,1012 @@
+# depslib dependency file v1.0
+1512665574 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\main.cpp
+	"../UI/MainUI.h"
+
+1511975978 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\mainui.h
+
+1512133342 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\pizza.h
+	"Topping.h"
+	<iostream>
+	<vector>
+
+1512134227 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\topping.h
+	<iostream>
+
+1512137375 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\mainui.cpp
+	"MainUI.h"
+	"PizzaUI.h"
+	<iostream>
+	<vector>
+
+1512136100 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\pizza.cpp
+	"Pizza.h"
+	<stddef.h>
+
+1512135472 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\topping.cpp
+	"Topping.h"
+	<string.h>
+	<iostream>
+
+1511993240 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\pizzaui.h
+	"PizzaRepository.h"
+
+1512136359 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\pizzarepository.cpp
+	"PizzaRepository.h"
+	"Pizza.h"
+	<fstream>
+	<iostream>
+
+1511992339 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\pizzarepository.h
+	"Pizza.h"
+
+1512142656 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\pizzaui.cpp
+	"PizzaUI.h"
+	"Pizza.h"
+	<iostream>
+
+1512135141 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\repo\toppingrepo.cpp
+	"ToppingRepo.h"
+
+1512135141 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\repo\toppingrepo.h
+
+1512658291 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\repo\pizzarepository.h
+	<fstream>
+	"../MODEL/Pizza.h"
+	"../UI/PizzaUI.h"
+
+1512656550 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\repo\pizzarepository.cpp
+	"PizzaRepository.h"
+
+1512772441 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\ui\mainui.cpp
+	"MainUI.h"
+
+1512772447 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\ui\mainui.h
+	"PizzaUI.h"
+	<iostream>
+	<vector>
+
+1512771850 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\ui\pizzaui.h
+	"../main.h"
+	"../SERVICE/PizzaService.h"
+	"../MODEL/PizzaRepository.h"
+
+1512781212 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\ui\pizzaui.cpp
+	"PizzaUI.h"
+
+1512654088 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\model\pizza.cpp
+	"Pizza.h"
+
+1512659603 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\model\pizza.h
+	"../main.h"
+	"Topping.h"
+	"../UI/PizzaUI.h"
+
+1512770871 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\model\topping.h
+	"../main.h"
+	"../UI/PizzaUI.h"
+
+1512653675 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\model\topping.cpp
+	"Topping.h"
+
+1512779473 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\service\pizzaservice.cpp
+	"PizzaService.h"
+
+1512779435 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\service\pizzaservice.h
+	"../main.h"
+	"../MODEL/PizzaRepository.h"
+	"DrinkService.h"
+	"OrderService.h"
+
+1512595472 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\service\toppingservice.cpp
+	"ToppingService.h"
+
+1512595472 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\service\toppingservice.h
+
+1512652606 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\service\drinkservice.cpp
+	"DrinkService.h"
+
+1512652606 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\service\drinkservice.h
+
+1512652500 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\service\orderservice.cpp
+	"OrderService.h"
+
+1512774842 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\service\orderservice.h
+	"../MODEL/PizzaRepository.h"
+
+1512780966 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\model\pizzarepository.h
+	"../main.h"
+	"OrderService.h"
+
+1512781540 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\model\pizzarepository.cpp
+	"PizzaRepository.h"
+
+1512768602 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3\main.h
+	<iostream>
+	<stddef.h>
+	<stdlib.h>
+	<cstddef>
+	<fstream>
+	<iostream>
+	<vector>
+	<string>
+
+1512665574 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\main.cpp
+	"../UI/MainUI.h"
+
+1512948716 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\ui\mainui.h
+	"../main.h"
+	"PizzaUI.h"
+
+1513156683 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\ui\pizzaui.h
+	"../main.h"
+	"../SERVICE/PizzaService.h"
+	"../REPO/PizzaRepository.h"
+	"../SERVICE/OrderService.h"
+
+1513156683 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\main.h
+	<iostream>
+	<stddef.h>
+	<stdlib.h>
+	<cstddef>
+	<fstream>
+	<iostream>
+	<vector>
+	<algorithm>
+	<string>
+	<sstream>
+
+1513147669 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\service\pizzaservice.h
+	"../main.h"
+	"../REPO/PizzaRepository.h"
+	"DrinkService.h"
+	"OrderService.h"
+
+1512837262 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\model\pizzarepository.h
+	"../main.h"
+	"OrderService.h"
+
+1513110734 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\service\orderservice.h
+	"../REPO/OrderRepository.h"
+	"../main.h"
+
+1512652606 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\service\drinkservice.h
+
+1512654088 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\model\pizza.cpp
+	"Pizza.h"
+
+1512659603 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\model\pizza.h
+	"../main.h"
+	"Topping.h"
+	"../UI/PizzaUI.h"
+
+1512770871 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\model\topping.h
+	"../main.h"
+	"../UI/PizzaUI.h"
+
+1512837262 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\model\pizzarepository.cpp
+	"PizzaRepository.h"
+
+1512653675 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\model\topping.cpp
+	"Topping.h"
+
+1512652606 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\service\drinkservice.cpp
+	"DrinkService.h"
+
+1513157260 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\service\orderservice.cpp
+	"OrderService.h"
+
+1513172706 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\service\pizzaservice.cpp
+	"PizzaService.h"
+
+1513172293 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\ui\mainui.cpp
+	"MainUI.h"
+
+1513157477 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\ui\pizzaui.cpp
+	"PizzaUI.h"
+
+1513146365 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\repo\pizzarepository.h
+	"../main.h"
+	"OrderRepository.h"
+
+1513172608 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\repo\pizzarepository.cpp
+	"PizzaRepository.h"
+
+1513107774 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\repo\orderrepository.h
+	"../main.h"
+
+1513157260 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\vika1\f3 - copy\repo\orderrepository.cpp
+	"OrderRepository.h"
+
+1513174199 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\hreidar_pizza\main.cpp
+	"../UI/MainUI.h"
+
+1513174199 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\hreidar_pizza\ui\mainui.h
+	"../main.h"
+	"PizzaUI.h"
+
+1513174199 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\hreidar_pizza\main.h
+	<iostream>
+	<stddef.h>
+	<stdlib.h>
+	<cstddef>
+	<fstream>
+	<iostream>
+	<vector>
+	<algorithm>
+	<string>
+	<sstream>
+
+1513174199 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\hreidar_pizza\ui\pizzaui.h
+	"../main.h"
+	"../SERVICE/PizzaService.h"
+	"../REPO/PizzaRepository.h"
+	"../SERVICE/OrderService.h"
+
+1513174199 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\hreidar_pizza\service\pizzaservice.h
+	"../main.h"
+	"../REPO/PizzaRepository.h"
+	"DrinkService.h"
+	"OrderService.h"
+
+1513174199 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\hreidar_pizza\repo\pizzarepository.h
+	"../main.h"
+	"OrderRepository.h"
+
+1513174199 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\hreidar_pizza\repo\orderrepository.h
+	"../main.h"
+
+1513174199 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\hreidar_pizza\service\drinkservice.h
+
+1513174199 c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\hreidar_pizza\service\orderservice.h
+	"../REPO/OrderRepository.h"
+	"../main.h"
+
+1513174199 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\hreidar_pizza\repo\orderrepository.cpp
+	"OrderRepository.h"
+
+1513174199 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\hreidar_pizza\repo\pizzarepository.cpp
+	"PizzaRepository.h"
+
+1513174199 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\hreidar_pizza\service\orderservice.cpp
+	"OrderService.h"
+
+1513174199 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\hreidar_pizza\service\pizzaservice.cpp
+	"PizzaService.h"
+
+1513174199 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\hreidar_pizza\ui\mainui.cpp
+	"MainUI.h"
+
+1513174199 source:c:\users\einar\documents\verklegt 3 vikna\verklegt1-2017\hreidar_pizza\ui\pizzaui.cpp
+	"PizzaUI.h"
+
+1513178891 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\main.cpp
+	"../UI/mainUI.h"
+
+1513177224 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\ui\mainui.h
+	"../main.h"
+	"PizzaUI.h"
+	"AdminUI.h"
+
+1513174199 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\main.h
+	<iostream>
+	<stddef.h>
+	<stdlib.h>
+	<cstddef>
+	<fstream>
+	<iostream>
+	<vector>
+	<algorithm>
+	<string>
+	<sstream>
+
+1513174199 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\ui\pizzaui.h
+	"../main.h"
+	"../SERVICE/PizzaService.h"
+	"../REPO/PizzaRepository.h"
+	"../SERVICE/OrderService.h"
+
+1513174199 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\service\pizzaservice.h
+	"../main.h"
+	"../REPO/PizzaRepository.h"
+	"DrinkService.h"
+	"OrderService.h"
+
+1513174199 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\repo\pizzarepository.h
+	"../main.h"
+	"OrderRepository.h"
+
+1513174199 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\repo\orderrepository.h
+	"../main.h"
+
+1513029716 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\service\drinkservice.h
+	"DrinkRepository.h"
+
+1513177270 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\repo\drinkrepository.h
+	<vector>
+	<string>
+	<fstream>
+	<iostream>
+	<locale>
+	"../EXCEPTIONS/FileNotFound.h"
+	"../EXCEPTIONS/InvalidInput.h"
+
+1513174199 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\service\orderservice.h
+	"../REPO/OrderRepository.h"
+	"../main.h"
+
+1513177309 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\ui\adminui.h
+	"AdminService.h"
+	"../EXCEPTIONS/FileNotFound.h"
+	"iostream"
+	<typeinfo>
+
+1513179699 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\service\adminservice.h
+	"AdminRepository.h"
+	"DrinkRepository.h"
+	"SideDishRepository.h"
+	"ToppingRepository.h"
+
+1513030046 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\repo\adminrepository.h
+	"DrinkService.h"
+
+1513177286 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\repo\sidedishrepository.h
+	<vector>
+	<string>
+	<fstream>
+	<iostream>
+	<locale>
+	"../EXCEPTIONS/FileNotFound.h"
+	"../EXCEPTIONS/InvalidInput.h"
+
+1513177299 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\repo\toppingrepository.h
+	<vector>
+	<string>
+	<fstream>
+	<iostream>
+	<locale>
+	"../EXCEPTIONS/FileNotFound.h"
+	"../EXCEPTIONS/InvalidInput.h"
+
+1513174199 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\model\pizza.cpp
+	"Pizza.h"
+
+1513174199 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\model\pizza.h
+	"../main.h"
+	"Topping.h"
+	"../UI/PizzaUI.h"
+
+1513174199 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\model\topping.h
+	"../main.h"
+	"../UI/PizzaUI.h"
+
+1513174199 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\model\pizzarepository.cpp
+	"PizzaRepository.h"
+
+1513174199 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\model\pizzarepository.h
+	"../main.h"
+
+1513174199 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\model\topping.cpp
+	"Topping.h"
+
+1513174199 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\repo\orderrepository.cpp
+	"OrderRepository.h"
+
+1513178448 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\repo\pizzarepository.cpp
+	"../REPO/PizzaRepository.h"
+
+1513029716 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\service\drinkservice.cpp
+	"DrinkService.h"
+
+1513174199 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\service\orderservice.cpp
+	"OrderService.h"
+
+1513174199 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\service\pizzaservice.cpp
+	"PizzaService.h"
+
+1513162026 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\service\toppingservice.cpp
+	"ToppingService.h"
+
+1513162026 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\service\toppingservice.h
+
+1513174199 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\ui\pizzaui.cpp
+	"PizzaUI.h"
+
+1513022293 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\exceptions\filenotfound.cpp
+	"FileNotFound.h"
+
+1513022293 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\exceptions\filenotfound.h
+
+1513089864 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\exceptions\invalidinput.cpp
+	"InvalidInput.h"
+
+1513089864 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\exceptions\invalidinput.h
+
+1513178807 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\repo\adminrepository.cpp
+	"AdminRepository.h"
+
+1513179785 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\repo\drinkrepository.cpp
+	"DrinkRepository.h"
+
+1513179941 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\repo\sidedishrepository.cpp
+	"SideDishRepository.h"
+
+1513163559 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\repo\toppingrepository.cpp
+	"ToppingRepository.h"
+
+1513164124 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\service\adminservice.cpp
+	"AdminService.h"
+
+1513155947 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\service\sidedishservice.cpp
+	"SideDishService.h"
+
+1513155947 c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\service\sidedishservice.h
+
+1513165403 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\ui\adminui.cpp
+	"AdminUI.h"
+
+1513178933 source:c:\users\einar\documents\codeblocks\pizzaverkefni\hreidar_pizza\ui\mainui.cpp
+	"../UI/MainUI.h"
+
+1513180696 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\exceptions\filenotfound.cpp
+	"FileNotFound.h"
+
+1513180696 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\exceptions\filenotfound.h
+
+1513180696 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\exceptions\invalidinput.cpp
+	"InvalidInput.h"
+
+1513180696 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\exceptions\invalidinput.h
+
+1513180696 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\main.cpp
+	"../UI/mainUI.h"
+
+1513180696 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\ui\mainui.h
+	"../main.h"
+	"PizzaUI.h"
+	"AdminUI.h"
+
+1513180696 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\main.h
+	<iostream>
+	<stddef.h>
+	<stdlib.h>
+	<cstddef>
+	<fstream>
+	<iostream>
+	<vector>
+	<algorithm>
+	<string>
+	<sstream>
+
+1513180696 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\ui\pizzaui.h
+	"../main.h"
+	"../SERVICE/PizzaService.h"
+	"../REPO/PizzaRepository.h"
+	"../SERVICE/OrderService.h"
+
+1513180696 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\service\pizzaservice.h
+	"../main.h"
+	"../REPO/PizzaRepository.h"
+	"DrinkService.h"
+	"OrderService.h"
+
+1513180696 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\repo\pizzarepository.h
+	"../main.h"
+	"OrderRepository.h"
+
+1513180696 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\repo\orderrepository.h
+	"../main.h"
+
+1513180696 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\service\drinkservice.h
+	"DrinkRepository.h"
+
+1513180792 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\repo\drinkrepository.h
+	<vector>
+	<string>
+	<fstream>
+	<stdlib.h>
+	<iostream>
+	<locale>
+	"../EXCEPTIONS/FileNotFound.h"
+	"../EXCEPTIONS/InvalidInput.h"
+
+1513180696 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\service\orderservice.h
+	"../REPO/OrderRepository.h"
+	"../main.h"
+
+1513180696 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\ui\adminui.h
+	"AdminService.h"
+	"../EXCEPTIONS/FileNotFound.h"
+	"iostream"
+	<typeinfo>
+
+1513180696 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\service\adminservice.h
+	"AdminRepository.h"
+	"DrinkRepository.h"
+	"SideDishRepository.h"
+	"ToppingRepository.h"
+
+1513180696 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\repo\adminrepository.h
+	"DrinkService.h"
+
+1513180837 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\repo\sidedishrepository.h
+	<vector>
+	<string>
+	<fstream>
+	<iostream>
+	<stdlib.h>
+	<locale>
+	"../EXCEPTIONS/FileNotFound.h"
+	"../EXCEPTIONS/InvalidInput.h"
+
+1513180876 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\repo\toppingrepository.h
+	<vector>
+	<string>
+	<fstream>
+	<iostream>
+	<stdlib.h>
+	<locale>
+	"../EXCEPTIONS/FileNotFound.h"
+	"../EXCEPTIONS/InvalidInput.h"
+
+1513180696 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\model\pizza.cpp
+	"Pizza.h"
+
+1513180696 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\model\pizza.h
+	"../main.h"
+	"Topping.h"
+	"../UI/PizzaUI.h"
+
+1513180696 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\model\topping.h
+	"../main.h"
+	"../UI/PizzaUI.h"
+
+1513180696 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\model\topping.cpp
+	"Topping.h"
+
+1513180696 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\repo\drinkrepository.cpp
+	"DrinkRepository.h"
+
+1513180696 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\repo\orderrepository.cpp
+	"OrderRepository.h"
+
+1513180696 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\repo\pizzarepository.cpp
+	"../REPO/PizzaRepository.h"
+
+1513180696 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\repo\sidedishrepository.cpp
+	"SideDishRepository.h"
+
+1513180696 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\repo\toppingrepository.cpp
+	"ToppingRepository.h"
+
+1513180696 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\service\adminservice.cpp
+	"AdminService.h"
+
+1513180696 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\service\drinkservice.cpp
+	"DrinkService.h"
+
+1513180696 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\service\orderservice.cpp
+	"OrderService.h"
+
+1513184654 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\service\pizzaservice.cpp
+	"PizzaService.h"
+
+1513180696 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\service\sidedishservice.cpp
+	"SideDishService.h"
+
+1513180696 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\service\sidedishservice.h
+
+1513180696 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\service\toppingservice.cpp
+	"ToppingService.h"
+
+1513180696 c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\service\toppingservice.h
+
+1513180696 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\ui\adminui.cpp
+	"AdminUI.h"
+
+1513180696 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\ui\mainui.cpp
+	"../UI/MainUI.h"
+
+1513180696 source:c:\users\hreiman\documents\hÍ\onedrive\ha\verklegt námskeið 1\verklegt1-2017\einar\combined project\ui\pizzaui.cpp
+	"PizzaUI.h"
+
+1513185554 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\exceptions\filenotfound.cpp
+	"FileNotFound.h"
+
+1513185554 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\exceptions\filenotfound.h
+
+1513185554 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\exceptions\invalidinput.cpp
+	"InvalidInput.h"
+
+1513185554 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\exceptions\invalidinput.h
+
+1513261255 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\main.cpp
+	"../UI/mainUI.h"
+
+1513262232 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\mainui.h
+	"../main.h"
+	"PizzaUI.h"
+	"AdminUI.h"
+	"BakerUI.h"
+
+1513261405 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\main.h
+	<iostream>
+	<stddef.h>
+	<stdlib.h>
+	<cstddef>
+	<fstream>
+	<iostream>
+	<vector>
+	<algorithm>
+	<string>
+	<sstream>
+
+1513265131 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\pizzaui.h
+	"../main.h"
+	"../SERVICE/PizzaService.h"
+	"../REPO/PizzaRepository.h"
+	"../SERVICE/OrderService.h"
+
+1513265493 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\pizzaservice.h
+	"../main.h"
+	"../REPO/PizzaRepository.h"
+	"DrinkService.h"
+	"OrderService.h"
+
+1513185554 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\pizzarepository.h
+	"../main.h"
+	"OrderRepository.h"
+
+1513185554 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\orderrepository.h
+	"../main.h"
+
+1513185554 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\drinkservice.h
+	"DrinkRepository.h"
+
+1513185554 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\drinkrepository.h
+	<vector>
+	<string>
+	<fstream>
+	<stdlib.h>
+	<iostream>
+	<locale>
+	"../EXCEPTIONS/FileNotFound.h"
+	"../EXCEPTIONS/InvalidInput.h"
+
+1513185554 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\orderservice.h
+	"../REPO/OrderRepository.h"
+	"../main.h"
+
+1513185554 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\adminui.h
+	"AdminService.h"
+	"../EXCEPTIONS/FileNotFound.h"
+	"iostream"
+	<typeinfo>
+
+1513187654 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\adminservice.h
+	"AdminRepository.h"
+	"DrinkRepository.h"
+	"SideDishRepository.h"
+	"ToppingRepository.h"
+	"ComboRepository.h"
+
+1513185554 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\adminrepository.h
+	"DrinkService.h"
+
+1513185554 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\sidedishrepository.h
+	<vector>
+	<string>
+	<fstream>
+	<iostream>
+	<stdlib.h>
+	<locale>
+	"../EXCEPTIONS/FileNotFound.h"
+	"../EXCEPTIONS/InvalidInput.h"
+
+1513185554 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\toppingrepository.h
+	<vector>
+	<string>
+	<fstream>
+	<iostream>
+	<stdlib.h>
+	<locale>
+	"../EXCEPTIONS/FileNotFound.h"
+	"../EXCEPTIONS/InvalidInput.h"
+
+1513185554 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\model\pizza.cpp
+	"Pizza.h"
+
+1513185554 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\model\pizza.h
+	"../main.h"
+	"Topping.h"
+	"../UI/PizzaUI.h"
+
+1513185554 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\model\topping.h
+	"../main.h"
+	"../UI/PizzaUI.h"
+
+1513185554 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\model\topping.cpp
+	"Topping.h"
+
+1513265131 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\drinkrepository.cpp
+	"DrinkRepository.h"
+
+1513263488 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\orderrepository.cpp
+	"OrderRepository.h"
+
+1513263896 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\pizzarepository.cpp
+	"../REPO/PizzaRepository.h"
+
+1513185554 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\sidedishrepository.cpp
+	"SideDishRepository.h"
+
+1513185554 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\toppingrepository.cpp
+	"ToppingRepository.h"
+
+1513188035 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\adminservice.cpp
+	"AdminService.h"
+
+1513185554 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\drinkservice.cpp
+	"DrinkService.h"
+
+1513185554 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\orderservice.cpp
+	"OrderService.h"
+
+1513265456 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\pizzaservice.cpp
+	"PizzaService.h"
+
+1513185554 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\sidedishservice.cpp
+	"SideDishService.h"
+
+1513185554 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\sidedishservice.h
+
+1513185554 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\toppingservice.cpp
+	"ToppingService.h"
+
+1513185554 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\toppingservice.h
+
+1513187615 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\adminui.cpp
+	"AdminUI.h"
+
+1513262313 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\mainui.cpp
+	"../UI/MainUI.h"
+
+1513265131 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\pizzaui.cpp
+	"PizzaUI.h"
+
+1513265131 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\comborepository.h
+	"Combo.h"
+	<vector>
+	<string>
+	<fstream>
+	<stdlib.h>
+	<iostream>
+	<locale>
+	"../EXCEPTIONS/FileNotFound.h"
+	"../EXCEPTIONS/InvalidInput.h"
+
+1513265131 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\model\combo.h
+	<string>
+	<vector>
+
+1513191382 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\model\combo.cpp
+	"Combo.h"
+
+1513265131 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\repo\comborepository.cpp
+	"ComboRepository.h"
+	"Combo.h"
+
+1513265131 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\bakerui.h
+	"../main.h"
+	"PizzaUI.h"
+
+1513262863 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\ui\bakerui.cpp
+	"BakerUI.h"
+
+1513251645 c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\bakerservice.h
+	"../REPO/OrderRepository.h"
+	<iostream>
+
+1513251645 source:c:\users\einar\documents\codeblocks\pizzaverkefni\combined project\service\bakerservice.cpp
+	"BakerService.h"
+
+1513185600 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\exceptions\filenotfound.cpp
+	"FileNotFound.h"
+
+1513185600 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\exceptions\filenotfound.h
+
+1513185600 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\exceptions\invalidinput.cpp
+	"InvalidInput.h"
+
+1513185600 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\exceptions\invalidinput.h
+
+1513264438 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\main.cpp
+	"../UI/mainUI.h"
+
+1513266938 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\ui\mainui.h
+	"../main.h"
+	"PizzaUI.h"
+	"AdminUI.h"
+	"BakerUI.h"
+	"salesui.h"
+
+1513185600 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\main.h
+	<iostream>
+	<stddef.h>
+	<stdlib.h>
+	<cstddef>
+	<fstream>
+	<iostream>
+	<vector>
+	<algorithm>
+	<string>
+	<sstream>
+
+1513265832 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\ui\pizzaui.h
+	"../main.h"
+	"../SERVICE/PizzaService.h"
+	"../REPO/PizzaRepository.h"
+	"../SERVICE/OrderService.h"
+
+1513265832 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\service\pizzaservice.h
+	"../main.h"
+	"../REPO/PizzaRepository.h"
+	"DrinkService.h"
+	"OrderService.h"
+
+1513185600 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\repo\pizzarepository.h
+	"../main.h"
+	"OrderRepository.h"
+
+1513185600 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\repo\orderrepository.h
+	"../main.h"
+
+1513185600 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\service\drinkservice.h
+	"DrinkRepository.h"
+
+1513185600 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\repo\drinkrepository.h
+	<vector>
+	<string>
+	<fstream>
+	<stdlib.h>
+	<iostream>
+	<locale>
+	"../EXCEPTIONS/FileNotFound.h"
+	"../EXCEPTIONS/InvalidInput.h"
+
+1513185600 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\service\orderservice.h
+	"../REPO/OrderRepository.h"
+	"../main.h"
+
+1513185600 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\ui\adminui.h
+	"AdminService.h"
+	"../EXCEPTIONS/FileNotFound.h"
+	"iostream"
+	<typeinfo>
+
+1513264438 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\service\adminservice.h
+	"AdminRepository.h"
+	"DrinkRepository.h"
+	"SideDishRepository.h"
+	"ToppingRepository.h"
+	"ComboRepository.h"
+
+1513185600 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\repo\adminrepository.h
+	"DrinkService.h"
+
+1513185600 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\repo\sidedishrepository.h
+	<vector>
+	<string>
+	<fstream>
+	<iostream>
+	<stdlib.h>
+	<locale>
+	"../EXCEPTIONS/FileNotFound.h"
+	"../EXCEPTIONS/InvalidInput.h"
+
+1513185600 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\repo\toppingrepository.h
+	<vector>
+	<string>
+	<fstream>
+	<iostream>
+	<stdlib.h>
+	<locale>
+	"../EXCEPTIONS/FileNotFound.h"
+	"../EXCEPTIONS/InvalidInput.h"
+
+1513265832 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\repo\comborepository.h
+	"Combo.h"
+	<vector>
+	<string>
+	<fstream>
+	<stdlib.h>
+	<iostream>
+	<locale>
+	"../EXCEPTIONS/FileNotFound.h"
+	"../EXCEPTIONS/InvalidInput.h"
+
+1513265832 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\model\combo.h
+	<string>
+	<vector>
+
+1513265832 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\ui\bakerui.h
+	"../main.h"
+	"PizzaUI.h"
+
+1513185600 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\model\pizza.cpp
+	"Pizza.h"
+
+1513185600 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\model\pizza.h
+	"../main.h"
+	"Topping.h"
+	"../UI/PizzaUI.h"
+
+1513185600 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\model\topping.h
+	"../main.h"
+	"../UI/PizzaUI.h"
+
+1513185600 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\model\topping.cpp
+	"Topping.h"
+
+1513265832 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\repo\drinkrepository.cpp
+	"DrinkRepository.h"
+
+1513264438 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\repo\orderrepository.cpp
+	"OrderRepository.h"
+
+1513264438 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\repo\pizzarepository.cpp
+	"../REPO/PizzaRepository.h"
+
+1513185600 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\repo\sidedishrepository.cpp
+	"SideDishRepository.h"
+
+1513185600 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\repo\toppingrepository.cpp
+	"ToppingRepository.h"
+
+1513264438 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\service\adminservice.cpp
+	"AdminService.h"
+
+1513185600 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\service\drinkservice.cpp
+	"DrinkService.h"
+
+1513185600 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\service\orderservice.cpp
+	"OrderService.h"
+
+1513265832 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\service\pizzaservice.cpp
+	"PizzaService.h"
+
+1513185600 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\service\sidedishservice.cpp
+	"SideDishService.h"
+
+1513185600 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\service\sidedishservice.h
+
+1513185600 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\service\toppingservice.cpp
+	"ToppingService.h"
+
+1513185600 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\service\toppingservice.h
+
+1513264438 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\ui\adminui.cpp
+	"AdminUI.h"
+
+1513264438 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\ui\mainui.cpp
+	"../UI/MainUI.h"
+
+1513265832 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\ui\pizzaui.cpp
+	"PizzaUI.h"
+
+1513264438 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\model\combo.cpp
+	"Combo.h"
+
+1513265832 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\repo\comborepository.cpp
+	"ComboRepository.h"
+	"Combo.h"
+
+1513266416 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\ui\bakerui.cpp
+	"BakerUI.h"
+
+1513266757 source:c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\ui\salesui.cpp
+	"salesui.h"
+
+1513266846 c:\users\regina\documents\c++\pizza folder\14.des_newcombo_pizza_code\newcombo_pizza14.des_workwith\combined project\ui\salesui.h
+	"../main.h"
+	"../UI/PizzaUI.h"
+
